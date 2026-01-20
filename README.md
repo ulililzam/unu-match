@@ -260,8 +260,8 @@ Kontribusi welcome! Fork repository → Create branch → Commit changes → Pus
 
 ## Kontak
 
-- **Email**: [your-email@example.com]
-- **GitHub Issues**: [Create an issue](https://github.com/yourusername/unumatch/issues)
+- **Email**: [ulilirvan@gmail.com]
+- **GitHub Issues**: [Create an issue](https://github.com/ulililzam/unu-match/issues)
 
 ---
 
