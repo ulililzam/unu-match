@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Demo - UNU-Match</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="js/modal.js"></script>
+</head>
+
+<body class="bg-gray-50 min-h-screen py-12">
+
+    <div class="container mx-auto max-w-4xl px-4">
+
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-dark mb-3">Modern Modal System</h1>
+            <p class="text-lg text-gray-600">Klik tombol di bawah untuk melihat berbagai jenis modal</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+
+            <!-- Confirmation Modals -->
+            <div class="card">
+                <h3 class="text-xl font-bold text-dark mb-4">Confirmation Modals</h3>
+                <div class="space-y-3">
+                    <button onclick="showWarningConfirm()" class="btn btn-primary w-full">
+                        Warning Confirm
+                    </button>
+                    <button onclick="showInfoConfirm()" class="btn btn-secondary w-full">
+                        Info Confirm
+                    </button>
+                </div>
+            </div>
+
+            <!-- Alert Modals -->
+            <div class="card">
+                <h3 class="text-xl font-bold text-dark mb-4">Alert Modals</h3>
+                <div class="space-y-3">
+                    <button onclick="showSuccessAlert()" class="btn btn-primary w-full">
+                        Success Alert
+                    </button>
+                    <button onclick="showErrorAlert()" class="btn btn-secondary w-full">
+                        Error Alert
+                    </button>
+                    <button onclick="showWarningAlert()" class="btn btn-secondary w-full">
+                        Warning Alert
+                    </button>
+                    <button onclick="showInfoAlert()" class="btn btn-secondary w-full">
+                        Info Alert
+                    </button>
+                </div>
+            </div>
+
+            <!-- Complex Examples -->
+            <div class="card md:col-span-2">
+                <h3 class="text-xl font-bold text-dark mb-4">Real Use Cases</h3>
+                <div class="grid md:grid-cols-3 gap-3">
+                    <button onclick="showDeleteConfirm()" class="btn btn-primary">
+                        Delete Confirmation
+                    </button>
+                    <button onclick="showLogoutConfirm()" class="btn btn-secondary">
+                        Logout Confirmation
+                    </button>
+                    <button onclick="showFormValidation()" class="btn btn-secondary">
+                        Form Validation
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Code Examples -->
+        <div class="mt-12">
+            <div class="card">
+                <h3 class="text-xl font-bold text-dark mb-4">Cara Penggunaan</h3>
+
+                <div class="mb-6">
+                    <h4 class="font-semibold text-dark mb-2">1. Include Files</h4>
+                    <pre class="bg-gray-100 p-4 rounded-lg text-sm overflow-x-auto"><code>&lt;link rel="stylesheet" href="css/modal.css"&gt;
+&lt;script src="js/modal.js"&gt;&lt;/script&gt;</code></pre>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="font-semibold text-dark mb-2">2. Confirmation Modal</h4>
+                    <pre class="bg-gray-100 p-4 rounded-lg text-sm overflow-x-auto"><code>const confirmed = await Modal.confirm({
+    title: 'Hapus Data?',
+    message: 'Data yang dihapus tidak dapat dikembalikan.',
+    icon: 'warning',
+    confirmText: 'Ya, Hapus',
+    cancelText: 'Batal'
+});
+
+if (confirmed) {
+    // Lakukan aksi jika user klik confirm
+}</code></pre>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-dark mb-2">3. Alert Modal</h4>
+                    <pre class="bg-gray-100 p-4 rounded-lg text-sm overflow-x-auto"><code>await Modal.alert({
+    title: 'Berhasil!',
+    message: 'Data berhasil disimpan.',
+    icon: 'success',
+    buttonText: 'OK'
+});</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-8">
+            <a href="index.html" class="btn btn-primary">Kembali ke Beranda</a>
+        </div>
+
+    </div>
+
+    <script>
+        // Warning Confirmation
+        async function showWarningConfirm() {
+            const confirmed = await Modal.confirm({
+                title: 'Apakah Kamu Yakin?',
+                message: 'Tindakan ini akan menghapus semua data yang telah kamu input.',
+                icon: 'warning',
+                confirmText: 'Ya, Lanjutkan',
+                cancelText: 'Batal'
+            });
+
+            if (confirmed) {
+                await Modal.alert({
+                    title: 'Dikonfirmasi!',
+                    message: 'Kamu memilih untuk melanjutkan.',
+                    icon: 'success',
+                    buttonText: 'OK'
+                });
+            }
+        }
+
+        // Info Confirmation
+        async function showInfoConfirm() {
+            const confirmed = await Modal.confirm({
+                title: 'Informasi',
+                message: 'Apakah kamu ingin melanjutkan ke halaman berikutnya?',
+                icon: 'info',
+                confirmText: 'Ya',
+                cancelText: 'Tidak'
+            });
+        }
+
+        // Success Alert
+        async function showSuccessAlert() {
+            await Modal.alert({
+                title: 'Berhasil!',
+                message: 'Data berhasil disimpan ke database.',
+                icon: 'success',
+                buttonText: 'Mantap!'
+            });
+        }
+
+        // Error Alert
+        async function showErrorAlert() {
+            await Modal.alert({
+                title: 'Terjadi Kesalahan',
+                message: 'Maaf, terjadi kesalahan saat memproses data. Silakan coba lagi.',
+                icon: 'error',
+                buttonText: 'Coba Lagi'
+            });
+        }
+
+        // Warning Alert
+        async function showWarningAlert() {
+            await Modal.alert({
+                title: 'Perhatian!',
+                message: 'Koneksi internet kamu tidak stabil. Simpan pekerjaan kamu secara berkala.',
+                icon: 'warning',
+                buttonText: 'Mengerti'
+            });
+        }
+
+        // Info Alert
+        async function showInfoAlert() {
+            await Modal.alert({
+                title: 'Info Update',
+                message: 'Versi aplikasi terbaru tersedia. Update untuk mendapatkan fitur baru.',
+                icon: 'info',
+                buttonText: 'OK'
+            });
+        }
+
+        // Delete Confirmation
+        async function showDeleteConfirm() {
+            const confirmed = await Modal.confirm({
+                title: 'Hapus Data?',
+                message: 'Data yang sudah dihapus tidak dapat dikembalikan. Apakah kamu yakin ingin melanjutkan?',
+                icon: 'warning',
+                confirmText: 'Ya, Hapus',
+                cancelText: 'Batal'
+            });
+
+            if (confirmed) {
+                await Modal.alert({
+                    title: 'Data Terhapus',
+                    message: 'Data berhasil dihapus dari sistem.',
+                    icon: 'success',
+                    buttonText: 'OK'
+                });
+            }
+        }
+
+        // Logout Confirmation
+        async function showLogoutConfirm() {
+            const confirmed = await Modal.confirm({
+                title: 'Logout?',
+                message: 'Apakah kamu yakin ingin keluar dari aplikasi?',
+                icon: 'info',
+                confirmText: 'Ya, Logout',
+                cancelText: 'Batal'
+            });
+
+            if (confirmed) {
+                await Modal.alert({
+                    title: 'Berhasil Logout',
+                    message: 'Kamu telah keluar dari aplikasi. Sampai jumpa!',
+                    icon: 'success',
+                    buttonText: 'OK'
+                });
+            }
+        }
+
+        // Form Validation
+        async function showFormValidation() {
+            await Modal.alert({
+                title: 'Form Belum Lengkap',
+                message: 'Mohon lengkapi semua field yang bertanda (*) sebelum melanjutkan.',
+                icon: 'warning',
+                buttonText: 'Mengerti'
+            });
+        }
+    </script>
+
+</body>
+
+</html>

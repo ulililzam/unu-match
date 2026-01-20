@@ -1,0 +1,1001 @@
+mtk,inggris,agama,fisika,kimia,biologi,ekonomi,minat_teknik,minat_kesehatan,minat_bisnis,minat_pendidikan,hafalan,prodi
+78,87,82,75,74,69,70,5,1,1,2,0,S1 Informatika
+92,82,66,84,83,73,90,1,1,3,3,0,S1 Akuntansi
+85,88,73,69,67,83,84,2,1,3,2,0,S1 Akuntansi
+67,79,85,69,70,69,75,1,3,1,3,0,S1 Studi Islam Interdisipliner
+87,72,88,95,66,68,75,4,2,4,1,0,S1 Informatika
+70,75,69,76,84,82,71,1,4,2,1,0,S1 Farmasi
+77,96,75,73,95,96,91,2,5,2,3,0,S1 Farmasi
+84,71,73,78,89,85,69,1,5,2,2,1,S1 Farmasi
+96,95,97,92,97,93,96,1,1,4,2,0,S1 Akuntansi
+77,76,80,66,67,86,66,2,2,1,4,0,S1 PGSD
+72,70,69,84,86,81,94,1,2,4,2,0,S1 Agribisnis
+77,87,86,82,86,71,69,5,2,3,1,0,S1 Informatika
+81,89,68,79,68,69,67,4,2,2,1,0,S1 Informatika
+69,84,69,75,97,83,80,3,3,2,2,1,S1 Teknologi Hasil Pertanian
+67,78,67,79,79,90,70,3,4,2,2,0,S1 Teknologi Hasil Pertanian
+86,81,83,77,69,77,81,2,3,4,1,0,S1 Akuntansi
+97,87,83,89,75,77,70,4,1,1,1,0,S1 Teknik Elektro
+89,86,66,78,68,70,66,4,1,1,2,0,S1 Informatika
+80,70,69,85,78,68,70,5,2,2,1,0,S1 Informatika
+81,87,67,66,67,67,81,3,1,4,3,0,S1 Manajemen
+66,85,95,81,68,77,88,2,1,1,4,0,S1 Pendidikan Bahasa Inggris
+77,88,77,81,90,75,80,1,4,1,2,0,S1 Farmasi
+82,81,67,69,66,66,96,3,2,5,1,0,S1 Manajemen
+81,68,66,94,87,66,78,4,3,3,1,0,S1 Informatika
+87,77,87,87,87,86,78,1,4,3,3,0,S1 Farmasi
+80,73,79,73,84,81,82,2,2,3,3,1,S1 Agribisnis
+82,72,78,80,67,66,82,1,2,2,3,1,S1 PGSD
+66,81,92,66,70,82,97,1,1,3,3,0,S1 Agribisnis
+78,84,75,80,71,73,80,1,1,4,1,0,S1 Akuntansi
+67,72,87,66,66,70,76,1,3,1,4,1,S1 Studi Islam Interdisipliner
+84,68,82,75,84,85,69,2,2,1,4,0,S1 PGSD
+81,66,81,71,81,81,92,1,1,2,4,1,S1 Agribisnis
+82,82,72,83,67,83,93,1,2,5,2,0,S1 Manajemen
+84,83,81,79,69,77,70,1,2,1,3,0,S1 Pendidikan Bahasa Inggris
+81,97,82,66,74,76,80,2,1,3,4,0,S1 PGSD
+80,84,68,79,83,82,92,2,1,4,1,0,S1 Akuntansi
+67,78,78,73,76,85,91,1,1,3,2,0,S1 Agribisnis
+94,78,82,83,84,90,71,4,1,1,1,0,S1 Informatika
+82,75,76,82,82,96,76,3,4,2,4,0,S1 Teknologi Hasil Pertanian
+77,85,70,80,69,73,90,5,3,2,1,0,S1 Informatika
+70,84,69,69,70,77,87,3,2,3,3,0,S1 Teknologi Hasil Pertanian
+78,75,85,81,95,81,79,2,3,3,3,0,S1 Farmasi
+77,96,82,72,70,83,82,1,2,4,2,1,S1 Agribisnis
+81,86,88,82,75,81,78,4,2,2,1,0,S1 Informatika
+81,79,83,83,69,68,75,1,2,1,4,0,S1 PGSD
+87,68,78,93,82,68,87,4,1,2,2,0,S1 Teknik Elektro
+78,86,96,77,71,67,68,5,1,1,1,0,S1 Informatika
+66,87,85,70,89,86,67,1,1,1,4,0,S1 Pendidikan Bahasa Inggris
+68,86,67,84,81,81,79,3,2,2,2,0,S1 Teknologi Hasil Pertanian
+80,69,75,73,74,66,85,1,1,4,1,0,S1 Manajemen
+90,66,75,86,85,71,74,4,2,2,1,0,S1 Teknik Elektro
+79,75,78,79,82,85,94,2,1,2,2,0,S1 Agribisnis
+97,96,95,95,91,97,97,1,2,3,1,1,S1 Agribisnis
+87,80,85,93,93,69,97,1,1,3,2,0,S1 Akuntansi
+68,84,78,67,79,92,87,1,3,3,2,0,S1 Agribisnis
+96,86,76,84,69,74,71,4,1,1,1,0,S1 Informatika
+84,67,77,72,75,77,82,2,2,2,2,0,S1 Teknologi Hasil Pertanian
+82,68,95,88,70,76,70,1,3,2,4,1,S1 Studi Islam Interdisipliner
+83,89,67,89,81,89,87,1,2,4,1,0,S1 Akuntansi
+78,84,90,80,83,85,69,5,1,1,1,0,S1 Informatika
+73,85,67,82,68,86,81,1,2,2,2,0,S1 Agribisnis
+73,73,86,69,71,82,81,2,2,4,2,0,S1 Agribisnis
+69,73,95,67,84,70,80,1,1,4,2,0,S1 Akuntansi
+85,84,81,69,74,87,73,1,3,1,4,0,S1 PGSD
+77,67,77,81,89,86,73,2,1,1,1,1,S1 Teknologi Hasil Pertanian
+83,93,84,71,78,79,85,1,4,2,3,0,S1 Pendidikan Bahasa Inggris
+81,87,69,76,72,77,70,2,1,3,1,0,S1 Informatika
+82,89,73,90,75,66,91,1,1,5,3,0,S1 Akuntansi
+84,95,84,75,87,77,86,2,1,4,3,0,S1 Manajemen
+82,94,70,67,68,68,78,4,1,2,1,0,S1 Informatika
+73,85,75,86,85,94,80,3,4,2,2,0,S1 Teknologi Hasil Pertanian
+67,67,76,77,86,81,84,4,3,1,3,1,S1 Teknologi Hasil Pertanian
+77,86,84,97,70,70,86,1,3,1,4,0,S1 Pendidikan Bahasa Inggris
+87,81,75,76,85,96,70,1,5,2,2,0,S1 Farmasi
+72,74,77,80,77,77,85,4,2,2,1,0,S1 Teknik Elektro
+79,86,83,80,76,91,80,1,2,1,2,1,S1 Teknologi Hasil Pertanian
+74,85,77,66,86,83,86,1,3,3,2,0,S1 Agribisnis
+84,66,79,94,75,82,70,4,1,3,3,0,S1 Teknik Elektro
+77,74,86,83,67,88,83,1,2,2,4,1,S1 Studi Islam Interdisipliner
+75,93,66,66,66,67,83,1,1,5,3,0,S1 Manajemen
+82,84,79,96,69,67,69,3,2,1,1,0,S1 Informatika
+79,66,89,89,75,69,82,4,1,3,1,0,S1 Teknik Elektro
+71,81,77,71,76,85,78,1,2,2,4,1,S1 Pendidikan Bahasa Inggris
+82,72,75,84,88,86,67,1,5,1,2,0,S1 Farmasi
+93,83,91,85,84,96,81,2,3,1,1,0,S1 Teknologi Hasil Pertanian
+82,79,77,78,91,79,85,3,5,3,2,1,S1 Teknologi Hasil Pertanian
+72,90,85,88,70,86,86,2,1,4,2,0,S1 Akuntansi
+87,66,81,83,73,68,67,5,1,2,1,1,S1 Informatika
+83,82,79,67,80,68,84,2,1,4,2,1,S1 Manajemen
+82,66,84,78,97,84,76,1,4,2,1,0,S1 Farmasi
+80,97,73,80,75,67,82,2,2,4,1,0,S1 Akuntansi
+78,90,85,66,81,68,69,2,2,2,4,0,S1 Pendidikan Bahasa Inggris
+82,78,76,84,72,74,75,3,3,3,4,0,S1 PGSD
+71,90,67,83,82,68,89,1,1,4,3,0,S1 Akuntansi
+81,82,67,84,69,69,66,5,1,1,2,0,S1 Informatika
+90,89,69,66,78,81,84,2,1,4,3,0,S1 Manajemen
+67,85,87,71,83,97,91,1,2,3,2,1,S1 Agribisnis
+84,75,70,77,76,76,71,1,1,4,1,0,S1 Akuntansi
+79,70,74,82,82,70,71,4,1,1,2,0,S1 Teknik Elektro
+76,84,84,78,69,79,83,1,2,4,2,0,S1 Akuntansi
+88,84,80,69,72,78,67,1,1,2,4,0,S1 Pendidikan Bahasa Inggris
+77,78,86,76,88,79,77,4,4,2,2,0,S1 Teknologi Hasil Pertanian
+83,70,76,68,88,76,86,1,2,2,4,0,S1 PGSD
+95,70,66,83,89,76,75,2,2,5,2,0,S1 Akuntansi
+76,79,69,78,70,76,85,1,1,5,2,0,S1 Akuntansi
+85,83,81,75,72,86,88,1,1,5,1,0,S1 Akuntansi
+84,75,90,79,67,82,82,1,2,3,2,0,S1 Agribisnis
+80,70,68,67,66,69,87,1,2,5,3,0,S1 Akuntansi
+78,76,82,72,70,70,91,1,1,4,3,0,S1 Akuntansi
+89,83,66,89,73,79,83,4,2,3,1,0,S1 Informatika
+85,80,86,89,85,68,78,4,1,2,1,0,S1 Teknik Elektro
+83,83,72,90,85,80,70,4,2,1,2,0,S1 Teknik Elektro
+79,84,97,81,67,67,73,2,1,4,1,0,S1 Akuntansi
+66,85,86,70,79,84,79,1,2,4,2,0,S1 Agribisnis
+91,95,94,92,94,93,89,3,3,3,3,0,S1 Teknologi Hasil Pertanian
+81,93,66,71,83,87,83,1,2,2,1,0,S1 Agribisnis
+82,95,80,82,87,86,89,4,2,1,2,0,S1 Informatika
+86,82,76,70,89,84,81,2,2,5,3,0,S1 Manajemen
+89,71,81,75,96,89,76,1,4,1,3,0,S1 Farmasi
+81,73,88,79,74,68,70,5,2,1,1,0,S1 Informatika
+75,84,68,67,86,81,87,3,1,5,2,0,S1 Manajemen
+75,77,94,78,83,68,85,3,1,3,4,0,S1 Pendidikan Bahasa Inggris
+87,87,70,96,69,73,66,2,2,5,1,0,S1 Akuntansi
+83,81,81,70,78,69,90,2,1,5,2,0,S1 Manajemen
+90,81,82,84,66,68,89,4,1,2,2,0,S1 Informatika
+83,88,83,81,69,78,70,5,1,1,2,0,S1 Informatika
+67,85,82,66,68,70,89,1,1,4,2,0,S1 Akuntansi
+70,75,73,68,77,86,88,2,2,3,3,0,S1 Agribisnis
+69,71,75,69,70,85,93,1,1,1,4,0,S1 PGSD
+97,81,77,68,75,87,89,1,2,4,2,0,S1 Akuntansi
+94,86,80,96,87,85,70,3,1,3,1,0,S1 Teknik Elektro
+82,85,93,69,81,78,69,2,4,2,4,0,S1 PGSD
+70,91,85,80,70,70,71,1,3,3,5,0,S1 Pendidikan Bahasa Inggris
+70,69,82,85,95,86,70,1,4,2,3,0,S1 Farmasi
+84,92,85,89,68,72,74,1,2,2,4,0,S1 Pendidikan Bahasa Inggris
+86,74,68,81,69,70,82,4,2,1,1,0,S1 Informatika
+84,96,82,80,69,66,80,2,1,5,2,1,S1 Akuntansi
+96,93,95,93,93,97,97,1,1,1,4,0,S1 Studi Islam Interdisipliner
+84,87,92,82,76,82,77,1,3,1,4,0,S1 Pendidikan Bahasa Inggris
+91,85,66,87,76,70,82,4,1,1,2,0,S1 Teknik Elektro
+67,79,92,75,66,86,88,1,2,2,3,1,S1 Studi Islam Interdisipliner
+82,82,78,68,70,70,67,1,2,4,4,0,S1 PGSD
+85,87,79,84,91,83,84,1,4,2,2,0,S1 Farmasi
+76,82,73,84,71,82,68,2,3,3,2,1,S1 Teknologi Hasil Pertanian
+75,79,83,79,87,78,83,1,2,1,4,0,S1 PGSD
+83,79,83,71,86,97,69,2,5,2,1,0,S1 Farmasi
+82,70,84,69,79,78,81,1,2,2,3,1,S1 Studi Islam Interdisipliner
+95,68,83,69,87,84,69,1,5,2,3,0,S1 Farmasi
+77,68,70,69,82,75,79,1,2,4,2,0,S1 Akuntansi
+83,89,83,71,87,82,81,1,4,5,2,0,S1 Farmasi
+87,86,84,76,89,93,71,1,3,3,1,0,S1 Farmasi
+78,79,72,75,80,83,78,1,2,1,4,0,S1 Pendidikan Bahasa Inggris
+87,67,78,83,81,86,81,4,3,1,2,0,S1 Teknologi Hasil Pertanian
+74,79,76,79,82,94,83,2,3,4,1,1,S1 Agribisnis
+82,88,78,66,75,85,73,1,1,2,4,1,S1 Pendidikan Bahasa Inggris
+76,82,88,72,75,72,75,1,1,2,4,0,S1 Pendidikan Bahasa Inggris
+87,69,79,69,93,66,72,2,1,4,1,0,S1 Akuntansi
+83,73,71,78,73,89,92,1,3,2,4,0,S1 Agribisnis
+78,77,84,81,83,93,79,3,3,2,1,0,S1 Teknologi Hasil Pertanian
+78,80,92,67,73,79,82,1,1,2,4,0,S1 PGSD
+87,87,81,88,73,70,70,2,1,5,2,0,S1 Akuntansi
+79,89,81,85,78,76,75,5,1,1,2,0,S1 Informatika
+86,68,70,73,86,84,70,1,2,4,1,0,S1 Akuntansi
+74,71,70,76,95,77,88,3,3,1,1,0,S1 Teknologi Hasil Pertanian
+71,87,81,72,82,67,73,3,3,1,2,1,S1 Teknologi Hasil Pertanian
+76,80,78,82,78,66,69,5,1,2,1,0,S1 Informatika
+85,84,95,83,73,70,66,2,3,5,1,1,S1 Akuntansi
+82,66,78,76,67,79,88,2,3,3,3,0,S1 Agribisnis
+68,81,81,85,74,69,66,2,1,4,2,0,S1 Manajemen
+70,85,66,66,83,86,85,1,5,1,2,0,S1 Farmasi
+67,84,83,77,77,66,96,2,2,2,4,0,S1 Pendidikan Bahasa Inggris
+85,80,81,82,66,67,78,3,2,2,1,0,S1 Informatika
+67,78,87,70,91,84,71,2,4,2,1,0,S1 Farmasi
+90,68,86,72,74,71,77,1,2,1,4,0,S1 PGSD
+79,81,78,80,81,86,68,3,3,2,1,0,S1 Teknologi Hasil Pertanian
+66,85,73,68,67,72,95,1,1,4,2,0,S1 Akuntansi
+82,75,79,82,97,83,93,1,1,4,2,0,S1 Akuntansi
+88,89,86,82,70,70,80,3,2,3,1,0,S1 Informatika
+85,70,68,68,91,70,86,3,1,3,1,0,S1 Informatika
+79,83,83,74,81,87,71,2,4,3,3,0,S1 Teknologi Hasil Pertanian
+69,87,89,66,84,69,73,1,2,2,2,1,S1 Studi Islam Interdisipliner
+82,82,77,68,86,88,68,1,4,2,2,0,S1 Farmasi
+88,67,71,66,94,83,80,2,4,2,2,0,S1 Farmasi
+79,86,71,68,79,70,82,2,1,3,2,0,S1 Manajemen
+88,91,79,79,71,81,78,1,2,2,3,0,S1 Pendidikan Bahasa Inggris
+91,72,86,79,87,78,84,1,2,3,3,1,S1 Studi Islam Interdisipliner
+71,80,90,83,75,74,79,2,2,1,3,0,S1 PGSD
+70,70,86,75,74,72,77,1,1,3,3,1,S1 Studi Islam Interdisipliner
+74,83,71,76,79,69,86,3,2,4,4,0,S1 Manajemen
+77,84,71,67,83,70,91,1,1,4,2,0,S1 Akuntansi
+88,90,79,79,81,70,66,4,1,3,1,0,S1 Informatika
+81,70,82,89,87,78,79,4,3,2,1,0,S1 Teknik Elektro
+83,75,79,67,89,94,78,1,1,2,5,0,S1 PGSD
+85,95,77,80,66,85,82,1,1,5,1,0,S1 Akuntansi
+76,69,78,71,84,87,79,1,3,4,3,0,S1 Agribisnis
+85,78,86,78,75,74,68,1,1,2,4,1,S1 PGSD
+86,66,90,69,88,66,77,1,3,2,2,1,S1 Studi Islam Interdisipliner
+92,97,95,97,93,95,97,1,1,3,2,0,S1 Agribisnis
+75,70,81,80,76,71,71,4,1,2,1,0,S1 Informatika
+88,85,86,89,74,70,69,5,1,3,2,0,S1 Informatika
+80,84,70,95,74,86,83,4,1,2,1,0,S1 Teknik Elektro
+87,78,82,74,85,89,69,2,4,2,2,0,S1 Farmasi
+87,70,84,68,76,93,78,1,3,4,2,0,S1 Agribisnis
+84,78,80,88,81,80,75,4,1,1,3,0,S1 Teknik Elektro
+81,81,71,68,67,69,94,1,1,5,2,0,S1 Akuntansi
+72,87,86,81,70,68,69,1,1,5,1,0,S1 Akuntansi
+87,84,84,69,79,67,70,1,2,1,4,0,S1 Pendidikan Bahasa Inggris
+78,79,83,83,80,70,76,4,3,4,2,0,S1 Teknologi Hasil Pertanian
+83,76,70,86,81,88,74,4,2,1,1,0,S1 Teknologi Hasil Pertanian
+79,86,82,75,85,70,92,2,1,3,1,0,S1 Akuntansi
+79,87,83,83,68,81,69,5,1,2,1,0,S1 Informatika
+82,66,79,73,78,76,73,4,1,3,1,0,S1 Informatika
+78,78,78,81,81,80,69,5,1,1,1,0,S1 Informatika
+81,79,74,81,68,68,90,2,1,3,1,0,S1 Manajemen
+83,68,67,94,87,67,72,4,1,1,1,0,S1 Teknik Elektro
+82,90,86,71,73,97,91,3,2,3,2,0,S1 Teknologi Hasil Pertanian
+82,78,76,88,75,71,89,4,2,2,1,0,S1 Teknik Elektro
+84,67,87,69,74,77,88,1,2,3,4,1,S1 Studi Islam Interdisipliner
+82,82,77,72,67,69,85,1,2,2,2,0,S1 Agribisnis
+84,85,92,70,69,70,74,2,2,3,3,1,S1 Studi Islam Interdisipliner
+80,83,82,69,67,80,86,2,1,4,1,0,S1 Manajemen
+69,86,85,75,71,85,80,1,1,4,1,0,S1 Manajemen
+79,82,77,69,81,72,78,1,2,3,3,0,S1 Pendidikan Bahasa Inggris
+76,69,73,76,82,86,81,1,1,3,3,0,S1 Agribisnis
+74,83,90,70,75,73,84,2,3,1,4,0,S1 PGSD
+78,86,87,83,85,69,94,4,1,1,2,0,S1 Teknik Elektro
+78,89,74,85,68,81,78,5,1,2,2,0,S1 Informatika
+88,80,66,87,81,70,88,2,1,3,2,1,S1 Akuntansi
+90,88,89,82,82,67,83,4,1,1,1,0,S1 Informatika
+85,87,94,72,67,70,76,1,1,2,4,0,S1 Pendidikan Bahasa Inggris
+85,90,83,88,95,86,68,3,3,2,1,0,S1 Teknologi Hasil Pertanian
+97,93,96,91,95,97,96,5,1,2,1,0,S1 Teknik Elektro
+78,72,89,74,95,88,71,1,3,1,2,0,S1 Farmasi
+67,72,66,67,80,84,79,1,2,3,2,0,S1 Agribisnis
+71,87,74,89,84,71,80,3,3,1,2,0,S1 Teknologi Hasil Pertanian
+82,87,82,84,73,70,66,5,1,2,2,0,S1 Teknik Elektro
+85,92,68,85,76,66,72,4,2,3,1,0,S1 Informatika
+81,68,66,70,80,85,89,1,1,4,2,1,S1 Manajemen
+81,83,83,91,68,70,68,4,2,3,2,0,S1 Informatika
+82,74,68,94,83,75,82,3,2,3,2,0,S1 Teknik Elektro
+68,90,86,67,73,67,83,1,2,2,4,0,S1 Pendidikan Bahasa Inggris
+67,96,95,75,89,70,67,1,2,2,4,1,S1 Pendidikan Bahasa Inggris
+83,67,72,82,81,92,82,3,3,1,2,0,S1 Teknologi Hasil Pertanian
+79,85,92,69,67,74,82,2,2,2,3,1,S1 Studi Islam Interdisipliner
+76,81,75,82,78,78,76,1,1,2,4,1,S1 Pendidikan Bahasa Inggris
+93,87,75,76,76,68,66,4,2,3,1,0,S1 Teknik Elektro
+66,93,80,68,78,66,66,1,2,2,3,0,S1 Pendidikan Bahasa Inggris
+84,82,84,84,81,76,66,4,3,1,1,1,S1 Teknologi Hasil Pertanian
+71,70,70,67,66,78,70,1,2,2,5,0,S1 PGSD
+75,80,83,84,87,88,79,2,2,2,4,0,S1 PGSD
+69,81,69,74,87,82,84,2,1,3,2,0,S1 Agribisnis
+72,89,96,78,66,82,84,1,1,2,3,0,S1 Pendidikan Bahasa Inggris
+80,85,75,88,69,75,70,4,1,1,1,0,S1 Teknik Elektro
+71,86,84,68,69,77,80,3,2,3,3,1,S1 Pendidikan Bahasa Inggris
+68,82,67,85,81,82,96,3,3,3,1,0,S1 Teknologi Hasil Pertanian
+82,81,67,83,73,67,70,5,2,1,1,0,S1 Informatika
+79,74,67,83,68,84,83,5,1,2,1,0,S1 Informatika
+72,96,91,81,87,72,90,3,1,4,1,0,S1 Manajemen
+81,88,84,87,69,66,66,4,1,1,1,0,S1 Informatika
+78,78,76,83,85,84,72,1,1,2,3,1,S1 PGSD
+78,80,67,68,69,86,95,1,2,4,2,0,S1 Akuntansi
+81,90,74,86,84,83,87,5,2,2,3,0,S1 Informatika
+81,88,79,84,83,66,70,2,1,5,1,0,S1 Akuntansi
+68,82,88,67,70,91,83,1,1,3,4,1,S1 Studi Islam Interdisipliner
+69,74,92,69,69,67,84,1,2,2,3,1,S1 Studi Islam Interdisipliner
+70,66,67,95,83,83,75,4,2,2,1,1,S1 Teknologi Hasil Pertanian
+85,82,78,80,73,71,85,5,1,1,1,0,S1 Informatika
+84,85,88,70,86,67,79,1,1,4,2,0,S1 Manajemen
+83,83,69,83,66,69,69,5,1,1,1,0,S1 Informatika
+96,82,76,76,76,78,80,1,1,4,1,0,S1 Akuntansi
+81,85,83,77,89,68,68,1,1,3,5,0,S1 Pendidikan Bahasa Inggris
+82,85,68,67,70,83,77,2,1,3,1,0,S1 Manajemen
+86,71,70,71,91,86,78,2,3,2,2,0,S1 Teknologi Hasil Pertanian
+91,75,91,67,81,78,75,2,2,1,3,1,S1 Studi Islam Interdisipliner
+86,84,81,69,66,67,89,2,1,4,2,0,S1 Akuntansi
+82,66,84,74,96,82,66,1,5,3,2,0,S1 Farmasi
+66,75,69,78,88,81,87,3,4,2,2,0,S1 Teknologi Hasil Pertanian
+79,69,84,96,87,76,80,4,2,2,1,1,S1 Informatika
+96,85,68,93,67,77,68,4,2,3,1,1,S1 Teknik Elektro
+69,76,72,69,66,69,84,2,1,4,1,1,S1 Manajemen
+96,87,71,94,67,79,77,4,1,3,1,0,S1 Teknik Elektro
+75,83,67,94,77,75,67,5,2,2,1,0,S1 Teknik Elektro
+77,78,67,84,68,86,96,1,1,3,1,0,S1 Akuntansi
+76,77,71,70,73,80,74,2,3,3,2,0,S1 Akuntansi
+80,85,69,80,69,66,85,1,1,4,1,0,S1 Akuntansi
+74,78,88,67,76,86,78,1,3,2,4,1,S1 Studi Islam Interdisipliner
+94,88,69,82,84,69,81,5,1,2,1,1,S1 Teknik Elektro
+89,66,87,85,77,72,66,3,1,3,1,0,S1 Teknik Elektro
+86,80,76,67,88,79,85,1,1,4,2,0,S1 Akuntansi
+75,73,88,72,72,82,93,1,1,4,3,0,S1 Akuntansi
+85,80,93,70,70,82,68,1,3,2,3,1,S1 Studi Islam Interdisipliner
+79,84,73,80,66,68,67,1,2,5,1,0,S1 Akuntansi
+75,67,86,74,83,78,72,2,1,2,3,0,S1 PGSD
+93,95,80,83,66,87,84,1,3,2,4,0,S1 PGSD
+86,83,78,73,80,87,68,1,3,3,1,1,S1 Farmasi
+84,66,71,87,84,66,75,4,1,1,1,0,S1 Teknik Elektro
+70,80,94,68,70,68,66,1,2,2,2,1,S1 Studi Islam Interdisipliner
+78,92,75,71,81,87,74,1,4,1,2,1,S1 Farmasi
+80,94,75,67,89,70,85,1,2,2,4,0,S1 Pendidikan Bahasa Inggris
+93,78,68,87,81,84,77,4,2,1,1,0,S1 Teknik Elektro
+80,85,81,94,84,69,68,4,1,3,1,1,S1 Teknik Elektro
+68,84,81,75,93,81,82,2,3,2,2,1,S1 Farmasi
+92,80,91,80,88,66,67,1,3,3,2,1,S1 Studi Islam Interdisipliner
+66,96,83,89,78,71,70,1,1,1,4,0,S1 Pendidikan Bahasa Inggris
+83,79,83,91,89,85,82,2,3,1,2,0,S1 Teknologi Hasil Pertanian
+82,96,83,90,84,66,67,4,1,3,1,0,S1 Informatika
+88,91,71,79,84,67,87,4,1,1,1,0,S1 Informatika
+81,78,83,71,95,93,87,1,3,3,2,0,S1 Agribisnis
+73,72,87,97,76,70,90,5,2,1,1,0,S1 Teknik Elektro
+95,83,66,88,80,86,84,4,2,2,1,0,S1 Teknik Elektro
+83,74,77,85,73,69,75,4,1,1,2,1,S1 Teknik Elektro
+83,89,90,68,94,74,83,1,2,1,4,0,S1 Pendidikan Bahasa Inggris
+87,90,87,66,73,77,82,1,1,2,5,0,S1 Pendidikan Bahasa Inggris
+81,84,84,71,81,88,67,1,4,3,1,0,S1 Farmasi
+69,70,94,66,81,81,66,1,2,2,3,1,S1 Studi Islam Interdisipliner
+89,81,70,88,70,66,96,2,2,5,1,0,S1 Akuntansi
+92,81,76,87,68,72,73,4,1,4,1,0,S1 Informatika
+82,96,86,93,78,67,75,2,3,1,3,0,S1 Pendidikan Bahasa Inggris
+86,85,92,75,85,70,77,1,1,2,4,0,S1 Studi Islam Interdisipliner
+75,84,83,81,69,88,69,1,3,2,5,0,S1 Pendidikan Bahasa Inggris
+79,80,68,67,67,75,89,2,2,5,2,0,S1 Manajemen
+83,83,79,69,78,84,86,2,2,2,4,1,S1 PGSD
+81,84,82,72,69,79,87,1,2,4,2,0,S1 Manajemen
+77,79,83,80,72,83,82,1,2,3,4,1,S1 Pendidikan Bahasa Inggris
+95,78,73,75,80,68,79,2,1,3,3,0,S1 Manajemen
+82,81,82,74,85,83,68,3,4,1,3,0,S1 Farmasi
+85,69,79,82,75,80,88,2,1,4,2,0,S1 Agribisnis
+80,89,97,69,66,73,68,1,1,1,4,0,S1 Pendidikan Bahasa Inggris
+95,69,70,80,73,73,88,4,1,2,1,0,S1 Informatika
+83,71,83,69,67,79,66,4,1,4,1,0,S1 Informatika
+84,89,80,81,67,88,85,1,1,1,3,1,S1 Pendidikan Bahasa Inggris
+89,75,68,77,97,91,82,1,3,3,2,0,S1 Farmasi
+93,82,77,73,68,88,78,1,1,3,1,0,S1 Manajemen
+83,86,86,87,77,81,74,1,1,2,3,0,S1 PGSD
+74,85,89,68,70,72,66,1,2,1,3,0,S1 Pendidikan Bahasa Inggris
+88,83,77,90,84,78,85,4,2,2,1,0,S1 Informatika
+83,83,67,83,76,70,86,5,1,1,1,0,S1 Informatika
+83,78,94,86,68,72,70,4,1,2,1,0,S1 Informatika
+86,76,69,85,83,85,69,3,3,1,2,0,S1 Teknologi Hasil Pertanian
+67,71,84,69,84,79,76,1,3,3,4,0,S1 PGSD
+80,81,70,69,80,83,67,2,4,2,3,0,S1 Farmasi
+82,96,87,70,70,85,67,4,2,1,1,0,S1 Informatika
+83,79,90,90,71,75,67,4,1,2,1,1,S1 Teknik Elektro
+68,97,83,77,81,92,91,2,1,4,2,0,S1 Akuntansi
+83,97,78,72,88,70,87,2,1,1,4,0,S1 Pendidikan Bahasa Inggris
+86,69,75,69,66,85,82,1,2,2,2,0,S1 Agribisnis
+89,81,80,83,66,66,69,2,1,4,1,0,S1 Akuntansi
+84,81,87,85,82,75,68,1,2,2,4,1,S1 Studi Islam Interdisipliner
+82,77,70,82,76,67,77,4,1,3,1,0,S1 Teknik Elektro
+91,72,84,81,76,80,91,1,1,4,2,0,S1 Akuntansi
+87,73,81,83,80,80,74,4,1,2,1,1,S1 Teknik Elektro
+79,66,84,69,70,72,87,1,1,3,3,0,S1 Akuntansi
+68,97,72,84,66,85,69,2,1,1,4,0,S1 Pendidikan Bahasa Inggris
+84,77,83,84,69,66,86,1,1,4,1,0,S1 Akuntansi
+95,91,87,89,68,69,71,1,1,2,4,0,S1 PGSD
+76,69,70,92,83,69,73,5,1,2,1,0,S1 Teknik Elektro
+90,85,77,68,76,82,67,2,2,1,4,0,S1 PGSD
+86,76,80,77,79,71,78,2,2,3,1,0,S1 Agribisnis
+67,67,97,66,80,68,89,1,3,2,3,1,S1 Studi Islam Interdisipliner
+83,78,78,91,81,81,82,3,1,3,1,0,S1 Teknik Elektro
+70,87,78,67,66,68,80,1,2,2,4,0,S1 Pendidikan Bahasa Inggris
+85,89,79,90,76,83,81,4,2,3,1,0,S1 Teknik Elektro
+89,75,83,88,70,80,75,1,1,5,2,0,S1 Akuntansi
+81,80,90,67,87,85,68,1,3,2,3,1,S1 Studi Islam Interdisipliner
+95,84,84,88,80,67,84,1,1,4,3,0,S1 Akuntansi
+70,91,91,76,83,67,72,1,2,2,4,0,S1 Pendidikan Bahasa Inggris
+90,80,77,74,92,87,84,1,4,1,2,0,S1 Farmasi
+71,87,73,68,91,84,79,1,4,2,1,0,S1 Farmasi
+85,87,78,81,69,70,95,2,1,4,1,0,S1 Akuntansi
+87,80,83,76,95,70,92,1,1,4,2,0,S1 Akuntansi
+82,66,75,75,73,82,88,1,1,1,3,0,S1 Agribisnis
+81,82,83,81,81,77,70,1,2,2,4,1,S1 Studi Islam Interdisipliner
+83,78,82,67,70,72,86,1,1,4,2,0,S1 Akuntansi
+89,79,83,95,77,73,70,4,2,1,1,0,S1 Informatika
+70,66,84,70,71,89,92,1,2,3,1,0,S1 Agribisnis
+69,74,73,72,85,81,81,1,2,2,4,1,S1 Studi Islam Interdisipliner
+78,69,87,70,69,69,85,1,2,4,2,0,S1 Akuntansi
+68,82,76,69,66,91,92,2,3,3,3,0,S1 Agribisnis
+83,85,90,84,76,72,69,5,1,2,1,1,S1 Informatika
+85,78,96,97,91,70,79,3,2,1,1,0,S1 Teknik Elektro
+90,82,72,79,72,68,78,5,1,2,1,0,S1 Teknik Elektro
+69,79,95,66,87,66,89,1,3,3,3,1,S1 Studi Islam Interdisipliner
+77,77,89,75,78,67,70,1,3,2,5,0,S1 PGSD
+77,84,86,83,86,87,67,1,4,3,1,0,S1 Farmasi
+67,66,95,67,75,73,78,1,1,3,3,1,S1 Studi Islam Interdisipliner
+91,76,70,73,73,81,66,4,1,1,1,0,S1 Informatika
+78,83,87,74,67,69,70,1,2,1,4,0,S1 Pendidikan Bahasa Inggris
+89,82,69,84,88,70,81,2,2,4,1,0,S1 Manajemen
+82,93,71,69,70,70,85,3,2,4,2,0,S1 Manajemen
+82,89,88,85,76,74,69,4,1,3,1,0,S1 Teknik Elektro
+85,82,74,69,74,76,83,1,2,2,4,0,S1 PGSD
+66,69,97,86,70,76,74,1,1,1,4,1,S1 Studi Islam Interdisipliner
+84,80,81,79,71,73,82,4,1,2,1,0,S1 Teknik Elektro
+94,81,74,73,79,94,88,2,2,3,1,0,S1 Agribisnis
+70,82,84,74,86,70,66,3,1,1,5,0,S1 PGSD
+82,82,78,79,81,69,70,1,2,4,2,0,S1 Akuntansi
+69,81,93,70,74,96,84,1,3,1,2,0,S1 Studi Islam Interdisipliner
+68,87,87,82,97,78,71,1,2,3,5,0,S1 Pendidikan Bahasa Inggris
+78,84,78,71,97,90,76,1,4,2,1,0,S1 Farmasi
+66,88,92,66,69,68,72,1,1,2,3,1,S1 Studi Islam Interdisipliner
+89,69,68,69,70,73,89,1,1,4,2,1,S1 Akuntansi
+67,67,73,83,82,86,76,1,2,3,1,0,S1 Agribisnis
+86,73,69,83,77,68,72,4,2,1,1,0,S1 Teknik Elektro
+67,81,76,68,75,83,82,2,3,3,1,0,S1 Teknologi Hasil Pertanian
+94,76,82,88,81,70,68,3,1,2,1,0,S1 Teknik Elektro
+82,76,68,67,83,89,74,3,3,2,1,0,S1 Teknologi Hasil Pertanian
+97,66,78,83,82,73,81,3,1,3,1,0,S1 Teknik Elektro
+74,82,80,80,70,76,77,1,2,2,3,0,S1 Pendidikan Bahasa Inggris
+90,84,70,84,75,69,76,2,1,4,1,1,S1 Akuntansi
+68,86,89,81,69,81,71,1,2,3,4,0,S1 Pendidikan Bahasa Inggris
+80,83,83,93,66,78,73,1,2,2,4,0,S1 Pendidikan Bahasa Inggris
+80,94,67,70,66,75,84,3,2,4,3,1,S1 Manajemen
+94,88,70,85,70,83,81,2,1,5,1,0,S1 Akuntansi
+74,74,72,96,85,84,77,5,5,3,4,1,S1 Teknologi Hasil Pertanian
+97,97,94,96,94,97,97,1,2,3,4,0,S1 PGSD
+72,73,81,83,88,86,78,1,4,1,2,0,S1 Farmasi
+82,75,76,85,76,68,82,2,1,4,1,0,S1 Akuntansi
+81,71,92,67,69,78,70,1,3,2,2,0,S1 Studi Islam Interdisipliner
+85,73,91,86,88,79,81,4,1,1,1,0,S1 Teknik Elektro
+73,71,67,92,81,92,74,3,3,2,2,0,S1 Teknologi Hasil Pertanian
+75,76,96,68,69,95,78,2,2,2,3,1,S1 Studi Islam Interdisipliner
+79,80,69,66,68,78,95,1,1,4,3,0,S1 Akuntansi
+68,68,87,74,88,80,77,3,3,1,2,0,S1 Teknologi Hasil Pertanian
+92,91,76,79,82,70,81,3,2,2,1,0,S1 Informatika
+88,78,76,86,68,67,66,4,1,1,1,0,S1 Informatika
+88,90,71,88,77,86,85,4,1,2,1,1,S1 Teknik Elektro
+79,79,66,67,94,90,81,1,4,1,3,0,S1 Farmasi
+83,78,89,82,85,89,66,1,4,3,3,0,S1 Farmasi
+76,79,75,96,82,84,66,3,3,1,2,0,S1 Teknologi Hasil Pertanian
+85,77,82,85,69,69,67,4,1,1,1,0,S1 Informatika
+77,97,78,81,70,75,81,1,2,2,3,0,S1 Pendidikan Bahasa Inggris
+66,80,80,69,74,88,80,1,4,2,1,0,S1 Agribisnis
+88,73,86,67,87,86,67,1,4,3,2,0,S1 Farmasi
+69,76,81,79,77,74,75,2,3,3,3,0,S1 Agribisnis
+67,87,73,76,77,67,83,1,2,4,3,0,S1 Manajemen
+82,78,73,79,69,68,86,4,1,4,2,0,S1 Manajemen
+70,76,95,70,69,78,77,2,5,2,4,0,S1 PGSD
+81,82,70,75,78,75,66,5,1,2,1,0,S1 Informatika
+79,80,67,75,70,82,67,5,1,3,2,0,S1 Informatika
+82,73,72,67,90,83,87,1,1,4,1,0,S1 Agribisnis
+76,90,86,79,76,68,91,2,1,4,4,1,S1 Manajemen
+67,73,67,85,73,80,74,2,1,4,1,0,S1 Akuntansi
+79,81,85,93,67,72,88,4,1,4,1,0,S1 Manajemen
+83,66,84,85,76,94,81,4,2,2,3,0,S1 Teknologi Hasil Pertanian
+70,70,86,80,67,69,81,1,2,4,2,0,S1 Akuntansi
+81,86,81,67,66,83,84,2,2,2,4,0,S1 Pendidikan Bahasa Inggris
+76,88,78,70,74,82,67,1,4,3,5,0,S1 Pendidikan Bahasa Inggris
+76,83,69,69,81,82,85,1,1,4,3,0,S1 Akuntansi
+97,81,85,70,76,78,74,5,1,3,3,0,S1 Informatika
+86,88,70,95,70,86,82,1,1,4,1,0,S1 Akuntansi
+97,68,82,74,68,75,85,2,1,2,3,1,S1 Studi Islam Interdisipliner
+83,70,74,70,93,97,87,1,5,2,1,1,S1 Farmasi
+74,88,75,83,79,87,72,2,2,1,2,0,S1 Teknologi Hasil Pertanian
+93,83,79,66,83,66,88,1,1,4,3,1,S1 Akuntansi
+97,86,83,76,85,67,84,3,1,3,1,0,S1 Informatika
+89,84,81,84,94,82,74,1,4,3,2,0,S1 Farmasi
+77,87,75,78,79,72,82,2,2,3,3,0,S1 PGSD
+76,76,91,81,77,90,75,1,1,2,4,0,S1 Studi Islam Interdisipliner
+76,95,89,84,67,85,76,2,2,3,5,0,S1 Pendidikan Bahasa Inggris
+90,85,66,80,79,69,67,4,1,2,1,1,S1 Informatika
+76,82,74,82,85,85,72,1,4,1,1,0,S1 Farmasi
+88,85,79,70,83,77,82,1,1,4,2,0,S1 Manajemen
+94,96,95,97,92,93,94,1,1,3,1,0,S1 Akuntansi
+79,78,80,69,81,82,72,1,3,2,3,0,S1 Pendidikan Bahasa Inggris
+90,78,74,80,88,90,78,5,1,1,1,0,S1 Teknik Elektro
+79,82,81,74,72,93,87,2,1,3,2,0,S1 Agribisnis
+83,72,67,80,82,90,67,5,2,2,2,0,S1 Informatika
+70,71,91,76,87,76,70,1,1,1,4,1,S1 PGSD
+75,86,77,85,86,88,82,1,4,2,4,0,S1 Farmasi
+70,90,80,80,82,85,87,3,3,1,2,0,S1 Teknologi Hasil Pertanian
+75,96,81,76,71,80,93,1,1,3,2,0,S1 Akuntansi
+86,75,84,81,79,73,78,4,1,1,1,1,S1 Teknik Elektro
+83,85,71,84,72,70,89,1,1,4,1,0,S1 Akuntansi
+96,80,76,67,90,96,87,1,4,3,1,0,S1 Farmasi
+70,75,97,66,89,78,78,1,2,2,3,1,S1 Studi Islam Interdisipliner
+82,75,68,78,82,70,66,5,1,1,1,0,S1 Informatika
+68,83,79,78,74,68,72,2,2,2,5,0,S1 PGSD
+69,79,89,76,70,82,79,1,2,2,3,0,S1 Studi Islam Interdisipliner
+77,75,77,77,80,76,69,1,2,2,4,1,S1 PGSD
+86,66,84,68,67,90,78,1,1,4,2,0,S1 Akuntansi
+83,77,79,78,72,86,84,1,1,4,1,0,S1 Akuntansi
+89,72,67,75,67,69,74,1,1,4,1,0,S1 Akuntansi
+77,91,80,66,67,76,71,1,3,3,4,0,S1 PGSD
+68,82,84,79,81,80,77,3,1,1,1,0,S1 Teknik Elektro
+68,96,70,66,68,68,90,2,1,4,2,1,S1 Manajemen
+79,73,78,70,75,84,76,1,2,2,5,0,S1 PGSD
+89,96,97,97,96,92,95,1,3,2,4,0,S1 PGSD
+78,96,81,68,76,69,75,1,2,1,5,0,S1 Pendidikan Bahasa Inggris
+86,80,88,69,86,67,84,2,1,3,4,0,S1 PGSD
+70,72,82,69,93,94,75,1,5,1,1,0,S1 Farmasi
+75,77,84,70,78,76,75,1,2,3,3,1,S1 Studi Islam Interdisipliner
+68,87,82,70,87,92,68,1,4,1,2,0,S1 Farmasi
+69,81,70,83,79,81,66,3,2,1,3,0,S1 Teknologi Hasil Pertanian
+69,77,86,70,68,80,77,1,3,3,3,1,S1 Studi Islam Interdisipliner
+67,75,74,83,81,95,70,4,2,1,2,0,S1 Teknologi Hasil Pertanian
+69,95,77,71,70,80,86,1,1,4,2,0,S1 Manajemen
+67,71,87,80,81,81,66,3,3,3,1,0,S1 Teknologi Hasil Pertanian
+76,77,87,66,66,80,82,2,1,1,4,0,S1 PGSD
+69,82,68,79,78,85,93,1,1,4,2,0,S1 Akuntansi
+82,94,75,76,70,71,70,5,2,1,1,0,S1 Informatika
+79,66,86,70,87,72,66,1,2,2,4,0,S1 PGSD
+68,82,80,69,75,84,86,2,1,3,3,0,S1 Agribisnis
+90,89,90,67,68,67,75,2,2,2,4,1,S1 Studi Islam Interdisipliner
+75,83,66,80,77,67,87,4,1,1,1,0,S1 Teknik Elektro
+82,71,70,91,80,73,77,2,1,4,2,1,S1 Akuntansi
+68,81,77,80,70,78,69,1,1,2,5,0,S1 PGSD
+95,68,71,96,81,69,96,1,1,3,2,0,S1 Akuntansi
+80,87,69,80,87,67,83,1,2,4,1,0,S1 Manajemen
+97,75,83,80,80,66,69,2,2,1,4,1,S1 Studi Islam Interdisipliner
+70,90,87,83,73,74,86,1,2,1,5,0,S1 Pendidikan Bahasa Inggris
+69,70,93,67,66,68,80,1,3,2,3,1,S1 Studi Islam Interdisipliner
+88,74,83,93,71,73,80,4,1,2,1,0,S1 Informatika
+88,86,78,86,78,70,66,1,1,4,1,0,S1 Akuntansi
+85,87,69,72,77,85,83,2,1,3,1,0,S1 Manajemen
+90,80,69,69,87,87,75,1,1,1,3,0,S1 PGSD
+86,71,81,67,70,86,86,1,1,3,2,0,S1 Akuntansi
+85,82,71,93,84,74,68,4,1,1,2,0,S1 Teknik Elektro
+80,92,97,83,74,70,68,4,1,1,1,0,S1 Teknik Elektro
+77,84,83,79,87,76,76,3,3,3,3,0,S1 Teknologi Hasil Pertanian
+74,89,68,69,70,69,89,2,1,3,2,0,S1 Akuntansi
+80,87,77,73,85,86,78,1,3,1,2,0,S1 Farmasi
+80,85,75,76,70,74,84,2,1,4,1,0,S1 Manajemen
+88,68,84,87,86,82,81,4,1,1,2,0,S1 Teknik Elektro
+81,79,84,78,85,92,86,1,4,1,2,0,S1 Farmasi
+95,91,96,95,92,96,97,3,4,3,3,0,S1 Teknologi Hasil Pertanian
+76,95,78,74,70,81,73,1,3,3,4,0,S1 Pendidikan Bahasa Inggris
+80,76,78,68,90,88,80,2,4,3,2,1,S1 Farmasi
+68,80,80,79,69,77,95,1,1,4,2,0,S1 Akuntansi
+79,78,80,86,75,67,77,5,1,3,1,1,S1 Informatika
+78,94,85,80,74,70,69,1,3,3,4,0,S1 PGSD
+75,82,85,82,68,88,92,1,2,3,1,0,S1 Agribisnis
+95,68,72,75,78,86,97,1,1,4,2,0,S1 Akuntansi
+94,83,78,67,76,66,77,3,1,4,2,0,S1 Akuntansi
+81,68,68,77,83,87,70,3,2,3,3,0,S1 Teknologi Hasil Pertanian
+82,76,82,75,68,89,80,1,2,3,1,0,S1 Agribisnis
+83,72,85,74,68,83,90,1,1,5,3,0,S1 Akuntansi
+81,67,81,79,86,80,88,1,1,4,2,0,S1 Agribisnis
+73,68,72,69,75,85,89,2,2,3,2,0,S1 Agribisnis
+83,73,74,66,70,68,93,2,1,5,4,0,S1 Akuntansi
+82,96,83,87,89,69,72,2,1,4,1,0,S1 Akuntansi
+93,87,84,82,66,69,69,4,1,2,1,0,S1 Teknik Elektro
+74,80,83,81,70,76,73,2,3,3,4,1,S1 Pendidikan Bahasa Inggris
+74,85,70,69,73,76,84,2,3,4,2,0,S1 Manajemen
+72,67,76,75,67,82,75,2,2,3,3,0,S1 Agribisnis
+84,81,96,68,66,66,76,1,3,2,3,1,S1 Studi Islam Interdisipliner
+85,80,81,67,83,81,79,1,1,2,3,0,S1 Studi Islam Interdisipliner
+74,78,75,72,81,82,77,1,2,2,2,0,S1 Agribisnis
+69,92,80,70,76,68,68,1,1,2,3,1,S1 Pendidikan Bahasa Inggris
+68,79,93,80,80,68,67,1,2,2,4,0,S1 Studi Islam Interdisipliner
+95,90,67,72,68,73,68,1,2,5,1,0,S1 Akuntansi
+76,79,85,72,85,97,90,1,1,1,2,0,S1 Agribisnis
+68,82,81,78,83,92,92,1,1,3,2,0,S1 Agribisnis
+73,69,84,66,80,89,79,3,3,4,3,0,S1 Teknologi Hasil Pertanian
+78,78,74,79,79,84,79,2,3,3,3,1,S1 Agribisnis
+78,73,81,86,70,83,79,2,3,2,2,0,S1 Teknologi Hasil Pertanian
+87,72,78,68,68,82,84,3,1,4,1,1,S1 Akuntansi
+83,85,90,75,67,81,81,1,2,3,4,0,S1 PGSD
+79,85,70,70,76,68,85,1,2,1,4,0,S1 Pendidikan Bahasa Inggris
+88,87,66,80,81,78,87,2,2,3,4,0,S1 Pendidikan Bahasa Inggris
+68,95,95,69,79,70,67,1,2,1,3,1,S1 Studi Islam Interdisipliner
+96,93,94,92,95,94,95,1,3,2,3,0,S1 Pendidikan Bahasa Inggris
+94,76,66,95,77,66,82,4,1,2,1,0,S1 Teknik Elektro
+82,91,74,82,67,73,79,2,1,3,1,0,S1 Manajemen
+89,69,75,75,90,87,72,2,5,3,2,0,S1 Farmasi
+80,74,88,83,79,82,84,1,1,3,2,0,S1 Agribisnis
+69,68,96,69,96,94,68,2,1,1,3,1,S1 Studi Islam Interdisipliner
+86,86,75,75,82,66,68,4,2,3,1,1,S1 Informatika
+77,88,78,75,66,66,88,3,1,3,3,0,S1 Manajemen
+83,81,67,83,74,78,84,4,1,1,1,0,S1 Informatika
+77,86,70,74,69,74,88,3,1,4,3,0,S1 Manajemen
+79,70,85,82,88,86,70,3,4,2,2,0,S1 Teknologi Hasil Pertanian
+85,80,83,79,78,88,89,5,3,1,1,0,S1 Informatika
+74,80,77,86,84,79,84,1,2,2,4,0,S1 Agribisnis
+81,73,69,76,68,81,94,2,1,4,3,0,S1 Akuntansi
+68,84,81,67,66,80,69,1,3,1,4,0,S1 Pendidikan Bahasa Inggris
+82,71,82,71,68,75,69,2,1,2,4,0,S1 PGSD
+78,69,70,80,75,79,74,2,1,4,4,0,S1 Agribisnis
+67,79,86,79,84,77,84,2,1,3,3,0,S1 Manajemen
+75,69,68,84,72,80,69,2,1,5,1,0,S1 Akuntansi
+77,71,91,80,82,86,68,1,3,2,4,1,S1 Studi Islam Interdisipliner
+88,88,66,95,73,66,67,3,2,2,1,0,S1 Informatika
+95,97,91,97,96,93,92,3,2,2,2,0,S1 Teknologi Hasil Pertanian
+78,79,69,68,67,69,84,2,1,5,3,0,S1 Manajemen
+75,77,87,74,68,75,78,2,2,4,4,0,S1 Manajemen
+69,76,85,71,78,78,84,2,2,3,3,1,S1 Studi Islam Interdisipliner
+95,88,73,84,84,70,68,4,1,3,1,0,S1 Teknik Elektro
+78,87,81,77,94,79,77,1,4,1,2,1,S1 Farmasi
+87,86,87,85,69,88,68,3,1,2,1,1,S1 Informatika
+80,70,72,68,80,81,89,1,1,4,2,0,S1 Akuntansi
+79,74,68,74,87,82,67,2,4,3,1,0,S1 Teknologi Hasil Pertanian
+89,86,85,76,72,83,78,1,2,2,3,1,S1 PGSD
+86,91,82,74,70,70,83,4,1,4,3,0,S1 Manajemen
+70,70,86,70,77,82,77,2,3,2,3,1,S1 Studi Islam Interdisipliner
+94,76,70,75,75,79,75,1,1,4,2,0,S1 Akuntansi
+66,66,86,70,76,85,83,1,2,2,3,1,S1 Studi Islam Interdisipliner
+67,66,91,69,70,78,82,1,3,2,3,0,S1 Studi Islam Interdisipliner
+84,86,70,83,95,70,82,4,1,3,1,0,S1 Informatika
+80,77,67,90,66,74,85,1,1,4,4,0,S1 Akuntansi
+82,75,86,82,85,91,83,3,3,2,1,1,S1 Teknologi Hasil Pertanian
+97,86,81,66,88,85,85,1,4,2,2,0,S1 Farmasi
+77,87,87,80,68,66,70,5,1,2,1,0,S1 Informatika
+78,82,87,87,85,83,83,4,3,2,1,0,S1 Teknologi Hasil Pertanian
+76,90,68,68,70,93,82,1,2,2,3,1,S1 Agribisnis
+71,76,93,70,68,74,83,1,1,4,2,0,S1 Manajemen
+68,78,74,86,86,97,83,2,3,2,2,1,S1 Teknologi Hasil Pertanian
+80,66,75,82,74,73,77,2,2,2,4,0,S1 PGSD
+73,68,80,69,66,83,84,2,2,1,4,0,S1 PGSD
+85,67,78,75,88,90,77,1,2,3,2,1,S1 Agribisnis
+75,76,88,80,81,86,74,1,3,3,3,0,S1 Farmasi
+66,87,84,83,70,66,85,1,2,2,4,0,S1 Pendidikan Bahasa Inggris
+76,79,74,67,82,77,76,1,3,1,4,0,S1 PGSD
+82,78,78,83,76,70,83,1,1,4,2,0,S1 Akuntansi
+81,95,68,81,69,79,84,1,2,5,3,0,S1 Akuntansi
+77,84,85,77,78,83,87,1,1,4,2,0,S1 Agribisnis
+76,90,79,85,70,68,95,2,1,4,3,0,S1 Manajemen
+82,84,84,77,78,67,82,2,1,1,5,0,S1 Pendidikan Bahasa Inggris
+68,84,68,73,97,89,77,2,3,1,1,0,S1 Farmasi
+82,69,72,67,69,79,83,4,1,2,1,0,S1 Informatika
+81,75,96,69,96,85,80,3,2,2,2,0,S1 Teknologi Hasil Pertanian
+80,69,68,88,84,75,70,4,1,1,1,0,S1 Teknik Elektro
+69,71,86,70,79,73,69,1,2,1,3,1,S1 Studi Islam Interdisipliner
+77,72,90,67,78,86,78,2,1,4,2,0,S1 Agribisnis
+69,68,96,94,92,82,93,3,4,2,2,0,S1 Teknologi Hasil Pertanian
+91,66,84,95,73,70,88,4,1,3,3,0,S1 Teknik Elektro
+70,74,82,67,87,86,78,2,2,2,3,0,S1 Studi Islam Interdisipliner
+84,76,79,81,66,84,71,4,1,2,3,0,S1 Informatika
+96,97,95,95,97,90,96,1,2,2,4,1,S1 Studi Islam Interdisipliner
+82,72,68,95,83,68,75,3,3,2,1,0,S1 Informatika
+86,80,79,87,73,66,84,4,2,1,3,0,S1 Informatika
+69,89,84,66,85,67,72,1,1,2,5,0,S1 Pendidikan Bahasa Inggris
+78,83,82,81,84,82,82,1,4,2,4,0,S1 Pendidikan Bahasa Inggris
+80,83,72,79,85,82,69,5,1,2,2,0,S1 Informatika
+69,88,77,69,71,87,69,1,3,2,2,1,S1 Farmasi
+75,82,85,66,82,75,89,2,1,4,2,0,S1 Manajemen
+83,82,73,80,78,74,85,5,1,2,2,0,S1 Informatika
+90,84,80,87,87,82,66,3,1,2,1,1,S1 Informatika
+83,78,93,79,91,69,83,1,2,1,3,1,S1 Studi Islam Interdisipliner
+87,79,84,84,84,69,87,3,1,2,1,0,S1 Teknik Elektro
+75,91,78,96,70,71,75,5,1,2,1,0,S1 Informatika
+71,67,73,72,84,77,73,2,3,2,2,0,S1 Teknologi Hasil Pertanian
+84,85,67,71,86,89,82,1,4,2,2,0,S1 Agribisnis
+70,87,68,78,68,81,68,1,1,1,3,0,S1 Pendidikan Bahasa Inggris
+79,70,80,86,73,82,76,4,1,2,1,0,S1 Teknik Elektro
+68,67,93,67,68,74,75,1,3,2,3,0,S1 PGSD
+88,80,74,84,68,69,91,1,1,5,1,0,S1 Manajemen
+78,77,82,83,75,69,81,1,4,1,4,1,S1 Pendidikan Bahasa Inggris
+80,95,69,80,67,81,78,1,2,3,3,0,S1 Pendidikan Bahasa Inggris
+85,66,96,69,78,69,83,1,1,3,2,0,S1 Akuntansi
+79,82,70,82,76,78,67,5,1,1,1,0,S1 Informatika
+77,67,81,67,84,83,86,1,3,2,2,0,S1 Agribisnis
+74,73,80,70,85,80,66,1,2,1,3,1,S1 Studi Islam Interdisipliner
+77,78,84,85,70,87,92,2,1,3,1,0,S1 Manajemen
+75,81,89,67,90,78,93,1,2,2,2,0,S1 Agribisnis
+89,71,70,87,83,74,74,4,1,3,2,0,S1 Teknik Elektro
+84,95,67,67,72,75,87,1,1,4,3,0,S1 Akuntansi
+76,83,72,84,73,81,95,2,1,4,2,0,S1 Akuntansi
+69,70,80,83,85,79,73,1,3,2,2,0,S1 Farmasi
+76,82,69,88,90,68,69,4,2,2,1,0,S1 Informatika
+68,86,89,81,67,78,70,1,1,1,3,1,S1 Studi Islam Interdisipliner
+69,68,80,73,70,70,79,2,3,1,3,1,S1 Studi Islam Interdisipliner
+72,67,93,68,88,87,78,2,4,2,2,0,S1 Farmasi
+79,70,81,71,94,92,77,2,5,2,2,0,S1 Farmasi
+74,77,89,76,83,83,78,1,3,2,1,0,S1 Agribisnis
+93,84,78,93,74,66,87,3,2,2,4,0,S1 PGSD
+88,83,78,73,68,91,79,2,2,2,4,0,S1 PGSD
+81,86,70,78,68,67,88,2,1,3,1,0,S1 Akuntansi
+74,68,94,76,71,86,70,1,1,2,4,1,S1 Studi Islam Interdisipliner
+93,81,69,94,79,66,79,4,1,2,1,0,S1 Teknik Elektro
+84,77,81,69,81,77,74,1,2,2,4,0,S1 PGSD
+83,66,83,87,66,67,78,4,2,3,1,0,S1 Teknik Elektro
+68,94,69,70,91,69,66,1,3,3,4,0,S1 Pendidikan Bahasa Inggris
+67,91,82,71,67,82,85,1,2,2,4,0,S1 Pendidikan Bahasa Inggris
+67,77,96,69,69,83,91,1,2,1,3,1,S1 Studi Islam Interdisipliner
+86,77,81,86,86,91,96,1,4,1,2,0,S1 Farmasi
+87,79,70,92,81,70,73,5,1,1,1,1,S1 Teknik Elektro
+83,66,90,79,82,70,68,1,3,1,3,1,S1 Studi Islam Interdisipliner
+90,67,75,75,77,66,82,4,1,3,1,0,S1 Teknik Elektro
+84,81,70,85,66,67,76,4,2,1,1,0,S1 Informatika
+73,82,67,81,78,90,83,4,1,2,1,0,S1 Informatika
+71,84,87,80,74,67,82,2,1,3,2,0,S1 Manajemen
+82,83,67,82,96,80,68,5,2,2,1,0,S1 Informatika
+70,92,67,69,85,92,72,2,4,2,1,0,S1 Farmasi
+80,85,68,82,70,97,87,5,1,3,2,0,S1 Informatika
+78,82,94,91,84,83,77,1,1,1,3,0,S1 Pendidikan Bahasa Inggris
+87,83,71,90,74,69,91,1,1,4,2,0,S1 Akuntansi
+97,81,81,81,69,77,70,1,1,4,2,0,S1 Akuntansi
+77,93,78,88,75,77,79,4,2,3,1,0,S1 Informatika
+68,72,95,69,77,72,80,1,3,1,3,1,S1 Studi Islam Interdisipliner
+78,87,87,75,68,74,77,1,3,2,4,0,S1 PGSD
+81,80,79,70,88,88,67,2,4,2,3,0,S1 Farmasi
+83,94,93,83,86,68,80,5,1,1,1,0,S1 Informatika
+74,92,82,81,90,79,79,5,1,2,1,0,S1 Informatika
+83,97,78,67,67,79,97,1,2,1,4,1,S1 PGSD
+95,78,85,89,69,66,67,3,1,1,2,0,S1 Informatika
+77,69,83,76,88,85,66,3,3,3,3,0,S1 Teknologi Hasil Pertanian
+79,97,88,83,85,69,68,4,1,1,1,0,S1 Informatika
+79,91,83,71,81,79,83,2,1,4,2,0,S1 Manajemen
+87,88,79,81,85,86,73,1,4,2,2,0,S1 Farmasi
+67,76,84,76,87,91,83,1,2,2,1,0,S1 Agribisnis
+80,79,69,76,82,72,97,1,1,4,2,0,S1 Akuntansi
+73,86,95,81,90,83,71,1,2,1,4,0,S1 Pendidikan Bahasa Inggris
+68,82,96,66,70,70,88,1,4,2,3,0,S1 Studi Islam Interdisipliner
+77,89,76,87,93,86,93,1,4,2,3,1,S1 Farmasi
+69,68,84,77,67,93,87,1,1,3,2,0,S1 Agribisnis
+81,91,81,80,77,66,84,5,1,2,2,0,S1 Teknik Elektro
+90,76,84,89,80,78,90,3,1,1,1,0,S1 Teknik Elektro
+69,82,84,82,90,89,87,2,3,3,1,0,S1 Teknologi Hasil Pertanian
+81,71,82,72,82,68,81,3,2,4,2,0,S1 Manajemen
+75,69,79,73,88,86,96,1,1,3,2,0,S1 Agribisnis
+78,85,81,84,66,68,68,5,1,1,1,0,S1 Informatika
+74,82,76,80,85,82,82,2,4,2,1,0,S1 Farmasi
+88,67,86,91,69,77,79,4,1,1,1,1,S1 Teknik Elektro
+81,81,74,85,66,91,85,1,2,3,3,0,S1 Agribisnis
+86,67,77,90,78,68,77,2,1,5,2,1,S1 Akuntansi
+85,77,66,83,76,76,77,4,1,3,1,0,S1 Teknik Elektro
+78,79,79,68,71,77,85,1,2,2,4,1,S1 Pendidikan Bahasa Inggris
+67,75,96,67,84,67,86,1,1,2,3,0,S1 Studi Islam Interdisipliner
+73,86,90,81,83,84,83,4,3,3,2,0,S1 Teknologi Hasil Pertanian
+67,80,75,73,81,66,86,1,1,4,2,0,S1 Manajemen
+78,79,84,85,66,75,83,1,2,2,2,1,S1 Studi Islam Interdisipliner
+71,84,88,87,83,68,80,2,2,2,4,0,S1 Studi Islam Interdisipliner
+96,89,79,74,95,96,74,1,5,4,2,0,S1 Farmasi
+81,93,82,86,83,66,68,2,1,2,3,1,S1 Pendidikan Bahasa Inggris
+75,75,72,66,88,88,87,4,2,4,2,0,S1 Manajemen
+73,89,82,70,75,78,67,1,3,3,5,0,S1 PGSD
+88,82,66,70,70,68,84,1,1,4,1,0,S1 Akuntansi
+81,66,95,77,76,84,87,1,1,2,4,0,S1 PGSD
+77,76,84,84,80,75,83,2,3,4,2,0,S1 Manajemen
+73,77,77,81,76,70,97,1,1,4,2,0,S1 Akuntansi
+85,81,77,70,84,77,83,1,3,3,1,0,S1 Agribisnis
+79,84,80,92,88,78,78,5,2,2,1,0,S1 Teknik Elektro
+79,86,70,81,77,69,68,5,1,2,1,0,S1 Informatika
+77,86,94,77,74,67,74,4,1,2,1,0,S1 Informatika
+88,67,85,79,68,73,84,1,2,4,1,1,S1 Akuntansi
+76,67,83,67,86,83,68,2,4,2,2,0,S1 Farmasi
+86,85,75,86,97,85,78,2,3,1,2,0,S1 Teknologi Hasil Pertanian
+82,75,80,87,66,66,73,4,1,2,1,0,S1 Teknik Elektro
+86,95,87,88,83,76,66,4,1,2,1,0,S1 Informatika
+66,82,94,79,70,78,89,2,2,2,4,0,S1 Studi Islam Interdisipliner
+74,81,95,69,67,74,72,1,1,3,4,0,S1 PGSD
+66,81,96,69,70,78,86,1,3,1,2,0,S1 Studi Islam Interdisipliner
+84,71,88,81,92,91,81,3,3,2,1,0,S1 Teknologi Hasil Pertanian
+79,84,78,72,89,68,87,1,1,2,4,1,S1 PGSD
+84,84,76,86,76,69,73,5,3,1,1,0,S1 Informatika
+70,70,66,75,74,89,87,1,3,3,1,0,S1 Agribisnis
+88,86,79,95,69,68,87,4,1,2,1,0,S1 Informatika
+66,69,85,72,70,67,69,3,2,3,2,1,S1 Studi Islam Interdisipliner
+66,75,89,72,96,83,66,2,2,3,4,1,S1 Studi Islam Interdisipliner
+83,95,92,84,73,68,82,3,1,1,1,0,S1 Informatika
+83,69,77,82,81,81,75,4,1,2,1,0,S1 Informatika
+83,82,83,83,79,80,87,3,1,4,1,0,S1 Manajemen
+68,96,78,74,80,80,81,2,1,2,4,0,S1 Pendidikan Bahasa Inggris
+78,81,69,69,80,90,87,1,1,5,1,0,S1 Akuntansi
+86,85,77,78,88,76,97,1,3,3,4,1,S1 PGSD
+83,77,87,67,70,81,94,1,1,3,2,0,S1 Agribisnis
+80,71,79,80,86,89,68,3,3,2,2,0,S1 Teknologi Hasil Pertanian
+82,75,89,67,73,88,71,1,1,3,1,0,S1 Manajemen
+71,90,92,68,92,96,73,1,4,1,1,1,S1 Farmasi
+83,73,69,83,75,69,84,5,1,2,1,0,S1 Teknik Elektro
+80,69,72,72,71,70,68,4,1,3,1,0,S1 Informatika
+85,84,80,75,71,85,94,1,3,3,3,0,S1 Agribisnis
+68,74,88,70,70,70,91,1,1,2,5,0,S1 PGSD
+89,83,79,81,70,86,69,2,1,2,3,0,S1 PGSD
+84,82,70,82,70,69,90,2,2,4,3,0,S1 Manajemen
+92,83,80,68,85,80,75,1,3,2,1,0,S1 Farmasi
+89,83,75,85,67,70,70,4,1,2,3,0,S1 Informatika
+86,85,86,80,73,83,76,1,1,1,4,0,S1 PGSD
+90,84,73,73,88,85,75,1,5,2,3,0,S1 Farmasi
+87,74,71,72,68,67,77,2,1,4,1,0,S1 Akuntansi
+84,87,66,77,83,79,82,2,4,3,3,0,S1 Farmasi
+78,81,80,67,69,77,78,2,1,5,2,0,S1 Manajemen
+81,82,72,87,68,90,84,1,1,4,1,0,S1 Akuntansi
+68,68,86,76,92,95,70,4,2,4,1,0,S1 Teknologi Hasil Pertanian
+82,85,85,67,77,77,70,1,2,1,3,0,S1 Pendidikan Bahasa Inggris
+71,83,87,69,85,83,67,1,3,2,4,0,S1 Pendidikan Bahasa Inggris
+85,91,80,84,68,66,84,5,3,2,1,0,S1 Informatika
+88,85,67,89,87,69,83,4,1,3,1,0,S1 Teknik Elektro
+69,68,77,78,78,82,66,3,4,2,3,0,S1 Teknologi Hasil Pertanian
+77,84,83,79,76,84,78,4,4,3,2,0,S1 Teknologi Hasil Pertanian
+67,86,85,79,92,84,70,3,3,1,2,0,S1 Teknologi Hasil Pertanian
+84,83,87,84,90,83,86,4,4,2,1,0,S1 Teknologi Hasil Pertanian
+86,70,78,74,87,70,68,1,2,2,4,0,S1 PGSD
+90,89,96,97,91,95,92,4,1,2,2,0,S1 Teknik Elektro
+79,82,79,67,86,76,84,4,2,2,2,0,S1 Teknologi Hasil Pertanian
+70,75,73,87,83,96,86,1,1,3,2,0,S1 Agribisnis
+87,82,75,69,68,80,88,1,2,4,2,0,S1 Akuntansi
+68,66,89,70,70,70,69,1,2,3,3,1,S1 Studi Islam Interdisipliner
+66,97,86,70,84,77,77,1,1,2,4,0,S1 Pendidikan Bahasa Inggris
+67,73,70,79,73,94,91,1,3,4,2,0,S1 Agribisnis
+81,83,71,82,86,70,78,1,1,4,1,1,S1 Akuntansi
+72,81,66,69,67,68,91,1,1,4,2,0,S1 Manajemen
+82,74,69,84,71,69,67,4,1,2,2,0,S1 Informatika
+70,89,79,90,86,80,88,3,3,2,1,0,S1 Teknologi Hasil Pertanian
+89,79,73,85,78,94,84,1,5,2,2,0,S1 Farmasi
+74,96,74,69,88,82,72,2,2,3,4,0,S1 Pendidikan Bahasa Inggris
+78,83,80,95,85,66,72,3,2,4,4,0,S1 PGSD
+80,90,80,70,91,89,83,1,4,2,1,0,S1 Farmasi
+80,97,82,85,76,81,80,2,2,2,4,1,S1 PGSD
+76,70,76,78,88,84,70,3,3,3,2,0,S1 Teknologi Hasil Pertanian
+80,83,79,70,84,84,97,1,2,3,2,0,S1 Agribisnis
+87,83,82,77,66,80,80,3,1,4,1,0,S1 Manajemen
+87,86,82,77,71,73,66,1,2,4,1,0,S1 Akuntansi
+97,92,80,72,83,97,79,1,2,3,2,0,S1 Agribisnis
+83,80,96,86,70,67,69,4,1,2,1,0,S1 Teknik Elektro
+80,79,68,97,77,87,80,4,3,2,2,1,S1 Teknik Elektro
+75,87,75,91,82,67,82,4,2,1,1,0,S1 Teknik Elektro
+68,81,92,76,86,73,81,1,3,2,2,1,S1 Studi Islam Interdisipliner
+76,84,76,70,87,85,73,1,3,2,1,0,S1 Farmasi
+69,73,84,73,68,97,82,1,3,2,2,0,S1 Agribisnis
+91,85,88,88,66,68,70,1,3,2,3,1,S1 Studi Islam Interdisipliner
+74,73,79,83,66,76,95,1,1,4,3,0,S1 Akuntansi
+78,86,88,67,86,83,70,1,4,1,3,0,S1 Farmasi
+86,78,69,80,77,68,70,4,1,2,2,0,S1 Teknik Elektro
+87,78,80,86,83,77,84,1,1,3,1,0,S1 Manajemen
+95,78,85,82,83,66,70,4,1,2,2,0,S1 Teknik Elektro
+83,82,66,69,69,66,76,1,1,1,4,0,S1 PGSD
+77,83,85,67,87,96,88,2,4,1,2,0,S1 Farmasi
+68,80,84,81,66,71,87,2,1,4,3,0,S1 Manajemen
+74,84,76,77,70,90,87,2,4,3,2,0,S1 Agribisnis
+86,94,66,81,82,69,68,5,3,1,2,0,S1 Informatika
+81,83,77,84,79,76,86,4,2,3,3,0,S1 Teknologi Hasil Pertanian
+88,83,85,72,66,84,73,1,3,4,4,1,S1 PGSD
+78,66,87,67,76,69,87,1,1,3,3,1,S1 Studi Islam Interdisipliner
+89,88,86,66,69,67,73,1,1,3,4,1,S1 Pendidikan Bahasa Inggris
+83,70,71,86,70,70,82,4,1,1,1,0,S1 Teknik Elektro
+68,76,81,79,71,70,81,2,1,5,3,0,S1 Manajemen
+85,84,66,66,68,76,81,1,1,4,1,0,S1 Akuntansi
+69,77,78,69,84,96,84,2,2,3,3,0,S1 Agribisnis
+68,84,68,77,97,81,66,1,5,4,1,0,S1 Farmasi
+79,78,82,69,82,73,67,1,1,2,4,0,S1 PGSD
+78,78,76,85,85,68,82,2,1,4,4,0,S1 Manajemen
+84,81,68,77,87,95,83,1,1,2,1,0,S1 Agribisnis
+73,89,74,67,89,88,88,2,4,3,2,0,S1 Farmasi
+90,72,69,68,85,89,87,1,1,4,3,0,S1 Akuntansi
+87,73,76,68,74,73,81,1,1,2,5,1,S1 PGSD
+94,86,70,69,69,70,69,1,1,2,3,1,S1 PGSD
+69,88,79,80,74,69,72,4,2,2,1,0,S1 Informatika
+94,93,90,96,97,96,96,2,3,4,2,0,S1 Farmasi
+82,82,79,84,67,79,85,2,3,3,3,1,S1 Manajemen
+88,79,68,85,78,80,66,4,1,3,1,0,S1 Informatika
+81,95,73,70,80,71,85,1,1,4,3,0,S1 Akuntansi
+77,67,76,70,96,86,83,4,3,2,1,0,S1 Teknologi Hasil Pertanian
+87,85,89,86,74,69,80,4,2,3,2,1,S1 Informatika
+79,88,69,97,68,83,77,4,1,2,1,0,S1 Informatika
+79,90,87,69,68,84,78,1,2,2,2,1,S1 Studi Islam Interdisipliner
+68,84,68,85,86,90,87,1,4,1,1,0,S1 Farmasi
+80,74,83,70,81,71,83,1,1,1,4,0,S1 PGSD
+76,87,87,80,70,71,66,2,3,2,4,0,S1 Pendidikan Bahasa Inggris
+89,85,75,80,75,85,77,1,1,4,1,1,S1 Akuntansi
+71,78,88,72,72,86,78,1,2,1,3,0,S1 Studi Islam Interdisipliner
+69,71,90,79,82,75,72,1,3,2,3,1,S1 Studi Islam Interdisipliner
+85,90,80,74,67,70,87,1,1,4,2,0,S1 Akuntansi
+93,70,83,71,86,75,88,1,2,3,3,0,S1 Akuntansi
+72,83,86,66,67,75,66,2,2,3,4,1,S1 Studi Islam Interdisipliner
+70,83,68,82,79,91,68,3,3,2,3,0,S1 Teknologi Hasil Pertanian
+74,83,97,67,66,85,82,1,3,2,3,1,S1 Studi Islam Interdisipliner
+67,87,88,77,70,66,68,1,1,2,4,0,S1 Pendidikan Bahasa Inggris
+75,69,70,84,97,94,78,3,4,1,2,0,S1 Teknologi Hasil Pertanian
+83,80,81,85,83,79,80,2,3,3,3,0,S1 Farmasi
+88,84,75,82,70,82,84,4,2,1,2,0,S1 Informatika
+97,93,95,92,94,97,96,5,1,2,2,0,S1 Teknik Elektro
+73,82,73,73,78,76,83,1,3,4,3,0,S1 Manajemen
+66,87,84,79,88,95,69,3,4,4,2,0,S1 Teknologi Hasil Pertanian
+94,77,95,86,81,86,68,2,1,4,1,1,S1 Akuntansi
+90,92,76,69,67,67,80,4,2,2,1,0,S1 Teknik Elektro
+87,76,95,70,94,91,90,1,2,3,3,0,S1 Agribisnis
+72,95,78,84,76,66,72,1,1,1,3,1,S1 Pendidikan Bahasa Inggris
+79,82,69,83,94,72,84,4,1,3,1,0,S1 Informatika
+79,80,77,68,89,89,88,1,4,1,3,0,S1 Farmasi
+85,84,76,68,69,91,88,2,1,4,3,0,S1 Manajemen
+89,78,70,75,70,68,69,4,1,2,1,0,S1 Informatika
+75,71,78,83,72,74,85,1,5,3,4,0,S1 Farmasi
+82,81,86,86,86,73,95,4,1,1,1,0,S1 Informatika
+79,95,77,76,66,76,84,1,2,1,5,0,S1 Pendidikan Bahasa Inggris
+83,67,70,94,69,69,78,1,1,5,1,0,S1 Akuntansi
+86,91,84,97,76,67,72,4,2,2,1,0,S1 Informatika
+78,94,66,69,89,88,67,1,4,2,2,0,S1 Farmasi
+81,85,78,86,72,85,82,1,1,3,1,0,S1 Agribisnis
+91,84,70,84,75,78,67,4,4,2,1,0,S1 Teknologi Hasil Pertanian
+71,78,81,83,76,83,78,2,3,4,3,0,S1 Agribisnis
+95,75,78,85,83,68,86,4,1,3,1,0,S1 Teknik Elektro
+84,83,70,66,70,69,70,1,3,2,4,0,S1 PGSD
+86,75,87,91,85,67,87,3,1,4,1,1,S1 Informatika
+86,83,79,81,82,74,84,2,1,4,1,0,S1 Manajemen
+81,96,85,66,75,76,85,1,4,1,4,0,S1 PGSD
+77,83,91,69,68,74,93,1,1,5,3,0,S1 Akuntansi
+85,85,68,86,69,69,86,5,1,2,2,0,S1 Informatika
+67,71,90,66,68,75,85,1,1,2,2,1,S1 Studi Islam Interdisipliner
+86,86,67,68,81,83,82,1,2,3,3,0,S1 Agribisnis
+93,95,97,96,97,96,93,3,3,2,2,0,S1 Teknologi Hasil Pertanian
+86,93,68,85,79,69,78,3,2,3,1,0,S1 Teknik Elektro
+84,83,75,77,76,70,81,1,1,4,1,1,S1 Akuntansi
+88,83,69,79,78,74,76,4,1,3,1,0,S1 Informatika
+76,80,79,84,70,77,82,1,3,1,3,1,S1 Studi Islam Interdisipliner
+70,66,78,81,85,83,71,2,3,3,2,0,S1 Teknologi Hasil Pertanian
+90,84,86,66,70,66,75,1,1,3,4,0,S1 PGSD
+80,74,97,81,73,70,74,4,1,2,1,0,S1 Informatika
+78,91,83,92,68,91,77,1,3,2,4,1,S1 Pendidikan Bahasa Inggris
+77,82,88,79,76,88,87,1,2,3,1,0,S1 Agribisnis
+67,76,83,84,78,76,80,2,4,1,3,0,S1 Farmasi
+79,72,67,85,75,73,77,1,2,2,4,1,S1 Pendidikan Bahasa Inggris
+68,67,91,79,80,75,85,1,1,1,4,0,S1 PGSD
+82,84,88,69,73,74,74,1,1,2,4,0,S1 Pendidikan Bahasa Inggris
+79,83,85,69,78,69,86,1,2,3,5,1,S1 PGSD
+69,85,80,80,66,81,83,1,2,2,4,0,S1 Pendidikan Bahasa Inggris
+82,75,79,68,87,91,66,2,4,2,1,0,S1 Farmasi
+82,80,76,73,91,86,76,4,3,3,2,0,S1 Teknologi Hasil Pertanian
+70,72,78,76,83,80,69,4,2,2,1,0,S1 Informatika
+80,88,85,84,84,95,80,3,2,3,3,1,S1 Teknologi Hasil Pertanian
+76,77,73,69,83,94,87,2,3,1,3,0,S1 Teknologi Hasil Pertanian
+70,82,84,84,90,79,81,2,3,3,1,0,S1 Agribisnis
+88,78,68,91,87,84,73,5,1,3,1,0,S1 Teknik Elektro
+88,77,69,82,71,87,86,1,2,5,2,0,S1 Agribisnis
+90,84,76,68,81,86,90,1,2,4,2,0,S1 Agribisnis
+69,89,75,69,75,86,76,1,2,3,4,0,S1 Pendidikan Bahasa Inggris
+69,68,83,70,72,85,85,1,1,2,4,0,S1 PGSD
+82,69,88,73,74,79,82,2,1,5,2,0,S1 Manajemen
+82,82,75,79,68,67,89,4,1,1,1,0,S1 Informatika
+75,85,89,68,80,86,89,1,1,2,4,0,S1 PGSD
+75,76,85,96,70,68,88,4,1,2,1,0,S1 Teknik Elektro
+83,76,87,79,78,79,69,4,4,1,2,0,S1 Teknologi Hasil Pertanian
+85,84,86,78,70,70,68,4,1,1,1,0,S1 Informatika
+69,87,77,83,68,87,68,1,3,2,4,0,S1 PGSD
+78,67,74,84,71,87,78,1,2,2,1,0,S1 Agribisnis
+89,81,84,92,67,68,71,5,1,3,2,0,S1 Teknik Elektro
+79,72,74,70,85,86,68,1,4,1,3,1,S1 Farmasi
+82,68,73,75,71,68,87,5,2,2,1,0,S1 Informatika
+85,78,83,82,76,92,88,2,2,3,3,0,S1 Agribisnis
+84,88,82,75,77,77,68,2,2,2,5,0,S1 Pendidikan Bahasa Inggris
+77,84,84,79,78,72,91,1,1,4,1,0,S1 Akuntansi
+77,86,77,70,67,85,78,1,1,3,1,0,S1 Akuntansi
+79,74,73,82,93,86,87,3,3,2,2,0,S1 Teknologi Hasil Pertanian
+77,84,92,83,69,76,81,2,1,4,3,0,S1 Manajemen
+77,80,80,86,73,73,69,2,1,3,5,0,S1 Pendidikan Bahasa Inggris
+95,85,82,71,87,92,70,2,4,3,2,1,S1 Farmasi
+68,68,97,69,80,75,83,1,2,3,4,0,S1 Studi Islam Interdisipliner
+86,79,68,66,69,81,84,2,1,4,3,0,S1 Manajemen
+78,81,87,86,83,84,71,2,3,2,4,0,S1 Pendidikan Bahasa Inggris
+87,81,81,97,85,67,84,4,1,1,1,0,S1 Informatika
+78,72,69,76,90,82,86,2,4,3,2,1,S1 Farmasi
+68,77,92,66,81,68,76,1,2,3,3,0,S1 Studi Islam Interdisipliner
+67,95,85,67,70,70,74,1,1,3,4,0,S1 Pendidikan Bahasa Inggris
+90,82,88,96,80,70,69,3,1,1,1,0,S1 Informatika
+80,83,73,82,75,86,84,5,1,3,2,0,S1 Informatika
+80,77,90,83,69,70,70,3,1,3,1,0,S1 Teknik Elektro
+79,84,84,83,83,91,81,2,3,1,3,0,S1 Teknologi Hasil Pertanian
+70,83,72,75,66,69,69,1,2,3,4,0,S1 Pendidikan Bahasa Inggris
+76,83,86,85,94,69,68,4,1,2,1,0,S1 Teknik Elektro
+82,68,89,66,67,83,81,2,1,3,5,1,S1 Studi Islam Interdisipliner
+69,67,78,67,68,86,86,2,1,4,3,1,S1 Agribisnis
+89,78,87,68,70,89,86,1,2,2,3,0,S1 Studi Islam Interdisipliner
+79,88,91,67,66,84,88,1,2,2,3,0,S1 Pendidikan Bahasa Inggris
+69,70,89,82,74,73,73,1,2,1,4,1,S1 PGSD
+74,78,85,71,67,70,77,1,1,3,4,0,S1 PGSD
+82,68,85,86,70,67,68,4,1,1,1,0,S1 Informatika
+85,78,75,69,84,95,72,1,4,2,3,0,S1 Farmasi
+84,68,85,68,81,85,93,1,1,4,2,0,S1 Agribisnis
+78,84,66,83,71,67,67,5,2,3,2,0,S1 Informatika
+83,95,79,84,83,68,70,2,1,3,4,0,S1 PGSD
+76,71,84,81,67,76,86,2,1,4,2,0,S1 Manajemen
+76,79,85,69,78,73,82,1,1,2,2,1,S1 Studi Islam Interdisipliner
+94,89,77,94,66,73,66,2,1,4,1,0,S1 Akuntansi
+76,81,69,97,82,69,86,4,1,2,1,0,S1 Teknik Elektro
+79,88,87,72,67,95,89,2,1,2,4,1,S1 PGSD
+85,80,85,84,85,87,67,1,3,1,2,0,S1 Farmasi
+77,70,83,83,70,91,83,1,1,2,2,0,S1 Agribisnis
+90,75,87,76,74,82,89,2,3,2,2,1,S1 Teknologi Hasil Pertanian
+83,95,76,71,84,88,82,1,3,1,3,0,S1 Farmasi
+74,72,83,81,74,72,73,3,2,3,3,0,S1 Manajemen
+76,73,67,90,78,71,92,1,2,5,1,0,S1 Akuntansi
+82,82,93,87,81,66,73,4,1,1,1,1,S1 Teknik Elektro
+93,77,82,79,75,67,69,4,1,2,1,0,S1 Teknik Elektro
+82,81,83,70,73,86,79,1,1,2,4,0,S1 PGSD
+81,67,67,77,81,67,66,3,1,1,1,0,S1 Informatika
+84,69,84,87,76,66,82,5,1,2,1,0,S1 Teknik Elektro
+67,93,82,75,67,85,78,1,2,2,4,0,S1 Pendidikan Bahasa Inggris
+70,84,90,70,95,68,82,1,2,1,1,0,S1 Studi Islam Interdisipliner
+88,67,89,87,67,78,85,1,2,2,3,1,S1 PGSD
+75,74,81,70,86,66,75,1,2,3,4,0,S1 PGSD
+81,80,86,81,87,90,77,4,3,2,1,1,S1 Teknologi Hasil Pertanian
+74,80,84,72,83,80,85,1,1,5,2,0,S1 Akuntansi
+84,95,77,76,87,75,69,4,1,1,2,0,S1 Informatika
+68,83,78,82,66,69,79,2,2,3,3,0,S1 Manajemen
+75,87,91,82,67,69,69,2,2,1,1,0,S1 Studi Islam Interdisipliner
+94,95,78,80,73,76,68,2,3,3,4,0,S1 PGSD
+67,88,71,68,80,74,76,2,2,3,3,0,S1 Pendidikan Bahasa Inggris
+79,87,84,77,66,66,73,5,1,2,1,0,S1 Informatika
+84,84,71,68,69,82,85,1,2,4,3,0,S1 Akuntansi
+83,73,80,77,83,81,85,1,2,2,2,0,S1 Agribisnis
+91,97,91,88,79,76,79,2,2,2,4,0,S1 Pendidikan Bahasa Inggris
+74,86,80,69,68,83,82,1,2,2,4,0,S1 Pendidikan Bahasa Inggris
+84,89,83,73,83,72,66,2,2,2,4,1,S1 PGSD
+81,74,75,88,66,70,77,2,1,4,2,0,S1 Manajemen
+89,82,71,88,96,92,77,1,4,3,4,0,S1 Farmasi
+79,81,88,71,89,95,81,3,4,1,3,0,S1 Farmasi
+83,85,93,83,73,80,74,1,3,3,5,1,S1 Studi Islam Interdisipliner
+95,71,95,68,73,77,77,4,1,2,1,0,S1 Informatika
+81,84,83,74,78,78,70,4,1,3,1,0,S1 Informatika
+84,82,88,76,68,70,66,5,1,3,2,1,S1 Informatika
+75,83,86,72,69,72,88,3,2,5,2,0,S1 Manajemen

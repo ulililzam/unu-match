@@ -1,0 +1,52 @@
+{
+  "features": [
+    {
+      "feature": "minat_teknik",
+      "importance": 0.14094067954355394
+    },
+    {
+      "feature": "minat_bisnis",
+      "importance": 0.10189400160111511
+    },
+    {
+      "feature": "minat_kesehatan",
+      "importance": 0.09944103957613491
+    },
+    {
+      "feature": "biologi",
+      "importance": 0.09270257808745395
+    },
+    {
+      "feature": "minat_pendidikan",
+      "importance": 0.09205182588121898
+    },
+    {
+      "feature": "inggris",
+      "importance": 0.07895803958562925
+    },
+    {
+      "feature": "fisika",
+      "importance": 0.07674402499491285
+    },
+    {
+      "feature": "kimia",
+      "importance": 0.07214777312974746
+    },
+    {
+      "feature": "agama",
+      "importance": 0.0715381976194197
+    },
+    {
+      "feature": "mtk",
+      "importance": 0.07068037041053209
+    },
+    {
+      "feature": "ekonomi",
+      "importance": 0.06860867080899316
+    },
+    {
+      "feature": "hafalan",
+      "importance": 0.03429279876128859
+    }
+  ]
+}

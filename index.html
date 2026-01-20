@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNU-Match - Temukan Jurusan yang Tepat Untukmu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ml_engine.js"></script>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center px-4 py-12">
+        <div class="container-custom text-center">
+
+            <!-- Logo & Title -->
+            <div class="mb-8">
+                <div
+                    class="inline-flex items-center justify-center w-24 h-24 bg-green rounded-full mb-4 search-icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white search-icon" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <circle cx="11" cy="11" r="8" stroke-width="2.5" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-4.35-4.35" />
+                    </svg>
+                </div>
+            </div>
+
+            <h1 class="text-5xl md:text-6xl font-extrabold text-dark mb-4">
+                UNU-<span class="text-green">Match</span>
+            </h1>
+
+            <p class="text-xl md:text-2xl text-gray mb-3 max-w-2xl mx-auto">
+                Temukan Jurusan yang Tepat Untukmu
+            </p>
+
+            <p class="text-base md:text-lg text-gray-600 mb-10 max-w-xl mx-auto">
+                Sistem cerdas yang membantu kamu menemukan program studi yang paling cocok berdasarkan minat, nilai, dan
+                preferensimu.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                <a href="survey.html" class="btn btn-primary btn-large">
+                    Mulai Sekarang
+                </a>
+
+                <button onclick="scrollToFeatures()" class="btn btn-secondary btn-large">
+                    Pelajari Lebih Lanjut
+                </button>
+            </div>
+
+            <!-- Stats -->
+            <div class="flex flex-wrap justify-center gap-8 mb-16">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-green mb-2">10</div>
+                    <div class="text-gray-600">Program Studi</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-green mb-2">1000+</div>
+                    <div class="text-gray-600">Data Training</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-green mb-2">5 Menit</div>
+                    <div class="text-gray-600">Waktu Pengerjaan</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container-custom">
+
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
+                    Mengapa Memilih UNU-Match?
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Sistem rekomendasi yang dirancang khusus untuk mahasiswa Universitas Nahdlatul Ulama
+                </p>
+            </div>
+
+            <!-- Feature Cards -->
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+
+                <!-- Feature 1 -->
+                <div class="card text-center">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-green-light rounded-full mb-4">
+                        <i class="hgi-stroke hgi-tick-02 text-4xl text-green"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Mudah Digunakan</h3>
+                    <p class="text-gray-600">
+                        Pertanyaan sederhana tanpa istilah teknis yang membingungkan. Semua orang bisa menggunakannya!
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="card text-center">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-green-light rounded-full mb-4">
+                        <i class="hgi-stroke hgi-target-01 text-4xl text-green"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Hasil Akurat</h3>
+                    <p class="text-gray-600">
+                        Menggunakan Random Forest Machine Learning dengan 1000+ data mahasiswa untuk rekomendasi yang
+                        akurat.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="card text-center">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-green-light rounded-full mb-4">
+                        <i class="hgi-stroke hgi-time-04 text-4xl text-green"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Cepat & Efisien</h3>
+                    <p class="text-gray-600">
+                        Hanya 5 menit untuk mendapatkan 3 rekomendasi jurusan terbaik dengan penjelasan lengkap.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-20 bg-gray-50">
+        <div class="container-custom">
+
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
+                    Bagaimana Cara Kerjanya?
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Proses yang simple dan straightforward
+                </p>
+            </div>
+
+            <!-- Steps -->
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div
+                        class="inline-flex items-center justify-center w-20 h-20 bg-green text-white rounded-full text-3xl font-bold mb-4">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Isi Survey</h3>
+                    <p class="text-gray-600">
+                        Jawab pertanyaan tentang nilai raport, minat, dan preferensi belajarmu
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div
+                        class="inline-flex items-center justify-center w-20 h-20 bg-green text-white rounded-full text-3xl font-bold mb-4">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Analisis</h3>
+                    <p class="text-gray-600">
+                        Sistem akan menganalisis jawabanmu dengan Random Forest Machine Learning
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div
+                        class="inline-flex items-center justify-center w-20 h-20 bg-green text-white rounded-full text-3xl font-bold mb-4">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-3">Hasil</h3>
+                    <p class="text-gray-600">
+                        Dapatkan 3 rekomendasi jurusan terbaik dengan tingkat kecocokan dan penjelasan
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center mt-12">
+                <a href="survey.html" class="btn btn-primary btn-large">
+                    Mulai Sekarang - Gratis!
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Program Studi -->
+    <section class="py-20 bg-white">
+        <div class="container-custom">
+
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
+                    Program Studi yang Tersedia
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    10 program studi unggulan di Universitas Nahdlatul Ulama
+                </p>
+            </div>
+
+            <!-- Prodi Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="card hover:border-green border-2 border-transparent">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="hgi-stroke hgi-laptop text-3xl text-green"></i>
+                        <h3 class="text-lg font-bold text-dark">Informatika</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">Teknologi & Programming</p>
+                </div>
+
+                <div class="card hover:border-green border-2 border-transparent">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="hgi-stroke hgi-test-tube text-3xl text-green"></i>
+                        <h3 class="text-lg font-bold text-dark">Farmasi</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">Kesehatan & Obat-obatan</p>
+                </div>
+
+                <div class="card hover:border-green border-2 border-transparent">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="hgi-stroke hgi-flash text-3xl text-green"></i>
+                        <h3 class="text-lg font-bold text-dark">Teknik Elektro</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">Kelistrikan & Elektronika</p>
+                </div>
+
+                <div class="card hover:border-green border-2 border-transparent">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="hgi-stroke hgi-plant-02 text-3xl text-green"></i>
+                        <h3 class="text-lg font-bold text-dark">Agribisnis</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">Bisnis Pertanian</p>
+                </div>
+
+                <div class="card hover:border-green border-2 border-transparent">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="hgi-stroke hgi-money-bag-02 text-3xl text-green"></i>
+                        <h3 class="text-lg font-bold text-dark">Akuntansi</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">Keuangan & Audit</p>
+                </div>
+
+                <div class="card hover:border-green border-2 border-transparent">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="hgi-stroke hgi-globe-02 text-3xl text-green"></i>
+                        <h3 class="text-lg font-bold text-dark">Pend. Bahasa Inggris</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">Pendidikan & Bahasa</p>
+                </div>
+
+                <div class="card hover:border-green border-2 border-transparent">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="hgi-stroke hgi-teacher text-3xl text-green"></i>
+                        <h3 class="text-lg font-bold text-dark">PGSD</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">Pendidikan Guru SD</p>
+                </div>
+
+                <div class="card hover:border-green border-2 border-transparent">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="hgi-stroke hgi-book-open-02 text-3xl text-green"></i>
+                        <h3 class="text-lg font-bold text-dark">Studi Islam</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">Kajian Keislaman</p>
+                </div>
+
+                <div class="card hover:border-green border-2 border-transparent">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="hgi-stroke hgi-analytics-01 text-3xl text-green"></i>
+                        <h3 class="text-lg font-bold text-dark">Manajemen</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">Bisnis & Organisasi</p>
+                </div>
+
+                <div class="card hover:border-green border-2 border-transparent">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="hgi-stroke hgi-medicine-01 text-3xl text-green"></i>
+                        <h3 class="text-lg font-bold text-dark">Teknologi Hasil Pertanian</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">Pengolahan Pangan</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container-custom text-center">
+            <div class="mb-4">
+                <h3 class="text-2xl font-bold mb-2">UNU-<span class="text-green">Match</span></h3>
+                <p class="text-gray-400">Temukan Jurusan yang Tepat Untukmu</p>
+            </div>
+            <div class="text-sm text-gray-400">
+                <p>&copy; 2026 UNU-Match. Dikembangkan untuk Universitas Nahdlatul Ulama.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        @keyframes search-pulse {
+
+            0%,
+            100% {
+                transform: scale(1) rotate(0deg);
+            }
+
+            50% {
+                transform: scale(1.1) rotate(5deg);
+            }
+        }
+
+        .search-icon-container {
+            animation: search-pulse 2s ease-in-out infinite;
+        }
+
+        .search-icon {
+            filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
+        }
+    </style>
+
+    <script>
+        function scrollToFeatures() {
+            document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey - UNU-Match</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="js/ml_engine.js"></script>
+    <script src="js/modal.js"></script>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container-custom py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-green rounded-full flex items-center justify-center search-icon-small">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <circle cx="11" cy="11" r="8" stroke-width="2.5" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M21 21l-4.35-4.35" />
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold text-dark">UNU-<span class="text-green">Match</span></span>
+                </a>
+
+                <button onclick="confirmReset()" class="text-gray-600 hover:text-green transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-8 min-h-screen">
+        <div class="container-custom max-w-3xl">
+
+            <!-- Progress Bar -->
+            <div class="mb-8">
+                <div class="flex justify-between items-center mb-2">
+                    <span class="text-sm font-medium text-gray" id="progress-text">Langkah 1 dari 3</span>
+                    <span class="text-sm font-medium text-green">33%</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar" style="width: 33%"></div>
+                </div>
+            </div>
+
+            <!-- Survey Form -->
+            <form id="survey-form" class="space-y-8">
+
+                <!-- Step 1: Nilai Raport -->
+                <div class="question-step active" id="step-1">
+                    <div class="card">
+                        <div class="mb-6">
+                            <h2 class="text-2xl font-bold text-dark mb-2">
+                                <i class="hgi-stroke hgi-book-02"></i> Bagaimana Nilai Raport Kamu?
+                            </h2>
+                            <p class="text-gray-600">
+                                Geser slider untuk menunjukkan nilai raport kamu di setiap mata pelajaran (0-100)
+                            </p>
+                        </div>
+
+                        <!-- Matematika -->
+                        <div class="slider-container">
+                            <div class="slider-label">
+                                <span>Matematika</span>
+                                <span class="slider-value" id="mtk-value">50</span>
+                            </div>
+                            <input type="range" min="0" max="100" value="50" class="slider" id="mtk"
+                                oninput="unumatch.updateSliderValue('mtk', this.value)">
+                        </div>
+
+                        <!-- Bahasa Inggris -->
+                        <div class="slider-container">
+                            <div class="slider-label">
+                                <span>Bahasa Inggris</span>
+                                <span class="slider-value" id="inggris-value">50</span>
+                            </div>
+                            <input type="range" min="0" max="100" value="50" class="slider" id="inggris"
+                                oninput="unumatch.updateSliderValue('inggris', this.value)">
+                        </div>
+
+                        <!-- Agama -->
+                        <div class="slider-container">
+                            <div class="slider-label">
+                                <span>Pendidikan Agama Islam</span>
+                                <span class="slider-value" id="agama-value">50</span>
+                            </div>
+                            <input type="range" min="0" max="100" value="50" class="slider" id="agama"
+                                oninput="unumatch.updateSliderValue('agama', this.value)">
+                        </div>
+
+                        <!-- Fisika -->
+                        <div class="slider-container">
+                            <div class="slider-label">
+                                <span>Fisika</span>
+                                <span class="slider-value" id="fisika-value">50</span>
+                            </div>
+                            <input type="range" min="0" max="100" value="50" class="slider" id="fisika"
+                                oninput="unumatch.updateSliderValue('fisika', this.value)">
+                        </div>
+
+                        <!-- Kimia -->
+                        <div class="slider-container">
+                            <div class="slider-label">
+                                <span>Kimia</span>
+                                <span class="slider-value" id="kimia-value">50</span>
+                            </div>
+                            <input type="range" min="0" max="100" value="50" class="slider" id="kimia"
+                                oninput="unumatch.updateSliderValue('kimia', this.value)">
+                        </div>
+
+                        <!-- Biologi -->
+                        <div class="slider-container">
+                            <div class="slider-label">
+                                <span>Biologi</span>
+                                <span class="slider-value" id="biologi-value">50</span>
+                            </div>
+                            <input type="range" min="0" max="100" value="50" class="slider" id="biologi"
+                                oninput="unumatch.updateSliderValue('biologi', this.value)">
+                        </div>
+
+                        <!-- Ekonomi -->
+                        <div class="slider-container">
+                            <div class="slider-label">
+                                <span>Ekonomi</span>
+                                <span class="slider-value" id="ekonomi-value">50</span>
+                            </div>
+                            <input type="range" min="0" max="100" value="50" class="slider" id="ekonomi"
+                                oninput="unumatch.updateSliderValue('ekonomi', this.value)">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Step 2: Minat -->
+                <div class="question-step" id="step-2">
+                    <div class="card">
+                        <div class="mb-6">
+                            <h2 class="text-2xl font-bold text-dark mb-2">
+                                <i class="hgi-stroke hgi-star"></i> Seberapa Besar Minatmu?
+                            </h2>
+                            <p class="text-gray-600">
+                                Klik bintang untuk menunjukkan seberapa tertarik kamu di setiap bidang (1 = tidak
+                                tertarik, 5 = sangat tertarik)
+                            </p>
+                        </div>
+
+                        <!-- Minat Teknik -->
+                        <div class="rating-container">
+                            <label class="rating-label">Bidang Teknik & Teknologi</label>
+                            <p class="text-sm text-gray-600 mb-2">
+                                Seperti: komputer, mesin, listrik, robotika, programming
+                            </p>
+                            <div class="star-rating" id="minat_teknik">
+                                <span class="star" onclick="setRating('minat_teknik', 1)">★</span>
+                                <span class="star" onclick="setRating('minat_teknik', 2)">★</span>
+                                <span class="star" onclick="setRating('minat_teknik', 3)">★</span>
+                                <span class="star" onclick="setRating('minat_teknik', 4)">★</span>
+                                <span class="star" onclick="setRating('minat_teknik', 5)">★</span>
+                            </div>
+                        </div>
+
+                        <!-- Minat Kesehatan -->
+                        <div class="rating-container">
+                            <label class="rating-label">Bidang Kesehatan</label>
+                            <p class="text-sm text-gray-600 mb-2">
+                                Seperti: kedokteran, farmasi, kesehatan masyarakat, nutrisi
+                            </p>
+                            <div class="star-rating" id="minat_kesehatan">
+                                <span class="star" onclick="setRating('minat_kesehatan', 1)">★</span>
+                                <span class="star" onclick="setRating('minat_kesehatan', 2)">★</span>
+                                <span class="star" onclick="setRating('minat_kesehatan', 3)">★</span>
+                                <span class="star" onclick="setRating('minat_kesehatan', 4)">★</span>
+                                <span class="star" onclick="setRating('minat_kesehatan', 5)">★</span>
+                            </div>
+                        </div>
+
+                        <!-- Minat Bisnis -->
+                        <div class="rating-container">
+                            <label class="rating-label">Bidang Bisnis & Ekonomi</label>
+                            <p class="text-sm text-gray-600 mb-2">
+                                Seperti: manajemen, akuntansi, marketing, entrepreneurship, keuangan
+                            </p>
+                            <div class="star-rating" id="minat_bisnis">
+                                <span class="star" onclick="setRating('minat_bisnis', 1)">★</span>
+                                <span class="star" onclick="setRating('minat_bisnis', 2)">★</span>
+                                <span class="star" onclick="setRating('minat_bisnis', 3)">★</span>
+                                <span class="star" onclick="setRating('minat_bisnis', 4)">★</span>
+                                <span class="star" onclick="setRating('minat_bisnis', 5)">★</span>
+                            </div>
+                        </div>
+
+                        <!-- Minat Pendidikan -->
+                        <div class="rating-container">
+                            <label class="rating-label">Bidang Pendidikan & Pengajaran</label>
+                            <p class="text-sm text-gray-600 mb-2">
+                                Seperti: mengajar, membimbing, berbagi ilmu, mendidik anak
+                            </p>
+                            <div class="star-rating" id="minat_pendidikan">
+                                <span class="star" onclick="setRating('minat_pendidikan', 1)">★</span>
+                                <span class="star" onclick="setRating('minat_pendidikan', 2)">★</span>
+                                <span class="star" onclick="setRating('minat_pendidikan', 3)">★</span>
+                                <span class="star" onclick="setRating('minat_pendidikan', 4)">★</span>
+                                <span class="star" onclick="setRating('minat_pendidikan', 5)">★</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Step 3: Hafalan -->
+                <div class="question-step" id="step-3">
+                    <div class="card">
+                        <div class="mb-6">
+                            <h2 class="text-2xl font-bold text-dark mb-2">
+                                <i class="hgi-stroke hgi-target-03"></i> Preferensi Belajar
+                            </h2>
+                            <p class="text-gray-600">
+                                Pertanyaan terakhir untuk melengkapi profil kamu
+                            </p>
+                        </div>
+
+                        <!-- Hafalan -->
+                        <div class="toggle-container">
+                            <label class="toggle-label">
+                                <div>
+                                    <div class="font-semibold mb-1">Apakah kamu suka menghafal?</div>
+                                    <div class="text-sm text-gray-600">
+                                        Seperti menghafal Al-Qur'an, hadits, atau materi pelajaran
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="hafalan" onchange="unumatch.toggleHafalan(this.checked)">
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+
+                        <!-- Summary Info -->
+                        <div class="mt-8 p-6 bg-green-light rounded-lg">
+                            <div class="flex items-start gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green flex-shrink-0 mt-1"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <div>
+                                    <h3 class="font-semibold text-dark mb-2">Kamu hampir selesai!</h3>
+                                    <p class="text-sm text-gray-600">
+                                        Setelah mengklik tombol "Lihat Hasil", sistem akan menganalisis jawaban kamu dan
+                                        memberikan 3 rekomendasi jurusan terbaik berdasarkan profil kamu.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="nav-buttons">
+                    <button type="button" id="prev-btn" onclick="previousStep()" class="btn btn-secondary"
+                        style="display: none;">
+                        Sebelumnya
+                    </button>
+
+                    <button type="button" id="next-btn" onclick="nextStep()" class="btn btn-primary">
+                        Selanjutnya
+                    </button>
+
+                    <button type="button" id="submit-btn" onclick="submitSurvey()" class="btn btn-primary"
+                        style="display: none;">
+                        Lihat Hasil
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </main>
+
+    <style>
+        @keyframes search-rotate {
+
+            0%,
+            100% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(10deg);
+            }
+        }
+
+        .search-icon-small {
+            animation: search-rotate 3s ease-in-out infinite;
+        }
+    </style>
+
+    <script src="js/script.js"></script>
+    <script>
+        let currentStep = 1;
+        const totalSteps = 3;
+
+        // Initialize on page load
+        window.addEventListener('DOMContentLoaded', async () => {
+            // Load saved answers if any
+            const savedAnswers = unumatch.loadAnswers();
+            if (savedAnswers) {
+                // Restore slider values
+                Object.keys(savedAnswers).forEach(key => {
+                    if (key === 'hafalan') {
+                        document.getElementById('hafalan').checked = savedAnswers[key] === 1;
+                    } else if (key.startsWith('minat_')) {
+                        setRating(key, savedAnswers[key]);
+                    } else {
+                        const slider = document.getElementById(key);
+                        if (slider) {
+                            slider.value = savedAnswers[key];
+                            unumatch.updateSliderValue(key, savedAnswers[key]);
+                        }
+                    }
+                });
+            }
+
+            // Initialize display
+            unumatch.showStep(1);
+        });
+
+        async function nextStep() {
+            if (!unumatch.validateCurrentStep(currentStep)) {
+                await Modal.alert({
+                    title: 'Pertanyaan Belum Lengkap',
+                    message: 'Mohon lengkapi semua pertanyaan di halaman ini sebelum melanjutkan.',
+                    icon: 'warning',
+                    buttonText: 'Mengerti'
+                });
+                return;
+            }
+
+            if (currentStep < totalSteps) {
+                currentStep++;
+                unumatch.showStep(currentStep);
+            }
+        }
+
+        function previousStep() {
+            if (currentStep > 1) {
+                currentStep--;
+                unumatch.showStep(currentStep);
+            }
+        }
+
+        function setRating(questionId, rating) {
+            unumatch.setRating(questionId, rating);
+        }
+
+        async function submitSurvey() {
+            if (!unumatch.validateCurrentStep(currentStep)) {
+                await Modal.alert({
+                    title: 'Pertanyaan Belum Lengkap',
+                    message: 'Mohon lengkapi semua pertanyaan sebelum melanjutkan.',
+                    icon: 'warning',
+                    buttonText: 'Mengerti'
+                });
+                return;
+            }
+
+            // Show loading
+            const submitBtn = document.getElementById('submit-btn');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `
+                <div class="loading-spinner"></div>
+            `;
+
+            // Simulate processing delay for better UX
+            await new Promise(resolve => setTimeout(resolve, 1500));
+
+            // Predict
+            const results = unumatch.predictProdi();
+
+            if (results) {
+                // Save results
+                unumatch.saveResults(results);
+
+                // Redirect to results page
+                window.location.href = 'hasil.html';
+            } else {
+                await Modal.alert({
+                    title: 'Terjadi Kesalahan',
+                    message: 'Terjadi kesalahan saat menganalisis data. Silakan coba lagi.',
+                    icon: 'error',
+                    buttonText: 'OK'
+                });
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = `Lihat Hasil`;
+            }
+        }
+
+        async function confirmReset() {
+            const confirmed = await Modal.confirm({
+                title: 'Mulai Ulang Survey?',
+                message: 'Apakah kamu yakin ingin mengulang dari awal? Semua jawaban akan hilang.',
+                icon: 'warning',
+                confirmText: 'Ya, Mulai Ulang',
+                cancelText: 'Batal'
+            });
+
+            if (confirmed) {
+                unumatch.clearAnswers();
+                window.location.reload();
+            }
+        }
+    </script>
+
+</body>
+
+</html>

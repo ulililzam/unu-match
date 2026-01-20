@@ -1,0 +1,20 @@
+{
+  "trained_at": "2026-01-19T15:36:46.498238",
+  "dataset_size": 1000,
+  "n_features": 12,
+  "n_classes": 10,
+  "metrics": {
+    "train_accuracy": 0.99375,
+    "test_accuracy": 0.735,
+    "train_f1": 0.9937416314202308,
+    "test_f1": 0.728993997683297,
+    "cv_mean": 0.7136702506654344,
+    "cv_std": 0.044649427686621945
+  },
+  "model_params": {
+    "n_estimators": 200,
+    "max_depth": 10,
+    "min_samples_split": 2,
+    "min_samples_leaf": 1
+  }
+}

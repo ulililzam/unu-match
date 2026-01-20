@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Rekomendasi - UNU-Match</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="js/ml_engine.js"></script>
+    <script src="js/modal.js"></script>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container-custom py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-green rounded-full flex items-center justify-center search-icon-small">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <circle cx="11" cy="11" r="8" stroke-width="2.5" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M21 21l-4.35-4.35" />
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold text-dark">UNU-<span class="text-green">Match</span></span>
+                </a>
+
+                <div class="flex gap-3">
+                    <button onclick="window.print()" class="text-gray-600 hover:text-green transition"
+                        title="Cetak hasil">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                        </svg>
+                    </button>
+                    <button onclick="shareResults()" class="text-gray-600 hover:text-green transition"
+                        title="Bagikan hasil">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-12 min-h-screen">
+        <div class="container-custom max-w-4xl">
+
+            <!-- Success Message -->
+            <div class="text-center mb-12 fade-in">
+                <div
+                    class="inline-flex items-center justify-center w-20 h-20 bg-green text-white rounded-full mb-4 icon-bounce">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h1 class="text-3xl md:text-4xl font-bold text-dark mb-3">
+                    Hasil Analisis Berhasil! <i class="hgi-stroke hgi-celebrate"></i>
+                </h1>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Berdasarkan jawaban kamu, kami menemukan <strong class="text-green">3 program studi</strong> yang
+                    paling cocok dengan profil dan minat kamu.
+                </p>
+            </div>
+
+            <!-- Results Container -->
+            <div id="results-container">
+                <!-- Results will be inserted here by JavaScript -->
+            </div>
+
+            <!-- Info Card -->
+            <div class="card mt-12 bg-blue-50 border-2 border-blue-200">
+                <div class="flex items-start gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <div>
+                        <h3 class="font-bold text-dark mb-2">Catatan Penting:</h3>
+                        <ul class="text-sm text-gray-700 space-y-1 list-disc list-inside">
+                            <li>Hasil ini adalah <strong>rekomendasi</strong> berdasarkan Random Forest Machine Learning
+                                dengan
+                                1000+ data mahasiswa</li>
+                            <li>Tingkat kecocokan menunjukkan seberapa mirip profil kamu dengan mahasiswa yang sukses di
+                                jurusan tersebut</li>
+                            <li>Keputusan akhir tetap ada di tangan kamu - pertimbangkan juga passion dan tujuan karirmu
+                            </li>
+                            <li>Konsultasikan dengan orang tua, guru, atau konselor pendidikan untuk keputusan terbaik
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 mt-8">
+                <button onclick="retakeSurvey()" class="btn btn-secondary flex-1">
+                    Coba Lagi
+                </button>
+
+                <a href="index.html" class="btn btn-primary flex-1">
+                    Kembali ke Beranda
+                </a>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="mt-12 text-center">
+                <h2 class="text-2xl font-bold text-dark mb-6">Langkah Selanjutnya</h2>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="card text-center">
+                        <div class="text-4xl mb-3"><i class="hgi-stroke hgi-book-03 text-5xl text-green"></i></div>
+                        <h3 class="font-bold text-dark mb-2">Riset Lebih Dalam</h3>
+                        <p class="text-sm text-gray-600">
+                            Cari tahu lebih banyak tentang kurikulum, fasilitas, dan prospek karir dari jurusan
+                            pilihanmu
+                        </p>
+                    </div>
+
+                    <div class="card text-center">
+                        <div class="text-4xl mb-3"><i class="hgi-stroke hgi-user-group text-5xl text-green"></i></div>
+                        <h3 class="font-bold text-dark mb-2">Tanya Alumni</h3>
+                        <p class="text-sm text-gray-600">
+                            Bicara dengan kakak tingkat atau alumni untuk mendapat perspektif langsung tentang jurusan
+                        </p>
+                    </div>
+
+                    <div class="card text-center">
+                        <div class="text-4xl mb-3"><i class="hgi-stroke hgi-building-03 text-5xl text-green"></i></div>
+                        <h3 class="font-bold text-dark mb-2">Kunjungi Kampus</h3>
+                        <p class="text-sm text-gray-600">
+                            Jika memungkinkan, kunjungi kampus dan fakultas untuk merasakan langsung suasananya
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-8 mt-12">
+        <div class="container-custom text-center">
+            <p class="text-gray-600 mb-2">
+                Ada pertanyaan tentang hasilnya?
+            </p>
+            <p class="text-sm text-gray-500">
+                Silakan konsultasikan dengan bagian akademik atau konselor pendidikan di kampus
+            </p>
+        </div>
+    </footer>
+
+    <style>
+        @keyframes search-rotate {
+
+            0%,
+            100% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(10deg);
+            }
+        }
+
+        .search-icon-small {
+            animation: search-rotate 3s ease-in-out infinite;
+        }
+    </style>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Load and display results on page load
+        window.addEventListener('DOMContentLoaded', async () => {
+            const results = unumatch.loadResults();
+
+            if (!results || results.length === 0) {
+                // No results found, redirect to survey
+                await Modal.alert({
+                    title: 'Belum Ada Hasil',
+                    message: 'Silakan isi survey terlebih dahulu untuk mendapatkan rekomendasi jurusan.',
+                    icon: 'info',
+                    buttonText: 'Mulai Survey'
+                });
+                window.location.href = 'survey.html';
+                return;
+            }
+
+            // Display results
+            unumatch.displayResults(results);
+
+            // Add animation delay for each card
+            const cards = document.querySelectorAll('.result-card');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.2}s`;
+            });
+        });
+
+        async function retakeSurvey() {
+            const confirmed = await Modal.confirm({
+                title: 'Ambil Survey Lagi?',
+                message: 'Apakah kamu ingin mengambil survey lagi untuk mendapatkan rekomendasi baru?',
+                icon: 'info',
+                confirmText: 'Ya, Coba Lagi',
+                cancelText: 'Tidak'
+            });
+
+            if (confirmed) {
+                // Clear all saved data
+                unumatch.clearAnswers();
+                localStorage.removeItem('unumatch_results');
+
+                // Redirect to survey
+                window.location.href = 'survey.html';
+            }
+        }
+
+        function shareResults() {
+            const results = unumatch.loadResults();
+            if (!results || results.length === 0) return;
+
+            const text = `Hasil UNU-Match saya:\n\n` +
+                `#1 ${results[0].prodi} (${results[0].matchPercentage}%)\n` +
+                (results[1] ? `#2 ${results[1].prodi} (${results[1].matchPercentage}%)\n` : '') +
+                (results[2] ? `#3 ${results[2].prodi} (${results[2].matchPercentage}%)\n` : '') +
+                `\nCoba UNU-Match sekarang!`;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Hasil UNU-Match',
+                    text: text
+                }).catch(err => console.log('Share cancelled', err));
+            } else {
+                // Fallback: copy to clipboard
+                navigator.clipboard.writeText(text).then(async () => {
+                    await Modal.alert({
+                        title: 'Berhasil!',
+                        message: 'Hasil berhasil disalin ke clipboard! Kamu bisa paste di aplikasi lain.',
+                        icon: 'success',
+                        buttonText: 'OK'
+                    });
+                }).catch(err => {
+                    console.error('Failed to copy', err);
+                });
+            }
+        }
+    </script>
+
+</body>
+
+</html>
