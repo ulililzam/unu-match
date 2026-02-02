@@ -10,49 +10,65 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/modal.css">
     <script src="js/ml_engine.js"></script>
+    <script src="js/business_rules.js"></script>
     <script src="js/modal.js"></script>
 </head>
 
 <body class="bg-gray-50">
 
-    <!-- Header -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="container-custom py-4">
-            <div class="flex items-center justify-between">
-                <a href="index.html" class="flex items-center gap-2">
-                    <div class="w-10 h-10 bg-green rounded-full flex items-center justify-center search-icon-small">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-b border-gray-200 shadow-sm">
+        <div class="container-custom">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-yellow-600 to-amber-600 rounded-2xl flex items-center justify-center shadow-lg shadow-yellow-600/20 group-hover:scale-105 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
                             <circle cx="11" cy="11" r="8" stroke-width="2.5" />
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                                 d="M21 21l-4.35-4.35" />
                         </svg>
                     </div>
-                    <span class="text-xl font-bold text-dark">UNU-<span class="text-green">Match</span></span>
+                    <span class="text-2xl font-black text-dark tracking-tight">UNU-<span class="text-yellow-700">Match</span></span>
                 </a>
 
-                <button onclick="confirmReset()" class="text-gray-600 hover:text-green transition">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                    </svg>
-                </button>
+                <!-- Desktop Actions -->
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="index.html" class="text-gray-700 hover:text-yellow-700 font-semibold transition-colors">Beranda</a>
+                    <button onclick="confirmReset()" class="text-gray-600 hover:text-yellow-700 transition-all hover:scale-110 p-2 rounded-xl hover:bg-yellow-600/5" title="Reset Survey">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile Actions -->
+                <div class="md:hidden">
+                    <button onclick="confirmReset()" class="text-gray-600 hover:text-yellow-700 transition-all hover:scale-110 p-2 rounded-xl hover:bg-yellow-600/5" title="Reset Survey">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
-    </header>
+    </nav>
+
+    <!-- Spacer for fixed nav -->
+    <div class="h-20"></div>
 
     <!-- Main Content -->
-    <main class="py-8 min-h-screen">
-        <div class="container-custom max-w-3xl">
+    <main class="py-12 min-h-screen bg-gradient-to-b from-white to-gray-50">
+        <div class="container-custom max-w-4xl">
 
             <!-- Progress Bar -->
-            <div class="mb-8">
-                <div class="flex justify-between items-center mb-2">
-                    <span class="text-sm font-medium text-gray" id="progress-text">Langkah 1 dari 3</span>
-                    <span class="text-sm font-medium text-green">33%</span>
+            <div class="mb-10">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="text-sm font-bold text-gray-700" id="progress-text">Langkah 1 dari 3</span>
+                    <span class="text-sm font-black text-yellow-700 text-lg">33%</span>
                 </div>
-                <div class="progress-container">
+                <div class="progress-container bg-gray-200">
                     <div class="progress-bar" id="progress-bar" style="width: 33%"></div>
                 </div>
             </div>
@@ -60,15 +76,18 @@
             <!-- Survey Form -->
             <form id="survey-form" class="space-y-8">
 
-                <!-- Step 1: Nilai Raport -->
+                <!-- Step 1: Minat bakat -->
                 <div class="question-step active" id="step-1">
-                    <div class="card">
-                        <div class="mb-6">
-                            <h2 class="text-2xl font-bold text-dark mb-2">
-                                <i class="hgi-stroke hgi-book-02"></i> Bagaimana Nilai Raport Kamu?
+                    <div class="card shadow-xl">
+                        <div class="mb-8">
+                            <div class="inline-block px-4 py-1.5 bg-yellow-600/10 text-yellow-700 font-bold text-xs rounded-full mb-4">
+                                LANGKAH 1
+                            </div>
+                            <h2 class="text-3xl md:text-4xl font-black text-dark mb-3 tracking-tight">
+                                <i class="hgi-stroke hgi-book-02"></i> Bagaimana Minat bakat Anda?
                             </h2>
-                            <p class="text-gray-600">
-                                Geser slider untuk menunjukkan nilai raport kamu di setiap mata pelajaran (0-100)
+                            <p class="text-lg text-gray-600 leading-relaxed">
+                                Geser slider untuk menunjukkan Minat bakat Anda di setiap mata pelajaran (0-100)
                             </p>
                         </div>
 
@@ -147,14 +166,17 @@
 
                 <!-- Step 2: Minat -->
                 <div class="question-step" id="step-2">
-                    <div class="card">
-                        <div class="mb-6">
-                            <h2 class="text-2xl font-bold text-dark mb-2">
-                                <i class="hgi-stroke hgi-star"></i> Seberapa Besar Minatmu?
+                    <div class="card shadow-xl">
+                        <div class="mb-8">
+                            <div class="inline-block px-4 py-1.5 bg-yellow-600/10 text-yellow-700 font-bold text-xs rounded-full mb-4">
+                                LANGKAH 2
+                            </div>
+                            <h2 class="text-3xl md:text-4xl font-black text-dark mb-3 tracking-tight">
+                                <i class="hgi-stroke hgi-star"></i> Seberapa Besar Minat Anda?
                             </h2>
-                            <p class="text-gray-600">
-                                Klik bintang untuk menunjukkan seberapa tertarik kamu di setiap bidang (1 = tidak
-                                tertarik, 5 = sangat tertarik)
+                            <p class="text-lg text-gray-600 leading-relaxed">
+                                Klik bintang untuk menunjukkan seberapa tertarik Anda di setiap bidang<br class="hidden md:block">
+                                (1 = tidak tertarik, 5 = sangat tertarik)
                             </p>
                         </div>
 
@@ -223,21 +245,24 @@
 
                 <!-- Step 3: Hafalan -->
                 <div class="question-step" id="step-3">
-                    <div class="card">
-                        <div class="mb-6">
-                            <h2 class="text-2xl font-bold text-dark mb-2">
-                                <i class="hgi-stroke hgi-target-03"></i> Preferensi Belajar
+                    <div class="card shadow-xl">
+                        <div class="mb-8">
+                            <div class="inline-block px-4 py-1.5 bg-yellow-600/10 text-yellow-700 font-bold text-xs rounded-full mb-4">
+                                LANGKAH 3
+                            </div>
+                            <h2 class="text-3xl md:text-4xl font-black text-dark mb-3 tracking-tight">
+                                <i class="hgi-stroke hgi-target-03"></i> Preferensi Belajar Anda
                             </h2>
-                            <p class="text-gray-600">
-                                Pertanyaan terakhir untuk melengkapi profil kamu
+                            <p class="text-lg text-gray-600 leading-relaxed">
+                                Pertanyaan terakhir untuk melengkapi profil Anda
                             </p>
                         </div>
 
                         <!-- Hafalan -->
-                        <div class="toggle-container">
+                        <div class="toggle-container bg-gradient-to-br from-gray-50 to-white border border-gray-200">
                             <label class="toggle-label">
                                 <div>
-                                    <div class="font-semibold mb-1">Apakah kamu suka menghafal?</div>
+                                    <div class="font-black text-lg mb-1">Apakah Anda suka menghafal?</div>
                                     <div class="text-sm text-gray-600">
                                         Seperti menghafal Al-Qur'an, hadits, atau materi pelajaran
                                     </div>
@@ -250,18 +275,19 @@
                         </div>
 
                         <!-- Summary Info -->
-                        <div class="mt-8 p-6 bg-green-light rounded-lg">
-                            <div class="flex items-start gap-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green flex-shrink-0 mt-1"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
+                        <div class="mt-8 p-8 bg-gradient-to-br from-yellow-50 to-amber-100/50 rounded-2xl border border-yellow-300">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-green rounded-2xl flex items-center justify-center flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
                                 <div>
-                                    <h3 class="font-semibold text-dark mb-2">Kamu hampir selesai!</h3>
-                                    <p class="text-sm text-gray-600">
-                                        Setelah mengklik tombol "Lihat Hasil", sistem akan menganalisis jawaban kamu dan
-                                        memberikan 3 rekomendasi jurusan terbaik berdasarkan profil kamu.
+                                    <h3 class="font-black text-dark text-xl mb-2">Anda hampir selesai!</h3>
+                                    <p class="text-gray-700 leading-relaxed">
+                                        Setelah mengklik tombol "Lihat Hasil", sistem AI akan menganalisis jawaban Anda dan
+                                        memberikan 3 rekomendasi jurusan terbaik berdasarkan profil lengkap Anda.
                                     </p>
                                 </div>
                             </div>
@@ -425,7 +451,70 @@
             }
         }
     </script>
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-gray-900 via-gray-900 to-black text-white py-16 mt-16">
+        <div class="container-custom">
+            <!-- Main Footer Content -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- About Section -->
+                <div>
+                    <h3 class="text-2xl font-black mb-4">
+                        UNU-<span class="text-yellow-500">Match</span>
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Sistem rekomendasi jurusan berbasis Machine Learning untuk mahasiswa Universitas Nahdlatul Ulama Yogyakarta.
+                    </p>
+                </div>
 
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-black mb-4 text-yellow-500">Navigasi</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Beranda</a></li>
+                        <li><a href="index.html#features" class="text-gray-400 hover:text-yellow-500 transition-colors">Fitur</a></li>
+                        <li><a href="index.html#how-it-works" class="text-gray-400 hover:text-yellow-500 transition-colors">Cara Kerja</a></li>
+                        <li><a href="index.html#programs" class="text-gray-400 hover:text-yellow-500 transition-colors">Program Studi</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-black mb-4 text-yellow-500">Layanan</h4>
+                    <ul class="space-y-3">
+                        <li><a href="survey.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Survey Minat</a></li>
+                        <li><a href="hasil.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Hasil Rekomendasi</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-black mb-4 text-yellow-500">Kontak</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start gap-2">
+                            <i class="hgi-stroke hgi-location-01 text-yellow-500 mt-1"></i>
+                            <span>Jl. Ringroad Barat, Gamping<br>Sleman, DIY 55293</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="hgi-stroke hgi-mail-01 text-yellow-500"></i>
+                            <span>info@unu-jogja.ac.id</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-center md:text-left">
+                    &copy; 2026 UNU-Match. Dikembangkan untuk <span class="text-yellow-500 font-semibold">Universitas Nahdlatul Ulama Yogyakarta</span>.
+                </p>
+                <div class="flex gap-6 text-sm">
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors">Kebijakan Privasi</a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

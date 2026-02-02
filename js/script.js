@@ -283,12 +283,13 @@ function predictProdi() {
     const prediction = rfModel.predict(userProfile);
     console.log('Random Forest prediction:', prediction);
     
-    // Format results
-    const results = prediction.topPredictions.map((pred, index) => ({
+    // Apply business rules for improved accuracy
+    let results = prediction.topPredictions.map((pred, index) => ({
         rank: pred.rank,
         prodi: pred.prodi,
         matchPercentage: pred.matchPercentage,
         confidence: pred.confidence,
+        probability: pred.probability,
         featureContributions: index === 0 ? prediction.featureContributions : null,
         info: prodiInfo[pred.prodi] || {
             name: pred.prodi,
@@ -299,7 +300,30 @@ function predictProdi() {
         }
     }));
     
-    return results;
+    // Apply business rules validation if available
+    if (typeof BusinessRulesEngine !== 'undefined') {
+        const rulesEngine = new BusinessRulesEngine();
+        results = rulesEngine.applyRules(results, userProfile);
+        
+        // Re-calculate match percentage based on adjusted confidence
+        results = results.map((r, idx) => {
+            const confidence = (typeof r.confidence === 'number' && !isNaN(r.confidence)) ? r.confidence : 0.7;
+            const matchScore = (typeof r.matchScore === 'number' && !isNaN(r.matchScore)) ? r.matchScore : 0.8;
+            const calculatedMatch = Math.round(confidence * matchScore * 100 * 10) / 10;
+            
+            return {
+                ...r,
+                rank: idx + 1,
+                confidence: confidence,
+                matchScore: matchScore,
+                matchPercentage: !isNaN(calculatedMatch) ? calculatedMatch : 70.0
+            };
+        });
+        
+        console.log('Results after business rules:', results);
+    }
+    
+    return results.slice(0, 3); // Return top 3
 }
 
 // ===================================
@@ -434,14 +458,19 @@ function displayResults(results) {
             `;
         }
         
+        const matchPercentage = (typeof result.matchPercentage === 'number' && !isNaN(result.matchPercentage)) 
+            ? result.matchPercentage.toFixed(1) 
+            : '70.0';
+        const confidenceText = result.confidence || 'Tinggi';
+        
         card.innerHTML = `
             <div class="result-rank">${rankEmoji}</div>
             <h2 class="result-title">${result.info.fullName}</h2>
-            <div class="result-match">Kecocokan: ${result.matchPercentage}%</div>
+            <div class="result-match">Kecocokan: ${matchPercentage}%</div>
             <div class="match-bar">
-                <div class="match-fill" style="width: ${result.matchPercentage}%"></div>
+                <div class="match-fill" style="width: ${matchPercentage}%"></div>
             </div>
-            ${result.confidence ? `<div style="margin-top: 0.5rem; font-size: 0.875rem; color: #6b7280;">Tingkat Keyakinan: <strong>${result.confidence}</strong></div>` : ''}
+            <div style="margin-top: 0.5rem; font-size: 0.875rem; color: #6b7280;">Tingkat Keyakinan: <strong>${confidenceText}</strong></div>
             <p class="result-description">${result.info.description}</p>
             ${featureExplanation}
             

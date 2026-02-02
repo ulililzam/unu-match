@@ -1,20 +1,20 @@
 {
-  "trained_at": "2026-01-19T15:36:46.498238",
+  "trained_at": "2026-02-02T15:19:00.350546",
   "dataset_size": 1000,
   "n_features": 12,
   "n_classes": 10,
   "metrics": {
-    "train_accuracy": 0.99375,
-    "test_accuracy": 0.735,
-    "train_f1": 0.9937416314202308,
-    "test_f1": 0.728993997683297,
-    "cv_mean": 0.7136702506654344,
-    "cv_std": 0.044649427686621945
+    "train_accuracy": 0.995,
+    "test_accuracy": 0.7,
+    "train_f1": 0.9950079856924684,
+    "test_f1": 0.6991457102172113,
+    "cv_mean": 0.71145993189124,
+    "cv_std": 0.04321437625155155
   },
   "model_params": {
-    "n_estimators": 200,
-    "max_depth": 10,
-    "min_samples_split": 2,
+    "n_estimators": 300,
+    "max_depth": 20,
+    "min_samples_split": 3,
     "min_samples_leaf": 1
   }
 }

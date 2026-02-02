@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accuracy Test - UNU-Match</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ml_engine.js"></script>
+    <script src="js/business_rules.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body class="bg-gray-50 p-8">
+    <div class="max-w-6xl mx-auto">
+        <h1 class="text-3xl font-bold mb-6">🧪 Accuracy Test Suite</h1>
+        
+        <div class="bg-white rounded-lg shadow p-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">Test Scenarios</h2>
+            <button onclick="runAllTests()" class="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700">
+                Run All Tests
+            </button>
+        </div>
+
+        <div id="results" class="space-y-4"></div>
+    </div>
+
+    <script>
+        const testCases = [
+            {
+                name: "STEM Student (High Math + Tech)",
+                profile: {
+                    mtk: 90, inggris: 80, agama: 75, fisika: 85, kimia: 75,
+                    biologi: 70, ekonomi: 70, minat_teknik: 5, minat_kesehatan: 1,
+                    minat_bisnis: 2, minat_pendidikan: 2, hafalan: 0
+                },
+                expected: ["S1 Informatika", "S1 Teknik Elektro"],
+                minMatch: 80
+            },
+            {
+                name: "Health Student (High Bio + Chem)",
+                profile: {
+                    mtk: 75, inggris: 78, agama: 75, fisika: 70, kimia: 90,
+                    biologi: 88, ekonomi: 70, minat_teknik: 1, minat_kesehatan: 5,
+                    minat_bisnis: 2, minat_pendidikan: 2, hafalan: 0
+                },
+                expected: ["S1 Farmasi", "S1 Teknologi Hasil Pertanian"],
+                minMatch: 80
+            },
+            {
+                name: "Business Student (High Eco + Business)",
+                profile: {
+                    mtk: 78, inggris: 80, agama: 75, fisika: 70, kimia: 70,
+                    biologi: 72, ekonomi: 88, minat_teknik: 2, minat_kesehatan: 1,
+                    minat_bisnis: 5, minat_pendidikan: 2, hafalan: 0
+                },
+                expected: ["S1 Manajemen", "S1 Akuntansi", "S1 Agribisnis"],
+                minMatch: 75
+            },
+            {
+                name: "Islamic Studies (High Agama + Hafalan)",
+                profile: {
+                    mtk: 70, inggris: 75, agama: 92, fisika: 70, kimia: 70,
+                    biologi: 72, ekonomi: 70, minat_teknik: 1, minat_kesehatan: 2,
+                    minat_bisnis: 2, minat_pendidikan: 3, hafalan: 1
+                },
+                expected: ["S1 Studi Islam Interdisipliner"],
+                minMatch: 80
+            },
+            {
+                name: "Education Student (High Minat Pendidikan)",
+                profile: {
+                    mtk: 76, inggris: 85, agama: 80, fisika: 72, kimia: 73,
+                    biologi: 74, ekonomi: 75, minat_teknik: 2, minat_kesehatan: 2,
+                    minat_bisnis: 2, minat_pendidikan: 5, hafalan: 0
+                },
+                expected: ["S1 Pendidikan Bahasa Inggris", "S1 PGSD"],
+                minMatch: 75
+            },
+            {
+                name: "Balanced Student (All Average)",
+                profile: {
+                    mtk: 75, inggris: 75, agama: 75, fisika: 75, kimia: 75,
+                    biologi: 75, ekonomi: 75, minat_teknik: 3, minat_kesehatan: 3,
+                    minat_bisnis: 3, minat_pendidikan: 3, hafalan: 0
+                },
+                expected: null, // Any major is acceptable
+                minMatch: 60
+            }
+        ];
+
+        async function runAllTests() {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '<div class="text-center text-gray-600">Running tests...</div>';
+            
+            // Load ML model first
+            if (!window.unumatch.rfModel || !window.unumatch.rfModel.isLoaded) {
+                await window.unumatch.loadMLModel();
+            }
+
+            let passedTests = 0;
+            let totalTests = testCases.length;
+            let results = [];
+
+            for (const testCase of testCases) {
+                window.unumatch.userAnswers = testCase.profile;
+                const predictions = window.unumatch.predictProdi();
+                
+                const topPrediction = predictions[0];
+                const isPassed = testCase.expected === null || 
+                                testCase.expected.includes(topPrediction.prodi);
+                const isMatchGood = topPrediction.matchPercentage >= testCase.minMatch;
+                
+                const testPassed = isPassed && isMatchGood;
+                if (testPassed) passedTests++;
+
+                results.push({
+                    testCase,
+                    predictions,
+                    isPassed,
+                    isMatchGood,
+                    testPassed
+                });
+            }
+
+            // Display results
+            const accuracy = (passedTests / totalTests * 100).toFixed(1);
+            const accuracyColor = accuracy >= 80 ? 'green' : accuracy >= 70 ? 'yellow' : 'red';
+            
+            resultsDiv.innerHTML = `
+                <div class="bg-white rounded-lg shadow p-6 mb-6">
+                    <h2 class="text-2xl font-bold mb-2">Test Results</h2>
+                    <div class="text-4xl font-bold text-${accuracyColor}-600">
+                        ${passedTests} / ${totalTests} Passed (${accuracy}%)
+                    </div>
+                    <div class="mt-4 text-gray-600">
+                        ${accuracy >= 80 ? '✅ Excellent! Accuracy target met.' : 
+                          accuracy >= 70 ? '⚠️ Good, but can be improved.' : 
+                          '❌ Needs improvement. Consider re-training model.'}
+                    </div>
+                </div>
+
+                ${results.map((result, idx) => `
+                    <div class="bg-white rounded-lg shadow p-6 ${result.testPassed ? 'border-l-4 border-green-500' : 'border-l-4 border-red-500'}">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-bold">Test ${idx + 1}: ${result.testCase.name}</h3>
+                            <span class="px-3 py-1 rounded-full text-sm font-semibold ${result.testPassed ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}">
+                                ${result.testPassed ? '✅ PASSED' : '❌ FAILED'}
+                            </span>
+                        </div>
+
+                        <div class="mb-4">
+                            <strong>Expected:</strong> ${result.testCase.expected ? result.testCase.expected.join(' or ') : 'Any major'} (>${result.testCase.minMatch}% match)
+                        </div>
+
+                        <div class="mb-4">
+                            <strong>Results:</strong>
+                            <ol class="list-decimal list-inside mt-2">
+                                ${result.predictions.map(p => `
+                                    <li class="${p.rank === 1 && result.isPassed ? 'text-green-600 font-semibold' : ''}">
+                                        ${p.prodi} - ${p.matchPercentage}% 
+                                        <span class="text-sm text-gray-600">(${p.confidence})</span>
+                                        ${p.warnings && p.warnings.length > 0 ? `<br><span class="text-xs text-orange-600">${p.warnings.join(', ')}</span>` : ''}
+                                    </li>
+                                `).join('')}
+                            </ol>
+                        </div>
+
+                        <div class="text-sm text-gray-600">
+                            <strong>Profile:</strong> 
+                            MTK:${result.testCase.profile.mtk} 
+                            ING:${result.testCase.profile.inggris} 
+                            AGM:${result.testCase.profile.agama} 
+                            FIS:${result.testCase.profile.fisika} 
+                            KIM:${result.testCase.profile.kimia} 
+                            BIO:${result.testCase.profile.biologi} 
+                            EKO:${result.testCase.profile.ekonomi} |
+                            Teknik:${result.testCase.profile.minat_teknik} 
+                            Kesehatan:${result.testCase.profile.minat_kesehatan} 
+                            Bisnis:${result.testCase.profile.minat_bisnis} 
+                            Pendidikan:${result.testCase.profile.minat_pendidikan} 
+                            Hafalan:${result.testCase.profile.hafalan ? 'Yes' : 'No'}
+                        </div>
+                    </div>
+                `).join('')}
+            `;
+        }
+
+        // Auto-run tests on load
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(runAllTests, 1000);
+        });
+    </script>
+</body>
+</html>

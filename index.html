@@ -13,15 +13,68 @@
 
 <body class="bg-gray-50">
 
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-b border-gray-200 shadow-sm">
+        <div class="container-custom">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 bg-gradient-to-br from-yellow-600 to-amber-600 rounded-2xl flex items-center justify-center shadow-lg shadow-yellow-600/20 group-hover:scale-105 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-white" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <circle cx="11" cy="11" r="8" stroke-width="2.5" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M21 21l-4.35-4.35" />
+                        </svg>
+                    </div>
+                    <span class="text-2xl font-black text-dark tracking-tight">UNU-<span class="text-yellow-700">Match</span></span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#features" class="text-gray-700 hover:text-yellow-700 font-semibold transition-colors">Fitur</a>
+                    <a href="#how-it-works" class="text-gray-700 hover:text-yellow-700 font-semibold transition-colors">Cara Kerja</a>
+                    <a href="#programs" class="text-gray-700 hover:text-yellow-700 font-semibold transition-colors">Program Studi</a>
+                    <a href="survey.html" class="btn btn-primary">Mulai Survey</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                    <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-200">
+                <div class="flex flex-col gap-4">
+                    <a href="#features" class="text-gray-700 hover:text-yellow-700 font-semibold transition-colors px-4 py-2">Fitur</a>
+                    <a href="#how-it-works" class="text-gray-700 hover:text-yellow-700 font-semibold transition-colors px-4 py-2">Cara Kerja</a>
+                    <a href="#programs" class="text-gray-700 hover:text-yellow-700 font-semibold transition-colors px-4 py-2">Program Studi</a>
+                    <a href="survey.html" class="btn btn-primary mx-4">Mulai Survey</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Spacer for fixed nav -->
+    <div class="h-20"></div>
+
     <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center px-4 py-12">
-        <div class="container-custom text-center">
+    <section class="min-h-screen flex items-center justify-center px-4 py-16 bg-gradient-to-br from-white via-amber-50/30 to-white relative overflow-hidden">
+        <!-- Decorative Background Elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute -top-40 -right-40 w-96 h-96 bg-yellow-600/5 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-amber-600/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="container-custom text-center relative z-10">
 
             <!-- Logo & Title -->
-            <div class="mb-8">
-                <div
-                    class="inline-flex items-center justify-center w-24 h-24 bg-green rounded-full mb-4 search-icon-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white search-icon" fill="none"
+            <div class="mb-12 animate-fade-in">
+                <div class="inline-flex items-center justify-center w-28 h-28 bg-gradient-to-br from-yellow-600 to-amber-600 rounded-3xl mb-6 shadow-2xl shadow-yellow-600/30 search-icon-container transform hover:scale-105 transition-transform duration-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-white search-icon" fill="none"
                         viewBox="0 0 24 24" stroke="currentColor">
                         <circle cx="11" cy="11" r="8" stroke-width="2.5" />
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-4.35-4.35" />
@@ -29,43 +82,52 @@
                 </div>
             </div>
 
-            <h1 class="text-5xl md:text-6xl font-extrabold text-dark mb-4">
-                UNU-<span class="text-green">Match</span>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-dark mb-6 tracking-tight">
+                UNU-<span class="text-gold bg-gradient-to-r from-yellow-600 to-amber-600 bg-clip-text text-transparent">Match</span>
             </h1>
 
-            <p class="text-xl md:text-2xl text-gray mb-3 max-w-2xl mx-auto">
-                Temukan Jurusan yang Tepat Untukmu
+            <p class="text-2xl md:text-3xl lg:text-4xl text-gray-700 font-bold mb-4 max-w-4xl mx-auto leading-tight">
+                Berfokus pada Masa Depan.<br>
+                <span class="text-gold">Berkomitmen pada Potensi Terbaik Anda.</span>
             </p>
 
-            <p class="text-base md:text-lg text-gray-600 mb-10 max-w-xl mx-auto">
-                Sistem cerdas yang membantu kamu menemukan program studi yang paling cocok berdasarkan minat, nilai, dan
-                preferensimu.
+            <p class="text-lg md:text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+                Sistem cerdas berbasis Machine Learning yang membantu menemukan program studi paling cocok berdasarkan minat, nilai, dan preferensi Anda.
             </p>
 
             <!-- CTA Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-                <a href="survey.html" class="btn btn-primary btn-large">
-                    Mulai Sekarang
+            <div class="flex flex-col sm:flex-row gap-5 justify-center items-center mb-16">
+                <a href="survey.html" class="btn btn-primary btn-large group">
+                    Mulai Analisis Sekarang
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
                 </a>
 
-                <button onclick="scrollToFeatures()" class="btn btn-secondary btn-large">
+                <button onclick="scrollToFeatures()" class="btn btn-secondary btn-large group">
                     Pelajari Lebih Lanjut
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:translate-y-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
                 </button>
             </div>
 
             <!-- Stats -->
-            <div class="flex flex-wrap justify-center gap-8 mb-16">
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-green mb-2">10</div>
-                    <div class="text-gray-600">Program Studi</div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="text-center p-6 rounded-2xl bg-white/50 backdrop-blur-sm border border-gray-100 hover:border-yellow-600/30 transition-all hover:shadow-lg">
+                    <div class="text-5xl md:text-6xl font-black bg-gradient-to-br from-yellow-600 to-amber-600 bg-clip-text text-transparent mb-3">10</div>
+                    <div class="text-gray-700 font-semibold text-lg">Program Studi</div>
+                    <div class="text-gray-500 text-sm mt-1">Pilihan jurusan tersedia</div>
                 </div>
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-green mb-2">1000+</div>
-                    <div class="text-gray-600">Data Training</div>
+                <div class="text-center p-6 rounded-2xl bg-white/50 backdrop-blur-sm border border-gray-100 hover:border-yellow-600/30 transition-all hover:shadow-lg">
+                    <div class="text-5xl md:text-6xl font-black bg-gradient-to-br from-yellow-600 to-amber-600 bg-clip-text text-transparent mb-3">1000+</div>
+                    <div class="text-gray-700 font-semibold text-lg">Data Training</div>
+                    <div class="text-gray-500 text-sm mt-1">Akurasi tinggi</div>
                 </div>
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-green mb-2">5 Menit</div>
-                    <div class="text-gray-600">Waktu Pengerjaan</div>
+                <div class="text-center p-6 rounded-2xl bg-white/50 backdrop-blur-sm border border-gray-100 hover:border-yellow-600/30 transition-all hover:shadow-lg">
+                    <div class="text-5xl md:text-6xl font-black bg-gradient-to-br from-yellow-600 to-amber-600 bg-clip-text text-transparent mb-3">5</div>
+                    <div class="text-gray-700 font-semibold text-lg">Menit</div>
+                    <div class="text-gray-500 text-sm mt-1">Waktu pengerjaan</div>
                 </div>
             </div>
 
@@ -73,36 +135,66 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="py-20 bg-white">
+    <section id="features" class="py-24 md:py-32 bg-gradient-to-b from-white to-gray-50">
         <div class="container-custom">
 
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
-                    Mengapa Memilih UNU-Match?
+            <div class="text-center mb-20">
+                <div class="inline-block px-6 py-2 bg-yellow-600/10 text-yellow-700 font-bold text-sm rounded-full mb-6">
+                    MENGAPA UNU-MATCH?
+                </div>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-dark mb-6 tracking-tight">
+                    Dipercaya untuk Masa Depan Anda
                 </h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Sistem rekomendasi yang dirancang khusus untuk mahasiswa Universitas Nahdlatul Ulama
+                <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Sistem rekomendasi yang dirancang khusus untuk mahasiswa<br class="hidden md:block"> Universitas Nahdlatul Ulama dengan teknologi terkini
                 </p>
             </div>
 
             <!-- Feature Cards -->
-            <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <div class="grid md:grid-cols-3 gap-8 lg:gap-10 mb-12">
 
                 <!-- Feature 1 -->
-                <div class="card text-center">
-                    <div class="inline-flex items-center justify-center w-16 h-16 bg-green-light rounded-full mb-4">
-                        <i class="hgi-stroke hgi-tick-02 text-4xl text-green"></i>
+                <div class="card group hover:shadow-2xl transition-all duration-500">
+                    <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-yellow-600/10 to-amber-600/5 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="hgi-stroke hgi-tick-02 text-5xl text-yellow-700"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-dark mb-3">Mudah Digunakan</h3>
-                    <p class="text-gray-600">
-                        Pertanyaan sederhana tanpa istilah teknis yang membingungkan. Semua orang bisa menggunakannya!
+                    <h3 class="text-2xl font-black text-dark mb-4 tracking-tight">Mudah & Intuitif</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Pertanyaan sederhana tanpa istilah teknis yang membingungkan. Interface yang dirancang untuk semua orang.
                     </p>
                 </div>
 
                 <!-- Feature 2 -->
+                <div class="card group hover:shadow-2xl transition-all duration-500">
+                    <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-yellow-600/10 to-amber-600/5 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="hgi-stroke hgi-target-01 text-5xl text-yellow-700"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-dark mb-4 tracking-tight">Akurat & Terpercaya</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Menggunakan Random Forest Machine Learning dengan 1000+ data mahasiswa untuk rekomendasi yang presisi.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="card group hover:shadow-2xl transition-all duration-500">
+                    <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-yellow-600/10 to-amber-600/5 rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="hgi-stroke hgi-time-04 text-5xl text-yellow-700"></i>
+                    </div>
+                    <h3 class="text-2xl font-black text-dark mb-4 tracking-tight">Cepat & Efisien</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Hanya 5 menit untuk mendapatkan 3 rekomendasi jurusan terbaik dengan penjelasan komprehensif.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+                <!-- Feature 2 -->
                 <div class="card text-center">
                     <div class="inline-flex items-center justify-center w-16 h-16 bg-green-light rounded-full mb-4">
-                        <i class="hgi-stroke hgi-target-01 text-4xl text-green"></i>
+                        <i class="hgi-stroke hgi-target-01 text-4xl text-yellow-700"></i>
                     </div>
                     <h3 class="text-xl font-bold text-dark mb-3">Hasil Akurat</h3>
                     <p class="text-gray-600">
@@ -114,7 +206,7 @@
                 <!-- Feature 3 -->
                 <div class="card text-center">
                     <div class="inline-flex items-center justify-center w-16 h-16 bg-green-light rounded-full mb-4">
-                        <i class="hgi-stroke hgi-time-04 text-4xl text-green"></i>
+                        <i class="hgi-stroke hgi-time-04 text-4xl text-yellow-700"></i>
                     </div>
                     <h3 class="text-xl font-bold text-dark mb-3">Cepat & Efisien</h3>
                     <p class="text-gray-600">
@@ -128,63 +220,72 @@
     </section>
 
     <!-- How It Works -->
-    <section class="py-20 bg-gray-50">
-        <div class="container-custom">
+    <section id="how-it-works" class="py-24 md:py-32 bg-white relative overflow-hidden">
+        <!-- Background Decoration -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-20 right-20 w-72 h-72 bg-yellow-600/5 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 left-20 w-72 h-72 bg-amber-600/5 rounded-full blur-3xl"></div>
+        </div>
 
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
-                    Bagaimana Cara Kerjanya?
+        <div class="container-custom relative z-10">
+
+            <div class="text-center mb-20">
+                <div class="inline-block px-6 py-2 bg-yellow-600/10 text-yellow-700 font-bold text-sm rounded-full mb-6">
+                    PROSES YANG SIMPLE
+                </div>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-dark mb-6 tracking-tight">
+                    Membangun Masa Depan,<br class="hidden md:block"> Dimulai dari Hari Ini
                 </h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Proses yang simple dan straightforward
+                <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Tiga langkah mudah untuk menemukan jurusan yang sempurna untuk Anda
                 </p>
             </div>
 
             <!-- Steps -->
-            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-10 lg:gap-12 max-w-6xl mx-auto mb-16">
 
                 <!-- Step 1 -->
-                <div class="text-center">
-                    <div
-                        class="inline-flex items-center justify-center w-20 h-20 bg-green text-white rounded-full text-3xl font-bold mb-4">
+                <div class="text-center group">
+                    <div class="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-yellow-600 to-amber-600 text-white rounded-3xl text-4xl font-black mb-6 shadow-2xl shadow-yellow-600/30 group-hover:scale-110 transition-transform duration-300">
                         1
                     </div>
-                    <h3 class="text-xl font-bold text-dark mb-3">Isi Survey</h3>
-                    <p class="text-gray-600">
-                        Jawab pertanyaan tentang nilai raport, minat, dan preferensi belajarmu
+                    <h3 class="text-2xl font-black text-dark mb-4 tracking-tight">Isi Survey</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Jawab pertanyaan tentang Minat bakat, minat, dan preferensi belajar Anda dengan jujur
                     </p>
                 </div>
 
                 <!-- Step 2 -->
-                <div class="text-center">
-                    <div
-                        class="inline-flex items-center justify-center w-20 h-20 bg-green text-white rounded-full text-3xl font-bold mb-4">
+                <div class="text-center group">
+                    <div class="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-yellow-600 to-amber-600 text-white rounded-3xl text-4xl font-black mb-6 shadow-2xl shadow-yellow-600/30 group-hover:scale-110 transition-transform duration-300">
                         2
                     </div>
-                    <h3 class="text-xl font-bold text-dark mb-3">Analisis</h3>
-                    <p class="text-gray-600">
-                        Sistem akan menganalisis jawabanmu dengan Random Forest Machine Learning
+                    <h3 class="text-2xl font-black text-dark mb-4 tracking-tight">Analisis AI</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Sistem AI akan menganalisis profil Anda dengan Random Forest Machine Learning
                     </p>
                 </div>
 
                 <!-- Step 3 -->
-                <div class="text-center">
-                    <div
-                        class="inline-flex items-center justify-center w-20 h-20 bg-green text-white rounded-full text-3xl font-bold mb-4">
+                <div class="text-center group">
+                    <div class="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-yellow-600 to-amber-600 text-white rounded-3xl text-4xl font-black mb-6 shadow-2xl shadow-yellow-600/30 group-hover:scale-110 transition-transform duration-300">
                         3
                     </div>
-                    <h3 class="text-xl font-bold text-dark mb-3">Hasil</h3>
-                    <p class="text-gray-600">
-                        Dapatkan 3 rekomendasi jurusan terbaik dengan tingkat kecocokan dan penjelasan
+                    <h3 class="text-2xl font-black text-dark mb-4 tracking-tight">Hasil Rekomendasi</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Dapatkan 3 rekomendasi jurusan terbaik dengan tingkat kecocokan dan penjelasan detail
                     </p>
                 </div>
 
             </div>
 
             <!-- CTA -->
-            <div class="text-center mt-12">
-                <a href="survey.html" class="btn btn-primary btn-large">
+            <div class="text-center">
+                <a href="survey.html" class="btn btn-primary btn-large group inline-flex">
                     Mulai Sekarang - Gratis!
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
                 </a>
             </div>
 
@@ -192,99 +293,122 @@
     </section>
 
     <!-- Program Studi -->
-    <section class="py-20 bg-white">
+    <section id="programs" class="py-24 md:py-32 bg-gradient-to-b from-gray-50 to-white">
         <div class="container-custom">
 
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
-                    Program Studi yang Tersedia
+            <div class="text-center mb-20">
+                <div class="inline-block px-6 py-2 bg-yellow-600/10 text-yellow-700 font-bold text-sm rounded-full mb-6">
+                    PROGRAM UNGGULAN
+                </div>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-dark mb-6 tracking-tight">
+                    10 Program Studi<br class="hidden md:block"> Unggulan UNU
                 </h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    10 program studi unggulan di Universitas Nahdlatul Ulama
+                <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Pilihan program studi berkualitas di Universitas Nahdlatul Ulama
                 </p>
             </div>
 
             <!-- Prodi Grid -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
 
-                <div class="card hover:border-green border-2 border-transparent">
-                    <div class="flex items-center gap-3 mb-2">
-                        <i class="hgi-stroke hgi-laptop text-3xl text-green"></i>
-                        <h3 class="text-lg font-bold text-dark">Informatika</h3>
+                <div class="card hover:border-yellow-600 border-2 border-transparent group cursor-pointer">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-14 h-14 bg-yellow-600/10 rounded-2xl flex items-center justify-center group-hover:bg-yellow-600/20 transition-colors">
+                            <i class="hgi-stroke hgi-laptop text-3xl text-yellow-700"></i>
+                        </div>
+                        <h3 class="text-xl font-black text-dark">Informatika</h3>
                     </div>
-                    <p class="text-sm text-gray-600">Teknologi & Programming</p>
+                    <p class="text-gray-600 leading-relaxed">Teknologi & Programming</p>
                 </div>
 
-                <div class="card hover:border-green border-2 border-transparent">
-                    <div class="flex items-center gap-3 mb-2">
-                        <i class="hgi-stroke hgi-test-tube text-3xl text-green"></i>
-                        <h3 class="text-lg font-bold text-dark">Farmasi</h3>
+                <div class="card hover:border-yellow-600 border-2 border-transparent group cursor-pointer">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-14 h-14 bg-yellow-600/10 rounded-2xl flex items-center justify-center group-hover:bg-yellow-600/20 transition-colors">
+                            <i class="hgi-stroke hgi-test-tube text-3xl text-yellow-700"></i>
+                        </div>
+                        <h3 class="text-xl font-black text-dark">Farmasi</h3>
                     </div>
-                    <p class="text-sm text-gray-600">Kesehatan & Obat-obatan</p>
+                    <p class="text-gray-600 leading-relaxed">Kesehatan & Obat-obatan</p>
                 </div>
 
-                <div class="card hover:border-green border-2 border-transparent">
-                    <div class="flex items-center gap-3 mb-2">
-                        <i class="hgi-stroke hgi-flash text-3xl text-green"></i>
-                        <h3 class="text-lg font-bold text-dark">Teknik Elektro</h3>
+                <div class="card hover:border-yellow-600 border-2 border-transparent group cursor-pointer">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-14 h-14 bg-yellow-600/10 rounded-2xl flex items-center justify-center group-hover:bg-yellow-600/20 transition-colors">
+                            <i class="hgi-stroke hgi-flash text-3xl text-yellow-700"></i>
+                        </div>
+                        <h3 class="text-xl font-black text-dark">Teknik Elektro</h3>
                     </div>
-                    <p class="text-sm text-gray-600">Kelistrikan & Elektronika</p>
+                    <p class="text-gray-600 leading-relaxed">Kelistrikan & Elektronika</p>
                 </div>
 
-                <div class="card hover:border-green border-2 border-transparent">
-                    <div class="flex items-center gap-3 mb-2">
-                        <i class="hgi-stroke hgi-plant-02 text-3xl text-green"></i>
-                        <h3 class="text-lg font-bold text-dark">Agribisnis</h3>
+                <div class="card hover:border-yellow-600 border-2 border-transparent group cursor-pointer">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-14 h-14 bg-yellow-600/10 rounded-2xl flex items-center justify-center group-hover:bg-yellow-600/20 transition-colors">
+                            <i class="hgi-stroke hgi-plant-02 text-3xl text-yellow-700"></i>
+                        </div>
+                        <h3 class="text-xl font-black text-dark">Agribisnis</h3>
                     </div>
-                    <p class="text-sm text-gray-600">Bisnis Pertanian</p>
+                    <p class="text-gray-600 leading-relaxed">Bisnis Pertanian</p>
                 </div>
 
-                <div class="card hover:border-green border-2 border-transparent">
-                    <div class="flex items-center gap-3 mb-2">
-                        <i class="hgi-stroke hgi-money-bag-02 text-3xl text-green"></i>
-                        <h3 class="text-lg font-bold text-dark">Akuntansi</h3>
+                <div class="card hover:border-yellow-600 border-2 border-transparent group cursor-pointer">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-14 h-14 bg-yellow-600/10 rounded-2xl flex items-center justify-center group-hover:bg-yellow-600/20 transition-colors">
+                            <i class="hgi-stroke hgi-money-bag-02 text-3xl text-yellow-700"></i>
+                        </div>
+                        <h3 class="text-xl font-black text-dark">Akuntansi</h3>
                     </div>
-                    <p class="text-sm text-gray-600">Keuangan & Audit</p>
+                    <p class="text-gray-600 leading-relaxed">Keuangan & Audit</p>
                 </div>
 
-                <div class="card hover:border-green border-2 border-transparent">
-                    <div class="flex items-center gap-3 mb-2">
-                        <i class="hgi-stroke hgi-globe-02 text-3xl text-green"></i>
-                        <h3 class="text-lg font-bold text-dark">Pend. Bahasa Inggris</h3>
+                <div class="card hover:border-yellow-600 border-2 border-transparent group cursor-pointer">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-14 h-14 bg-yellow-600/10 rounded-2xl flex items-center justify-center group-hover:bg-yellow-600/20 transition-colors">
+                            <i class="hgi-stroke hgi-globe-02 text-3xl text-yellow-700"></i>
+                        </div>
+                        <h3 class="text-xl font-black text-dark">Pend. Bahasa Inggris</h3>
                     </div>
-                    <p class="text-sm text-gray-600">Pendidikan & Bahasa</p>
+                    <p class="text-gray-600 leading-relaxed">Pendidikan & Bahasa</p>
                 </div>
 
-                <div class="card hover:border-green border-2 border-transparent">
-                    <div class="flex items-center gap-3 mb-2">
-                        <i class="hgi-stroke hgi-teacher text-3xl text-green"></i>
-                        <h3 class="text-lg font-bold text-dark">PGSD</h3>
+                <div class="card hover:border-yellow-600 border-2 border-transparent group cursor-pointer">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-14 h-14 bg-yellow-600/10 rounded-2xl flex items-center justify-center group-hover:bg-yellow-600/20 transition-colors">
+                            <i class="hgi-stroke hgi-teacher text-3xl text-yellow-700"></i>
+                        </div>
+                        <h3 class="text-xl font-black text-dark">PGSD</h3>
                     </div>
-                    <p class="text-sm text-gray-600">Pendidikan Guru SD</p>
+                    <p class="text-gray-600 leading-relaxed">Pendidikan Guru SD</p>
                 </div>
 
-                <div class="card hover:border-green border-2 border-transparent">
-                    <div class="flex items-center gap-3 mb-2">
-                        <i class="hgi-stroke hgi-book-open-02 text-3xl text-green"></i>
-                        <h3 class="text-lg font-bold text-dark">Studi Islam</h3>
+                <div class="card hover:border-yellow-600 border-2 border-transparent group cursor-pointer">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-14 h-14 bg-yellow-600/10 rounded-2xl flex items-center justify-center group-hover:bg-yellow-600/20 transition-colors">
+                            <i class="hgi-stroke hgi-book-open-02 text-3xl text-yellow-700"></i>
+                        </div>
+                        <h3 class="text-xl font-black text-dark">Studi Islam</h3>
                     </div>
-                    <p class="text-sm text-gray-600">Kajian Keislaman</p>
+                    <p class="text-gray-600 leading-relaxed">Kajian Keislaman</p>
                 </div>
 
-                <div class="card hover:border-green border-2 border-transparent">
-                    <div class="flex items-center gap-3 mb-2">
-                        <i class="hgi-stroke hgi-analytics-01 text-3xl text-green"></i>
-                        <h3 class="text-lg font-bold text-dark">Manajemen</h3>
+                <div class="card hover:border-yellow-600 border-2 border-transparent group cursor-pointer">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-14 h-14 bg-yellow-600/10 rounded-2xl flex items-center justify-center group-hover:bg-yellow-600/20 transition-colors">
+                            <i class="hgi-stroke hgi-analytics-01 text-3xl text-yellow-700"></i>
+                        </div>
+                        <h3 class="text-xl font-black text-dark">Manajemen</h3>
                     </div>
-                    <p class="text-sm text-gray-600">Bisnis & Organisasi</p>
+                    <p class="text-gray-600 leading-relaxed">Bisnis & Organisasi</p>
                 </div>
 
-                <div class="card hover:border-green border-2 border-transparent">
-                    <div class="flex items-center gap-3 mb-2">
-                        <i class="hgi-stroke hgi-medicine-01 text-3xl text-green"></i>
-                        <h3 class="text-lg font-bold text-dark">Teknologi Hasil Pertanian</h3>
+                <div class="card hover:border-yellow-600 border-2 border-transparent group cursor-pointer">
+                    <div class="flex items-center gap-4 mb-3">
+                        <div class="w-14 h-14 bg-yellow-600/10 rounded-2xl flex items-center justify-center group-hover:bg-yellow-600/20 transition-colors">
+                            <i class="hgi-stroke hgi-medicine-01 text-3xl text-yellow-700"></i>
+                        </div>
+                        <h3 class="text-xl font-black text-dark">Teknologi Hasil Pertanian</h3>
                     </div>
-                    <p class="text-sm text-gray-600">Pengolahan Pangan</p>
+                    <p class="text-gray-600 leading-relaxed">Pengolahan Pangan</p>
                 </div>
 
             </div>
@@ -293,37 +417,129 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-8">
-        <div class="container-custom text-center">
-            <div class="mb-4">
-                <h3 class="text-2xl font-bold mb-2">UNU-<span class="text-green">Match</span></h3>
-                <p class="text-gray-400">Temukan Jurusan yang Tepat Untukmu</p>
+    <footer class="bg-gradient-to-br from-gray-900 via-gray-900 to-black text-white py-16">
+        <div class="container-custom">
+            <!-- Main Footer Content -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- About Section -->
+                <div>
+                    <h3 class="text-2xl font-black mb-4">
+                        UNU-<span class="text-yellow-500">Match</span>
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Sistem rekomendasi jurusan berbasis Machine Learning untuk mahasiswa Universitas Nahdlatul Ulama Yogyakarta.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-yellow-600 rounded-lg flex items-center justify-center transition-all hover:scale-110">
+                            <i class="hgi-stroke hgi-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-yellow-600 rounded-lg flex items-center justify-center transition-all hover:scale-110">
+                            <i class="hgi-stroke hgi-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-yellow-600 rounded-lg flex items-center justify-center transition-all hover:scale-110">
+                            <i class="hgi-stroke hgi-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-black mb-4 text-yellow-500">Navigasi</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Beranda</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-yellow-500 transition-colors">Fitur</a></li>
+                        <li><a href="#how-it-works" class="text-gray-400 hover:text-yellow-500 transition-colors">Cara Kerja</a></li>
+                        <li><a href="#programs" class="text-gray-400 hover:text-yellow-500 transition-colors">Program Studi</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-black mb-4 text-yellow-500">Layanan</h4>
+                    <ul class="space-y-3">
+                        <li><a href="survey.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Survey Minat</a></li>
+                        <li><a href="hasil.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Hasil Rekomendasi</a></li>
+                        <li><a href="test_accuracy.html" class="text-gray-400 hover:text-yellow-500 transition-colors">Test Akurasi</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-black mb-4 text-yellow-500">Kontak</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start gap-2">
+                            <i class="hgi-stroke hgi-location-01 text-yellow-500 mt-1"></i>
+                            <span>Jl. Ringroad Barat, Gamping<br>Sleman, DIY 55293</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="hgi-stroke hgi-mail-01 text-yellow-500"></i>
+                            <span>info@unu-jogja.ac.id</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="hgi-stroke hgi-phone text-yellow-500"></i>
+                            <span>(0274) 123456</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="text-sm text-gray-400">
-                <p>&copy; 2026 UNU-Match. Dikembangkan untuk Universitas Nahdlatul Ulama.</p>
+
+            <!-- Quote Section -->
+            <div class="border-t border-gray-800 pt-8 mb-8">
+                <p class="text-gray-400 text-center leading-relaxed max-w-3xl mx-auto italic">
+                    "Masa depan tidak terjadi begitu saja—tetapi dibangun oleh mereka yang berani membayangkannya dan disiplin untuk meraihnya."
+                </p>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-center md:text-left">
+                    &copy; 2026 UNU-Match. Dikembangkan untuk <span class="text-yellow-500 font-semibold">Universitas Nahdlatul Ulama Yogyakarta</span>.
+                </p>
+                <div class="flex gap-6 text-sm">
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors">Kebijakan Privasi</a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 transition-colors">Syarat & Ketentuan</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <style>
         @keyframes search-pulse {
-
-            0%,
-            100% {
+            0%, 100% {
                 transform: scale(1) rotate(0deg);
             }
-
             50% {
-                transform: scale(1.1) rotate(5deg);
+                transform: scale(1.05) rotate(3deg);
+            }
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
 
         .search-icon-container {
-            animation: search-pulse 2s ease-in-out infinite;
+            animation: search-pulse 3s ease-in-out infinite;
         }
 
         .search-icon {
-            filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
+            filter: drop-shadow(0 0 16px rgba(255, 255, 255, 0.6));
+        }
+
+        .animate-fade-in {
+            animation: fade-in 1s ease-out;
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 
@@ -331,6 +547,46 @@
         function scrollToFeatures() {
             document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
         }
+
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && document.querySelector(href)) {
+                        e.preventDefault();
+                        document.querySelector(href).scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        // Close mobile menu if open
+                        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+
+            // Hide mobile menu on scroll
+            let lastScroll = 0;
+            window.addEventListener('scroll', function() {
+                const currentScroll = window.pageYOffset;
+                if (currentScroll > lastScroll && mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                lastScroll = currentScroll;
+            });
+        });
     </script>
 
 </body>

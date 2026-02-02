@@ -11,13 +11,17 @@
 class BusinessRulesEngine {
     
     constructor() {
-        // Prerequisite thresholds
+        // Prerequisite thresholds (more strict for better accuracy)
         this.thresholds = {
-            agama_studi_islam: 75,
-            inggris_pend_inggris: 75,
-            ekonomi_business: 70,
-            stem_minimum: 70,
-            science_health: 70
+            agama_studi_islam: 78,
+            inggris_pend_inggris: 78,
+            ekonomi_business: 72,
+            stem_minimum: 72,
+            science_health: 72,
+            mtk_informatika: 70,
+            kimia_farmasi: 70,
+            fisika_elektro: 70,
+            minat_minimum: 3
         };
     }
 
@@ -28,18 +32,108 @@ class BusinessRulesEngine {
      * @returns {Array} Adjusted predictions with warnings
      */
     applyRules(predictions, userProfile) {
-        return predictions.map(pred => {
-            const adjusted = {...pred};
+        const adjusted = predictions.map(pred => {
+            const result = {...pred};
             const validation = this.validatePrediction(pred.prodi, userProfile);
             
             // Adjust confidence based on rules
-            adjusted.confidence = pred.confidence * validation.multiplier;
-            adjusted.warnings = validation.warnings;
-            adjusted.strengths = validation.strengths;
-            adjusted.alternatives = validation.alternatives;
+            result.confidence = pred.confidence * validation.multiplier;
+            result.warnings = validation.warnings;
+            result.strengths = validation.strengths;
+            result.alternatives = validation.alternatives;
+            result.matchScore = this.calculateMatchScore(pred.prodi, userProfile);
             
-            return adjusted;
-        }).sort((a, b) => b.confidence - a.confidence); // Re-rank
+            return result;
+        });
+        
+        // Re-rank based on adjusted confidence and match score
+        return adjusted.sort((a, b) => {
+            const scoreA = a.confidence * 0.6 + a.matchScore * 0.4;
+            const scoreB = b.confidence * 0.6 + b.matchScore * 0.4;
+            return scoreB - scoreA;
+        });
+    }
+
+    /**
+     * Calculate comprehensive match score
+     * @param {string} prodi - Program studi
+     * @param {Object} profile - User profile
+     * @returns {number} Match score (0-1)
+     */
+    calculateMatchScore(prodi, profile) {
+        let score = 0.5; // Base score
+        const factors = [];
+        
+        // Validate profile has all required fields with defaults
+        const safeProfile = {
+            mtk: profile.mtk || 50,
+            inggris: profile.inggris || 50,
+            agama: profile.agama || 50,
+            fisika: profile.fisika || 50,
+            kimia: profile.kimia || 50,
+            biologi: profile.biologi || 50,
+            ekonomi: profile.ekonomi || 50,
+            minat_teknik: profile.minat_teknik || 3,
+            minat_kesehatan: profile.minat_kesehatan || 3,
+            minat_bisnis: profile.minat_bisnis || 3,
+            minat_pendidikan: profile.minat_pendidikan || 3,
+            hafalan: profile.hafalan || 0
+        };
+        
+        // Calculate weighted factors for each prodi
+        if (prodi.includes('Informatika')) {
+            factors.push(safeProfile.mtk / 100 * 0.3);
+            factors.push(safeProfile.minat_teknik / 5 * 0.4);
+            factors.push(safeProfile.inggris / 100 * 0.2);
+            factors.push(safeProfile.fisika / 100 * 0.1);
+        } else if (prodi.includes('Farmasi')) {
+            factors.push(safeProfile.kimia / 100 * 0.35);
+            factors.push(safeProfile.biologi / 100 * 0.35);
+            factors.push(safeProfile.minat_kesehatan / 5 * 0.3);
+        } else if (prodi.includes('Teknik Elektro')) {
+            factors.push(safeProfile.fisika / 100 * 0.35);
+            factors.push(safeProfile.mtk / 100 * 0.25);
+            factors.push(safeProfile.minat_teknik / 5 * 0.4);
+        } else if (prodi.includes('Studi Islam')) {
+            factors.push(safeProfile.agama / 100 * 0.5);
+            factors.push(safeProfile.hafalan * 0.3);
+            factors.push(safeProfile.minat_pendidikan / 5 * 0.2);
+        } else if (prodi.includes('Akuntansi')) {
+            factors.push(safeProfile.ekonomi / 100 * 0.35);
+            factors.push(safeProfile.mtk / 100 * 0.3);
+            factors.push(safeProfile.minat_bisnis / 5 * 0.35);
+        } else if (prodi.includes('Manajemen')) {
+            factors.push(safeProfile.ekonomi / 100 * 0.3);
+            factors.push(safeProfile.minat_bisnis / 5 * 0.4);
+            factors.push(safeProfile.inggris / 100 * 0.2);
+            factors.push(safeProfile.mtk / 100 * 0.1);
+        } else if (prodi.includes('Pendidikan Bahasa Inggris')) {
+            factors.push(safeProfile.inggris / 100 * 0.5);
+            factors.push(safeProfile.minat_pendidikan / 5 * 0.4);
+            factors.push(safeProfile.agama / 100 * 0.1);
+        } else if (prodi.includes('PGSD')) {
+            factors.push(safeProfile.minat_pendidikan / 5 * 0.5);
+            const avgAcademic = (safeProfile.mtk + safeProfile.inggris + safeProfile.agama) / 300;
+            factors.push(avgAcademic * 0.5);
+        } else if (prodi.includes('Agribisnis')) {
+            factors.push(safeProfile.biologi / 100 * 0.3);
+            factors.push(safeProfile.ekonomi / 100 * 0.3);
+            factors.push(safeProfile.minat_bisnis / 5 * 0.4);
+        } else if (prodi.includes('Teknologi Hasil Pertanian')) {
+            factors.push(safeProfile.biologi / 100 * 0.35);
+            factors.push(safeProfile.kimia / 100 * 0.35);
+            factors.push(safeProfile.minat_kesehatan / 5 * 0.2);
+            factors.push(safeProfile.fisika / 100 * 0.1);
+        }
+        
+        // Calculate average of all factors
+        if (factors.length > 0) {
+            score = factors.reduce((a, b) => a + b, 0);
+        }
+        
+        // Ensure score is a valid number between 0 and 1
+        const finalScore = Math.max(0, Math.min(1, score));
+        return !isNaN(finalScore) ? finalScore : 0.7; // Fallback to 0.7 if NaN
     }
 
     /**

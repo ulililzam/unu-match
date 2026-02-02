@@ -93,23 +93,26 @@ class UNUMatchMLTrainer:
         if tune_hyperparameters:
             print("🔍 Performing hyperparameter tuning...")
             
-            # Hyperparameter grid
+            # Enhanced hyperparameter grid for better accuracy
             param_grid = {
-                'n_estimators': [100, 200, 300],
-                'max_depth': [10, 15, 20, None],
-                'min_samples_split': [2, 5, 10],
-                'min_samples_leaf': [1, 2, 4],
-                'max_features': ['sqrt', 'log2']
+                'n_estimators': [200, 300, 400],  # More trees for better accuracy
+                'max_depth': [12, 18, 25, None],  # Deeper trees
+                'min_samples_split': [2, 4, 6],   # More granular splits
+                'min_samples_leaf': [1, 2, 3],
+                'max_features': ['sqrt', 'log2', None],  # Try all features too
+                'min_impurity_decrease': [0.0, 0.001, 0.005],  # Prune weak splits
+                'class_weight': ['balanced', None]  # Handle class imbalance
             }
             
-            # Grid search with cross-validation
-            rf_base = RandomForestClassifier(random_state=42)
+            # Grid search with cross-validation (increased CV folds)
+            rf_base = RandomForestClassifier(random_state=42, n_jobs=-1)
             grid_search = GridSearchCV(
                 rf_base, 
                 param_grid, 
-                cv=5,
+                cv=7,  # Increased from 5 to 7 for better validation
                 scoring='f1_weighted',
-                verbose=1
+                verbose=1,
+                n_jobs=-1  # Use all CPU cores
             )
             
             grid_search.fit(self.X_train, self.y_train)
@@ -119,17 +122,20 @@ class UNUMatchMLTrainer:
             print(f"✅ Best CV score: {grid_search.best_score_:.4f}")
             
         else:
-            # Train with default good parameters
+            # Train with improved default parameters
             self.model = RandomForestClassifier(
-                n_estimators=200,
-                max_depth=15,
-                min_samples_split=5,
-                min_samples_leaf=2,
+                n_estimators=300,  # Increased from 200
+                max_depth=20,      # Increased from 15
+                min_samples_split=3,  # More balanced
+                min_samples_leaf=1,   # Allow more granularity
                 max_features='sqrt',
-                random_state=42
+                min_impurity_decrease=0.001,  # Prune weak splits
+                class_weight='balanced',  # Handle imbalanced classes
+                random_state=42,
+                n_jobs=-1  # Use all cores
             )
             self.model.fit(self.X_train, self.y_train)
-            print("✅ Model trained with default parameters")
+            print("✅ Model trained with improved default parameters")
         
         return self
     

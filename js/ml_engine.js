@@ -75,14 +75,20 @@ class RandomForestClassifier {
             this.predictTree(tree, normalizedFeatures)
         );
 
-        // Count votes for each class
+        // Count votes for each class with weighted voting
         const votes = new Array(this.classNames.length).fill(0);
+        const weightedVotes = new Array(this.classNames.length).fill(0);
+        
         treePredictions.forEach(prediction => {
             votes[prediction]++;
+            // Weight vote by feature strength
+            const weight = this.calculatePredictionWeight(features, this.classNames[prediction]);
+            weightedVotes[prediction] += weight;
         });
 
-        // Calculate probabilities
-        const probabilities = votes.map(v => v / treePredictions.length);
+        // Calculate probabilities (use weighted votes for better accuracy)
+        const totalWeight = weightedVotes.reduce((a, b) => a + b, 0);
+        const probabilities = weightedVotes.map(w => w / totalWeight);
 
         // Get top 3 predictions
         const sortedIndices = probabilities
@@ -150,6 +156,48 @@ class RandomForestClassifier {
     }
 
     /**
+     * Calculate prediction weight based on feature alignment
+     * @param {Object} features - User features
+     * @param {string} prodi - Program studi name
+     * @returns {number} Weight multiplier (0.5 - 1.5)
+     */
+    calculatePredictionWeight(features, prodi) {
+        let weight = 1.0;
+        
+        // Boost weight based on strong feature alignment
+        if (prodi.includes('Informatika')) {
+            if (features.minat_teknik >= 4) weight += 0.3;
+            if (features.mtk >= 80) weight += 0.2;
+        } else if (prodi.includes('Farmasi')) {
+            if (features.minat_kesehatan >= 4) weight += 0.3;
+            if (features.kimia >= 80 && features.biologi >= 80) weight += 0.2;
+        } else if (prodi.includes('Teknik Elektro')) {
+            if (features.minat_teknik >= 4) weight += 0.3;
+            if (features.fisika >= 80) weight += 0.2;
+        } else if (prodi.includes('Studi Islam')) {
+            if (features.agama >= 85) weight += 0.3;
+            if (features.hafalan === 1) weight += 0.2;
+        } else if (prodi.includes('Akuntansi') || prodi.includes('Manajemen')) {
+            if (features.minat_bisnis >= 4) weight += 0.3;
+            if (features.ekonomi >= 80) weight += 0.2;
+        } else if (prodi.includes('PGSD') || prodi.includes('Pendidikan')) {
+            if (features.minat_pendidikan >= 4) weight += 0.3;
+            if (prodi.includes('Inggris') && features.inggris >= 85) weight += 0.2;
+        } else if (prodi.includes('Agribisnis')) {
+            if (features.minat_bisnis >= 3 && features.biologi >= 75) weight += 0.3;
+        } else if (prodi.includes('Teknologi Hasil Pertanian')) {
+            if (features.biologi >= 80 && features.kimia >= 75) weight += 0.3;
+        }
+        
+        // Penalize if critical features are too low
+        if (prodi.includes('Informatika') && features.mtk < 60) weight *= 0.7;
+        if (prodi.includes('Farmasi') && (features.kimia < 60 || features.biologi < 60)) weight *= 0.7;
+        if (prodi.includes('Studi Islam') && features.agama < 70) weight *= 0.6;
+        
+        return Math.max(0.5, Math.min(1.5, weight)); // Clamp between 0.5-1.5
+    }
+
+    /**
      * Calculate confidence score for prediction
      * @param {number} topProbability - Probability of top prediction
      * @param {Array} allProbabilities - All class probabilities
@@ -159,9 +207,10 @@ class RandomForestClassifier {
         const sortedProbs = [...allProbabilities].sort((a, b) => b - a);
         const gap = sortedProbs[0] - sortedProbs[1];
 
-        if (topProbability >= 0.6 && gap >= 0.2) return 'Sangat Tinggi';
-        if (topProbability >= 0.4 && gap >= 0.15) return 'Tinggi';
-        if (topProbability >= 0.3) return 'Sedang';
+        // Improved confidence thresholds
+        if (topProbability >= 0.55 && gap >= 0.25) return 'Sangat Tinggi';
+        if (topProbability >= 0.40 && gap >= 0.18) return 'Tinggi';
+        if (topProbability >= 0.28 && gap >= 0.10) return 'Sedang';
         return 'Rendah';
     }
 

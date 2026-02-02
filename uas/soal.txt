@@ -1,0 +1,12 @@
+1.Buatlah mini project study kasus dengan menggunakan data public
+atau data real, selesasikan kasus tersebut mulai dari pre-processing,
+splitting data (Pembagian data traning dan testing), dan pemodelan
+algoritma !
+2.Pilih salah satu algoritma supervised atau unsupervised sesuai dengan
+kasus yang akan diselesaikan !
+3.Selesaikan kasus tersebut menggunakan pemrograman python !
+4.Output dari UAS ini berupa laporan atau artikel ilmiah dan kumpulkan
+dalam bentuk soft file dengan format filename
+NAMATIMPROJEC_NAMAKASUS melalui Edlink, paling akhir
+dikumpulkan tanggal 08 Februari 2025 pukul 23.59 WIB.
+5.Persentasikan hasil project tersebut pada tanggal 09 Februari 2025
