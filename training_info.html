@@ -10,31 +10,31 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
         .formula-box {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
             border-radius: 12px;
             padding: 20px;
             color: white;
             margin: 15px 0;
         }
         .metric-card {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
             border-radius: 12px;
             padding: 20px;
             color: white;
             text-align: center;
         }
         .metric-card.green {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            background: linear-gradient(135deg, #F4D03F 0%, #D4AF37 100%);
         }
         .metric-card.blue {
-            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            background: linear-gradient(135deg, #B8941F 0%, #8B7355 100%);
         }
         .metric-card.purple {
-            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            background: linear-gradient(135deg, #F4D03F 0%, #D4AF37 100%);
         }
         .training-iteration {
             background: #f8f9fa;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #D4AF37;
             padding: 15px;
             margin: 10px 0;
             border-radius: 8px;
@@ -44,7 +44,7 @@
 <body class="bg-gray-50">
     <div class="container mx-auto px-4 py-8">
         <!-- Header -->
-        <div class="bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg shadow-lg p-8 mb-8 text-white">
+        <div class="bg-gradient-to-r from-yellow-600 to-amber-600 rounded-lg shadow-lg p-8 mb-8 text-white">
             <h1 class="text-4xl font-bold mb-2">🎓 UNU-Match Training Dashboard</h1>
             <p class="text-xl">Random Forest Model - Training Information & Analysis</p>
             <p class="text-sm mt-2 opacity-90">Data Science & Machine Learning - UAS 2025/2026</p>
@@ -74,15 +74,15 @@
         <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
             <h2 class="text-2xl font-bold mb-4 text-gray-800">🏗️ Model Architecture</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="border-l-4 border-purple-500 pl-4">
+                <div class="border-l-4 border-yellow-600 pl-4">
                     <h3 class="font-semibold text-gray-700">Algorithm</h3>
                     <p class="text-gray-600">Random Forest Classifier</p>
                 </div>
-                <div class="border-l-4 border-blue-500 pl-4">
+                <div class="border-l-4 border-amber-600 pl-4">
                     <h3 class="font-semibold text-gray-700">Number of Trees</h3>
                     <p class="text-gray-600" id="nEstimators">300</p>
                 </div>
-                <div class="border-l-4 border-green-500 pl-4">
+                <div class="border-l-4 border-yellow-500 pl-4">
                     <h3 class="font-semibold text-gray-700">Max Depth</h3>
                     <p class="text-gray-600" id="maxDepth">20</p>
                 </div>
@@ -268,13 +268,13 @@
         function updateDashboard() {
             if (!modelMetadata) return;
             
-            // Update metrics
+            // Update metrics with null checks to prevent NaN
             document.getElementById('trainAccuracy').textContent = 
-                (modelMetadata.train_accuracy * 100).toFixed(1) + '%';
+                modelMetadata.train_accuracy ? (modelMetadata.train_accuracy * 100).toFixed(1) + '%' : '0%';
             document.getElementById('testAccuracy').textContent = 
-                (modelMetadata.test_accuracy * 100).toFixed(1) + '%';
+                modelMetadata.test_accuracy ? (modelMetadata.test_accuracy * 100).toFixed(1) + '%' : '0%';
             document.getElementById('nEstimators').textContent = 
-                modelMetadata.n_estimators + ' trees';
+                (modelMetadata.n_estimators || 300) + ' trees';
             
             if (modelMetadata.cv_scores) {
                 const cvMean = modelMetadata.cv_scores.reduce((a, b) => a + b, 0) / modelMetadata.cv_scores.length;
@@ -302,9 +302,9 @@
                     labels: features,
                     datasets: [{
                         label: 'Feature Importance (%)',
-                        data: importance.map(v => v * 100),
-                        backgroundColor: 'rgba(102, 126, 234, 0.8)',
-                        borderColor: 'rgba(102, 126, 234, 1)',
+                        data: importance.map(v => (v || 0) * 100),
+                        backgroundColor: 'rgba(212, 175, 55, 0.8)',
+                        borderColor: 'rgba(212, 175, 55, 1)',
                         borderWidth: 1
                     }]
                 },
@@ -335,9 +335,9 @@
                     labels: ['Iteration 1', 'Iteration 2', 'Iteration 3', 'Current'],
                     datasets: [{
                         label: 'Test Accuracy',
-                        data: [0.68, 0.69, 0.695, modelMetadata ? modelMetadata.test_accuracy : 0.70],
-                        borderColor: 'rgba(75, 192, 192, 1)',
-                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        data: [0.68, 0.69, 0.695, modelMetadata && modelMetadata.test_accuracy ? modelMetadata.test_accuracy : 0.70],
+                        borderColor: 'rgba(212, 175, 55, 1)',
+                        backgroundColor: 'rgba(212, 175, 55, 0.2)',
                         tension: 0.4
                     }]
                 },
@@ -394,21 +394,21 @@
                 <div class="training-iteration">
                     <div class="flex justify-between items-start mb-2">
                         <div>
-                            <span class="font-bold text-purple-600">Training #${train.iteration}</span>
+                            <span class="font-bold text-yellow-700">Training #${train.iteration}</span>
                             <span class="text-sm text-gray-500 ml-2">${new Date(train.timestamp).toLocaleString('id-ID')}</span>
                         </div>
-                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-semibold">
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-semibold">
                             ${train.duration}
                         </span>
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
                         <div>
                             <span class="text-gray-600">Train Acc:</span>
-                            <span class="font-semibold text-green-600">${(train.trainAccuracy * 100).toFixed(1)}%</span>
+                            <span class="font-semibold text-yellow-700">${train.trainAccuracy ? (train.trainAccuracy * 100).toFixed(1) : '0'}%</span>
                         </div>
                         <div>
                             <span class="text-gray-600">Test Acc:</span>
-                            <span class="font-semibold text-blue-600">${(train.testAccuracy * 100).toFixed(1)}%</span>
+                            <span class="font-semibold text-amber-600">${train.testAccuracy ? (train.testAccuracy * 100).toFixed(1) : '0'}%</span>
                         </div>
                         <div>
                             <span class="text-gray-600">Trees:</span>
@@ -438,8 +438,8 @@
             const percentage = (weightedScore * 100).toFixed(1);
             
             const result = `
-                <div class="bg-purple-50 p-4 rounded-lg border-2 border-purple-200">
-                    <h3 class="font-bold text-lg mb-3 text-purple-800">Calculation Steps:</h3>
+                <div class="bg-yellow-50 p-4 rounded-lg border-2 border-yellow-200">
+                    <h3 class="font-bold text-lg mb-3 text-yellow-800">Calculation Steps:</h3>
                     <div class="space-y-2 text-sm">
                         <div class="flex justify-between border-b pb-2">
                             <span class="text-gray-700">1. Normalization:</span>
@@ -457,9 +457,9 @@
                             <span class="text-gray-700">4. Weighted Score:</span>
                             <span class="font-mono">${baseScore.toFixed(3)} × ${weight.toFixed(3)} = ${weightedScore.toFixed(3)}</span>
                         </div>
-                        <div class="flex justify-between bg-purple-100 p-2 rounded font-bold">
-                            <span class="text-purple-800">Final Match Score:</span>
-                            <span class="text-purple-900 text-xl">${percentage}%</span>
+                        <div class="flex justify-between bg-yellow-100 p-2 rounded font-bold">
+                            <span class="text-yellow-800">Final Match Score:</span>
+                            <span class="text-yellow-900 text-xl">${percentage}%</span>
                         </div>
                     </div>
                     <p class="text-xs text-gray-600 mt-3 italic">

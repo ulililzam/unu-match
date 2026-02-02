@@ -16,7 +16,7 @@
         
         <div class="bg-white rounded-lg shadow p-6 mb-6">
             <h2 class="text-xl font-bold mb-4">Test Scenarios</h2>
-            <button onclick="runAllTests()" class="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700">
+            <button onclick="runAllTests()" class="bg-gradient-to-r from-yellow-600 to-amber-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-yellow-700 hover:to-amber-700 transition-all">
                 Run All Tests
             </button>
         </div>
@@ -124,7 +124,7 @@
 
             // Display results
             const accuracy = (passedTests / totalTests * 100).toFixed(1);
-            const accuracyColor = accuracy >= 80 ? 'green' : accuracy >= 70 ? 'yellow' : 'red';
+            const accuracyColor = accuracy >= 80 ? 'yellow' : accuracy >= 70 ? 'amber' : 'red';
             
             resultsDiv.innerHTML = `
                 <div class="bg-white rounded-lg shadow p-6 mb-6">
@@ -140,10 +140,10 @@
                 </div>
 
                 ${results.map((result, idx) => `
-                    <div class="bg-white rounded-lg shadow p-6 ${result.testPassed ? 'border-l-4 border-green-500' : 'border-l-4 border-red-500'}">
+                    <div class="bg-white rounded-lg shadow p-6 ${result.testPassed ? 'border-l-4 border-yellow-600' : 'border-l-4 border-red-500'}">
                         <div class="flex items-center justify-between mb-4">
                             <h3 class="text-lg font-bold">Test ${idx + 1}: ${result.testCase.name}</h3>
-                            <span class="px-3 py-1 rounded-full text-sm font-semibold ${result.testPassed ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}">
+                            <span class="px-3 py-1 rounded-full text-sm font-semibold ${result.testPassed ? 'bg-yellow-100 text-yellow-800' : 'bg-red-100 text-red-800'}">
                                 ${result.testPassed ? '✅ PASSED' : '❌ FAILED'}
                             </span>
                         </div>
@@ -156,7 +156,7 @@
                             <strong>Results:</strong>
                             <ol class="list-decimal list-inside mt-2">
                                 ${result.predictions.map(p => `
-                                    <li class="${p.rank === 1 && result.isPassed ? 'text-green-600 font-semibold' : ''}">
+                                    <li class="${p.rank === 1 && result.isPassed ? 'text-yellow-700 font-semibold' : ''}">
                                         ${p.prodi} - ${p.matchPercentage}% 
                                         <span class="text-sm text-gray-600">(${p.confidence})</span>
                                         ${p.warnings && p.warnings.length > 0 ? `<br><span class="text-xs text-orange-600">${p.warnings.join(', ')}</span>` : ''}
