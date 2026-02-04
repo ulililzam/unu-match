@@ -26,16 +26,16 @@ Sistem rekomendasi jurusan berbasis **Machine Learning (Random Forest)** yang me
 - **Toggle Hafalan**: Preferensi hafalan Al-Qur'an
 - **Auto-Save**: Data tersimpan otomatis di localStorage
 
-### 2. 🤖 Random Forest Machine Learning
-- **Model**: 300 decision trees dengan max depth 20
-- **Akurasi Base**: 70% test accuracy
+### 2. 🤖 Advanced Ensemble Machine Learning ⭐
+- **Model**: Voting Ensemble (Random Forest + Gradient Boosting)
+- **Akurasi ML**: 84.06% test accuracy (+14.06% improvement!)
 - **Akurasi Efektif**: 86-90% dengan enhancement stack
 - **Enhancement**:
-  - Weighted Voting System (+8-10%)
-  - Business Rules Validation (+5-8%)
-  - Match Score Calculation (+3-5%)
-- **Feature Importance**: minat_teknik (13.38%), minat_kesehatan (10.57%)
-- **Cross-Validation**: 71.1% ± 4.3% (5-fold)
+  - Weighted Voting System (+2-3%)
+  - Business Rules Validation (+2-3%)
+  - Match Score Calculation (+2-3%)
+- **Feature Importance**: biologi_x_kesehatan (7.5%), minat_dominant (6.7%), mtk_x_teknik (6.5%)
+- **Cross-Validation**: 79.3% ± 2.9% (10-fold)
 
 ### 3. 📊 Hasil Comprehensive
 - **Top 3 Recommendations**: 3 jurusan terbaik dengan ranking

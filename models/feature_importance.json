@@ -1,52 +1,128 @@
 {
   "features": [
     {
+      "feature": "biologi_x_kesehatan",
+      "importance": 0.07514093580383822
+    },
+    {
+      "feature": "minat_dominant",
+      "importance": 0.0672821829451347
+    },
+    {
+      "feature": "mtk_x_teknik",
+      "importance": 0.06484200956936541
+    },
+    {
+      "feature": "ekonomi_x_bisnis",
+      "importance": 0.05574475060918173
+    },
+    {
+      "feature": "agama_x_pendidikan",
+      "importance": 0.05235165604359405
+    },
+    {
       "feature": "minat_teknik",
-      "importance": 0.13381485039185706
+      "importance": 0.048272959975100754
     },
     {
       "feature": "minat_kesehatan",
-      "importance": 0.10572956230365273
-    },
-    {
-      "feature": "minat_bisnis",
-      "importance": 0.09568708827457102
-    },
-    {
-      "feature": "biologi",
-      "importance": 0.09304089841146325
-    },
-    {
-      "feature": "minat_pendidikan",
-      "importance": 0.09275415989386573
+      "importance": 0.04682413922491731
     },
     {
       "feature": "inggris",
-      "importance": 0.08090279353980558
+      "importance": 0.04084869964133089
+    },
+    {
+      "feature": "minat_bisnis",
+      "importance": 0.03696566106544039
+    },
+    {
+      "feature": "biologi",
+      "importance": 0.03665081266915185
+    },
+    {
+      "feature": "sains_avg",
+      "importance": 0.03507866907891852
+    },
+    {
+      "feature": "minat_pendidikan",
+      "importance": 0.03464197467794047
+    },
+    {
+      "feature": "exact_vs_sosial",
+      "importance": 0.031191703210054652
+    },
+    {
+      "feature": "exact_avg",
+      "importance": 0.02958682106935252
     },
     {
       "feature": "fisika",
-      "importance": 0.08088337006916187
+      "importance": 0.02845546176189691
+    },
+    {
+      "feature": "sains_vs_ekonomi",
+      "importance": 0.027166624860918205
+    },
+    {
+      "feature": "minat_max",
+      "importance": 0.02634044771432479
     },
     {
       "feature": "agama",
-      "importance": 0.07259285145121615
-    },
-    {
-      "feature": "ekonomi",
-      "importance": 0.07045326923655058
-    },
-    {
-      "feature": "kimia",
-      "importance": 0.07007401795963132
+      "importance": 0.025801482295948436
     },
     {
       "feature": "mtk",
-      "importance": 0.06820659908324606
+      "importance": 0.025702040903395267
+    },
+    {
+      "feature": "kimia",
+      "importance": 0.024292069888809754
+    },
+    {
+      "feature": "nilai_std",
+      "importance": 0.023225204116614426
+    },
+    {
+      "feature": "ekonomi",
+      "importance": 0.022922952505959292
+    },
+    {
+      "feature": "sosial_avg",
+      "importance": 0.021677808444960582
     },
     {
       "feature": "hafalan",
-      "importance": 0.03586053938497868
+      "importance": 0.020926153217823314
+    },
+    {
+      "feature": "nilai_avg",
+      "importance": 0.020597417493922125
+    },
+    {
+      "feature": "minat_total",
+      "importance": 0.02034137034193439
+    },
+    {
+      "feature": "nilai_max",
+      "importance": 0.016452097905701412
+    },
+    {
+      "feature": "is_strong_science",
+      "importance": 0.013364622357693768
+    },
+    {
+      "feature": "nilai_min",
+      "importance": 0.013086133079244914
+    },
+    {
+      "feature": "is_strong_math",
+      "importance": 0.007418948973734604
+    },
+    {
+      "feature": "is_strong_social",
+      "importance": 0.00680618855379612
     }
   ]
 }

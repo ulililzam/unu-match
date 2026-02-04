@@ -2,12 +2,13 @@
 
 ## Overview
 
-UNU-Match menggunakan **Random Forest Classifier** yang di-train dengan Python scikit-learn dan di-deploy ke JavaScript.
+UNU-Match menggunakan **Ensemble Classifier (RF + GB)** yang di-train dengan Python scikit-learn dan di-deploy ke JavaScript.
 
 **Performance:**
-- Test Accuracy: **91.0%**
-- Cross-Validation F1: **93.98% (±1.74%)**
-- Algorithm: Random Forest (200 trees, max_depth=15)
+- Test Accuracy: **84.06%** ⭐ (+14.06% from baseline)
+- Cross-Validation F1: **79.29% (±2.90%)**
+- Algorithm: Voting Ensemble (RF 400 trees + GB 300 estimators)
+- Dataset: 1380 samples (1000 original + augmentation)
 
 ---
 
